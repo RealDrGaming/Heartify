@@ -7,9 +7,10 @@ header nav ul :nth-child(4) a
 {
     width: 60%;
     margin: 90px auto;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: var(--border-color);
     padding: 45px 45px;
+    border-radius: 1em;
 }
 
 .accordion .container
@@ -24,14 +25,14 @@ header nav ul :nth-child(4) a
     position: relative;
     padding: 10px 0;
     font-size: 30px;
-    color: black;
+    color: white;
     cursor: pointer;
 }
 
 .accordion .label::before
 {
     content: '+';
-    color: black;
+    color: white;
     position: absolute;
     top: 50%;
     right: -5px;
@@ -42,7 +43,7 @@ header nav ul :nth-child(4) a
 .accordion .content
 {
     position: relative;
-    background: white;
+    background: var(--border-color);
     height: 0;
     font-size: 20px;
     text-align: justify;
