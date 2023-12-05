@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'BeMyGlittertine';
+    src: url(fonts/BeMyGlittertine.ttf);
+}
+
+:root 
+{
+    --body-background-color: #953C52; /* rgb(0,113,182) */
+    --background-color: #804D59; /* rgb(0,55,105) */
+    --text-hover-color: #E52E5D; /* rgb(0,113,182) */
+    --border-color: #4C3D41; /* rgb(0, 50, 110) */
+    --site-name: 'Heartify'; /* Heartify | SoulLinked | Connectionary */
+}
+html
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.3em;
+}
+
+body
+{
+    background-color: var(--body-background-color);
+    color:white;
+    font-family: 'BeMyGlittertine';
+}
+
+header h2
+{
+    font-family: 'BeMyGlittertine';
+    margin: 0 0 0 1em;
+}
+
+header .head-info
+{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    padding: 1em;
+    border: 0.2em solid var(--border-color);
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+}
+
+header p
+{
+    margin: 0;
+    display: inline-block;
+}
+
+header nav 
+{
+    display: flex;
+    align-items: center;
+}
+
+header nav ul
+{
+    display: flex;
+    gap: 3em;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li
+{
+    display: block;
+}
+
+header nav ul li :hover,
+header .buttons .login-button .login-button-direct :hover,
+header .buttons .register-button .register-button-direct :hover
+{
+    color: var(--text-hover-color);
+}
+
+header a
+{
+    text-decoration: none;
+    color: white;
+}
+
+header .buttons
+{
+    display: flex;
+    gap: 1em;
+    margin: 0 1em 0 0;
+}
+
+header .buttons svg 
+{
+    color: white;
+}
+
+header .buttons .login-button,
+header .buttons .register-button
+{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+footer .footer-info
+{
+    display: flex;
+    background-color: var(--background-color);
+    padding: 1em;
+    border-radius: 1em;
+}

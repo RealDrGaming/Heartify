@@ -1,0 +1,4 @@
+header nav ul :nth-child(2) a
+{
+    color: var(--text-hover-color);
+}
