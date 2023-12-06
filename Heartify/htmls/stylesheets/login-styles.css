@@ -1,0 +1,49 @@
+.container
+{
+  padding: 16px;
+  width: 40%;
+  margin: 4em auto 4em auto;
+}
+
+input[type=text],
+input[type=password]
+{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 0.8em;
+}
+  
+input[type=text]:focus,
+input[type=password]:focus
+{
+  background-color: #ddd;
+  outline: none;
+}
+  
+hr
+{
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.loginbtn 
+{
+  background-color: var(--background-color);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 0.8em;
+}
+
+.loginbtn:hover
+{
+  opacity: 1;
+  color: var(--text-hover-color);
+}
