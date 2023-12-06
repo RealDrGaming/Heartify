@@ -8,7 +8,7 @@ header nav ul :nth-child(4) a
     width: 60%;
     margin: 90px auto;
     color: white;
-    background-color: var(--border-color);
+    background-color: var(--background-color);
     padding: 45px 45px;
     border-radius: 1em;
 }
@@ -43,7 +43,7 @@ header nav ul :nth-child(4) a
 .accordion .content
 {
     position: relative;
-    background: var(--border-color);
+    background: var(--background-color);
     height: 0;
     font-size: 20px;
     text-align: justify;
