@@ -24,7 +24,7 @@ input[type=password]:focus
   outline: none;
 }
   
-hr
+hr .inbetween-form
 {
   border: 1px solid var(--text-fill-color);
   margin-bottom: 25px;
