@@ -7,7 +7,7 @@ header nav ul :nth-child(4) a
 {
     width: 60%;
     margin: 90px auto;
-    color: white;
+    color: var(--text-fill-color);
     background-color: var(--background-color);
     padding: 45px 45px;
     border-radius: 1em;
@@ -25,14 +25,14 @@ header nav ul :nth-child(4) a
     position: relative;
     padding: 10px 0;
     font-size: 30px;
-    color: white;
+    color: var(--text-fill-color);
     cursor: pointer;
 }
 
 .accordion .label::before
 {
     content: '+';
-    color: white;
+    color: var(--text-fill-color);
     position: absolute;
     top: 50%;
     right: -5px;

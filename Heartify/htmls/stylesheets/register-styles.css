@@ -13,7 +13,7 @@ input[type=password]
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
-  background: #f1f1f1;
+  background: var(--text-fill-color);
   border-radius: 0.8em;
 }
   
@@ -26,14 +26,14 @@ input[type=password]:focus
   
 hr
 {
-  border: 1px solid #f1f1f1;
+  border: 1px solid var(--text-fill-color);
   margin-bottom: 25px;
 }
 
 .registerbtn 
 {
   background-color: var(--background-color);
-  color: white;
+  color: var(--text-fill-color);
   padding: 16px 20px;
   border: none;
   cursor: pointer;
@@ -57,6 +57,7 @@ a
 {
   background-color: var(--background-color);
   text-align: center;
+  border-radius: 1em;
 }
 
 .emergency 

@@ -5,6 +5,7 @@
 
 :root 
 {
+    --text-fill-color: white;
     --body-background-color: #953C52; /* rgb(0,113,182) */
     --text-hover-color: #E52E5D; /* rgb(0,113,182) */
     --background-color: #58474c; /* rgb(0, 50, 110) */
@@ -27,7 +28,7 @@ html
 body
 {
     background-color: var(--body-background-color);
-    color:white;
+    color: var(--text-fill-color);
     font-family: 'BeMyGlittertine';
 }
 
@@ -84,7 +85,7 @@ header .buttons .register-button .register-button-direct :hover
 header a
 {
     text-decoration: none;
-    color: white;
+    color: var(--text-fill-color);
 }
 
 header .buttons
@@ -96,7 +97,7 @@ header .buttons
 
 header .buttons svg 
 {
-    color: white;
+    color: var(--text-fill-color);
 }
 
 header .buttons .login-button,
@@ -110,7 +111,44 @@ header .buttons .register-button
 footer .footer-info
 {
     display: flex;
+    width: 90%;
+    margin: auto;
     background-color: var(--background-color);
-    padding: 1em;
-    border-radius: 1em;
+    padding: 1.5em 0 1.5em 0;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-around;
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
+}
+
+footer svg 
+{
+    width: 2em;
+    height: 2em;
+    color: var(--text-fill-color);
+}
+
+footer h2,
+footer p
+{
+    margin: 0;
+    padding: 0;
+}
+
+footer .socials :hover
+{
+    color: var(--text-hover-color);
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+  
+main
+{
+    flex: 1;
 }
