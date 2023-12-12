@@ -24,7 +24,7 @@ input[type=password]:focus
   outline: none;
 }
   
-hr
+hr .inbetween-form
 {
   border: 1px solid var(--text-fill-color);
   margin-bottom: 25px;
@@ -50,7 +50,7 @@ hr
   
 a
 {
-  color: dodgerblue;
+  color: var(--text-hyperlink-color);
 }
   
 .signin
@@ -60,7 +60,7 @@ a
   border-radius: 1em;
 }
 
-.emergency 
+.emergency-mark
 {
   font-size: 3em;
 }

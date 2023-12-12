@@ -2,3 +2,11 @@ header nav ul :first-child a
 {
     color: var(--text-hover-color);
 }
+
+.head-container-main
+{
+    padding-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;    
+}
