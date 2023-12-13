@@ -80,12 +80,12 @@ header nav ul
 
 header nav ul li
 {
-    display: block;
+    align-items: center;
+    display: flex;
+    gap: 0.2em;
 }
 
-header nav ul li :hover,
-header .buttons .login-button .login-button-direct :hover,
-header .buttons .register-button .register-button-direct :hover
+header .button-direct :hover
 {
     color: var(--text-hover-color);
 }
@@ -113,7 +113,7 @@ header .buttons .register-button
 {
     display: flex;
     align-items: center;
-    gap: 0.5em;
+    gap: 0.2em;
 }
 
 footer .footer-info

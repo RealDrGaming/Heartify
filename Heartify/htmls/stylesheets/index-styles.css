@@ -1,4 +1,4 @@
-header nav ul :first-child a
+header nav ul :first-child .button-direct a
 {
     color: var(--text-hover-color);
 }
