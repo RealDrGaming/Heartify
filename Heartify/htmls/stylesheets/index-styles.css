@@ -5,8 +5,21 @@ header nav ul :first-child a
 
 .head-container-main
 {
-    padding-top: 5em;
+    padding-top: 2em;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;    
+    justify-content: space-evenly;
+    font-size: 1.5em;
+}
+
+.head-container-main h1,
+.head-container-main p
+{
+    margin: 0;
+}
+
+.image-part
+{
+    width: 20%;
+    height: 20%;
 }
