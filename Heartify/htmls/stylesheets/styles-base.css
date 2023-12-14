@@ -3,13 +3,20 @@
     src: url(fonts/BeMyGlittertine.ttf);
 }
 
+/*
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url(fonts/Roboto-Regular.ttf);
+}
+*/
+
 :root 
 {
     --text-fill-color: white;
     --body-background-color: #953C52; /* rgb(0,113,182) */
     --text-hover-color: #E52E5D; /* rgb(0,113,182) */
     --background-color: #58474c; /* rgb(0, 50, 110) */
-    --text-hyperlink-color: rgb(215, 113, 255);
+    --text-hyperlink-color: rgb(215, 113, 255); /* #dodgerblue */
 }
 
 * 
