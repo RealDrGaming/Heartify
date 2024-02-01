@@ -9,9 +9,10 @@ builder.Services.AddDbContext<HeartifyDatingDbContext>(options =>
     options.UseSqlServer(connectionString);
 });
 
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//builder.Services.AddScoped<IPersonProfileService, PersonProfileService>();
 
 var app = builder.Build();
 

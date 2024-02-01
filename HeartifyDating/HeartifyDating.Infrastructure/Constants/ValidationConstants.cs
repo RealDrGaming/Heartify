@@ -54,5 +54,20 @@
         /// Minimal Description length
         /// </summary>
         public const int DescriptionMinLength = 2;
+        
+        /// <summary>
+        /// Require Error Message Text
+        /// </summary>
+        public const string RequiredErrorMessage = "The {0} field is required!";
+
+        /// <summary>
+        /// Input is not long enough or is too long
+        /// </summary>
+        public const string StringLengthErrorMessage = "The {0} field must be between {2} and {1} characters long!";
+
+        /// <summary>
+        /// Age is not in the permitted range
+        /// </summary>
+        public const string AgeIsntInRangeErrorMessage = "{0} must be in the range {2} - {1}";
     }
 }

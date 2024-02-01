@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace HeartifyDating.Infrastructure.Data.Models
 {
+    [Comment("Person Profiles Table")]
     public class PersonProfile
     {
         [Key]
