@@ -1,0 +1,62 @@
+﻿header nav ul :first-child .button-direct a {
+    color: var(--text-hover-color);
+}
+
+.container-main {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+}
+
+article :nth-child(5n) {
+    flex-direction: row-reverse;
+}
+
+.container-main h1,
+.container-main p {
+    margin: 0;
+}
+
+.container-main .text {
+    width: 20em;
+}
+
+article {
+    width: 90%;
+    margin: auto;
+}
+
+.tips-container-main h1 {
+    text-align: center;
+}
+
+.tips-container-main {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.starting-tips h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.starting-tips {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.starting-tip {
+    padding: 12px;
+}
+
+.starting-tip a {
+    color: var(--text-hyperlink-color);
+}

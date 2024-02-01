@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'BeMyGlittertine';
+    src: url(fonts/BeMyGlittertine.ttf);
+}
+
+/*
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url(fonts/Roboto-Regular.ttf);
+}
+*/
+
+:root {
+    --text-fill-color: white;
+    --body-background-color: #953C52; /* rgb(0,113,182) */
+    --text-hover-color: #E52E5D; /* rgb(0,113,182) */
+    --background-color: #58474c; /* rgb(0, 50, 110) */
+    --text-hyperlink-color: rgb(215, 113, 255); /* #dodgerblue */
+    --headers-font: 'BeMyGlittertine';
+    --text-font: 'BeMyGlittertine';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.3em;
+}
+
+body {
+    background-color: var(--body-background-color);
+    color: var(--text-fill-color);
+    font-family: 'BeMyGlittertine';
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+header h2 {
+    font-family: var(--headers-font);
+    margin: 0 0 0 1em;
+}
+
+header .head-info {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    padding: 1em;
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+}
+
+header p {
+    margin: 0;
+    display: inline-block;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+    header nav ul {
+        display: flex;
+        gap: 3em;
+        padding: 0;
+        margin: 0;
+    }
+
+        header nav ul li {
+            align-items: center;
+            display: flex;
+            gap: 0.5em;
+        }
+
+header .button-direct {
+    transition: transform 0.3s;
+}
+
+    header .button-direct:hover {
+        color: var(--text-hover-color);
+        transform: scale(1.1);
+    }
+
+header a {
+    text-decoration: none;
+    color: var(--text-fill-color);
+}
+
+header .buttons {
+    display: flex;
+    gap: 1em;
+    margin: 0 1em 0 0;
+}
+
+    header .buttons svg {
+        color: var(--text-fill-color);
+    }
+
+    header .buttons .login-button,
+    header .buttons .register-button {
+        display: flex;
+        align-items: center;
+        gap: 0.3em;
+    }
+
+main .inbetween-form {
+    border: 1px solid var(--text-fill-color);
+    margin: 1em auto 1em auto;
+    width: 80%;
+}
+
+footer .footer-info {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    background-color: var(--background-color);
+    padding: 1em 0 1em 0;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-around;
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
+}
+
+footer svg {
+    width: 2em;
+    height: 2em;
+    color: var(--text-fill-color);
+}
+
+footer h2,
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+footer .socials :hover {
+    color: var(--text-hover-color);
+}
+
+#terms-button {
+    color: var(--text-hyperlink-color);
+}
