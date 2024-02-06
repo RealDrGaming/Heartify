@@ -120,6 +120,7 @@ hr {
 
 .inbetween-in-footer {
     margin: 10px auto 10px auto;
+    border-radius: 2em;
 }
 
 main .inbetween-form {
