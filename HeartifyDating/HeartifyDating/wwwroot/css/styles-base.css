@@ -114,6 +114,14 @@ header .buttons .register-button {
     gap: 0.3em;
 }
 
+hr {
+    opacity: 100%;
+}
+
+.inbetween-in-footer {
+    margin: 10px auto 10px auto;
+}
+
 main .inbetween-form {
     border: 1px solid var(--text-fill-color);
     margin: 1em auto 1em auto;
