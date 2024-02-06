@@ -2,7 +2,7 @@
 
 namespace HeartifyDating.Controllers
 {
-    public class FindYourselfController : Controller
+    public class FindYourselfController : BaseController
     {
         public IActionResult FindYourself()
         {
