@@ -12,3 +12,17 @@ C:\Users\danko\Desktop\Heartify\HeartifyDating\HeartifyDating.Infrastructure\obj
 C:\Users\danko\Desktop\Heartify\HeartifyDating\HeartifyDating.Infrastructure\obj\Debug\net6.0\HeartifyDating.Infrastructure.pdb
 C:\Users\danko\Desktop\Heartify\HeartifyDating\HeartifyDating.Infrastructure\obj\Debug\net6.0\HeartifyDating.Infrastructure.genruntimeconfig.cache
 C:\Users\danko\Desktop\Heartify\HeartifyDating\HeartifyDating.Infrastructure\obj\Debug\net6.0\ref\HeartifyDating.Infrastructure.dll
+C:\Users\XI_B\Documents\GitHub\HeartifyDating\HeartifyDating\HeartifyDating.Infrastructure\bin\Debug\net6.0\HeartifyDating.Infrastructure.deps.json
+C:\Users\XI_B\Documents\GitHub\HeartifyDating\HeartifyDating\HeartifyDating.Infrastructure\bin\Debug\net6.0\HeartifyDating.Infrastructure.runtimeconfig.json
+C:\Users\XI_B\Documents\GitHub\HeartifyDating\HeartifyDating\HeartifyDating.Infrastructure\bin\Debug\net6.0\HeartifyDating.Infrastructure.dll
+C:\Users\XI_B\Documents\GitHub\HeartifyDating\HeartifyDating\HeartifyDating.Infrastructure\bin\Debug\net6.0\HeartifyDating.Infrastructure.pdb
+C:\Users\XI_B\Documents\GitHub\HeartifyDating\HeartifyDating\HeartifyDating.Infrastructure\obj\Debug\net6.0\HeartifyDating.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\XI_B\Documents\GitHub\HeartifyDating\HeartifyDating\HeartifyDating.Infrastructure\obj\Debug\net6.0\HeartifyDating.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\XI_B\Documents\GitHub\HeartifyDating\HeartifyDating\HeartifyDating.Infrastructure\obj\Debug\net6.0\HeartifyDating.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\XI_B\Documents\GitHub\HeartifyDating\HeartifyDating\HeartifyDating.Infrastructure\obj\Debug\net6.0\HeartifyDating.Infrastructure.AssemblyInfo.cs
+C:\Users\XI_B\Documents\GitHub\HeartifyDating\HeartifyDating\HeartifyDating.Infrastructure\obj\Debug\net6.0\HeartifyDating.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\XI_B\Documents\GitHub\HeartifyDating\HeartifyDating\HeartifyDating.Infrastructure\obj\Debug\net6.0\HeartifyDating.Infrastructure.dll
+C:\Users\XI_B\Documents\GitHub\HeartifyDating\HeartifyDating\HeartifyDating.Infrastructure\obj\Debug\net6.0\refint\HeartifyDating.Infrastructure.dll
+C:\Users\XI_B\Documents\GitHub\HeartifyDating\HeartifyDating\HeartifyDating.Infrastructure\obj\Debug\net6.0\HeartifyDating.Infrastructure.pdb
+C:\Users\XI_B\Documents\GitHub\HeartifyDating\HeartifyDating\HeartifyDating.Infrastructure\obj\Debug\net6.0\HeartifyDating.Infrastructure.genruntimeconfig.cache
+C:\Users\XI_B\Documents\GitHub\HeartifyDating\HeartifyDating\HeartifyDating.Infrastructure\obj\Debug\net6.0\ref\HeartifyDating.Infrastructure.dll

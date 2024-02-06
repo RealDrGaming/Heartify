@@ -70,27 +70,27 @@ header nav {
     align-items: center;
 }
 
-    header nav ul {
-        display: flex;
-        gap: 3em;
-        padding: 0;
-        margin: 0;
-    }
+header nav ul {
+    display: flex;
+    gap: 3em;
+    padding: 0;
+    margin: 0;
+}
 
-        header nav ul li {
-            align-items: center;
-            display: flex;
-            gap: 0.5em;
-        }
+header nav ul li {
+    align-items: center;
+    display: flex;
+    gap: 0.5em;
+}
 
 header .button-direct {
     transition: transform 0.3s;
 }
 
-    header .button-direct:hover {
-        color: var(--text-hover-color);
-        transform: scale(1.1);
-    }
+header .button-direct:hover {
+    color: var(--text-hover-color);
+    transform: scale(1.1);
+}
 
 header a {
     text-decoration: none;
@@ -103,16 +103,16 @@ header .buttons {
     margin: 0 1em 0 0;
 }
 
-    header .buttons svg {
-        color: var(--text-fill-color);
-    }
+header .buttons svg {
+    color: var(--text-fill-color);
+}
 
-    header .buttons .login-button,
-    header .buttons .register-button {
-        display: flex;
-        align-items: center;
-        gap: 0.3em;
-    }
+header .buttons .login-button,
+header .buttons .register-button {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
 
 main .inbetween-form {
     border: 1px solid var(--text-fill-color);
