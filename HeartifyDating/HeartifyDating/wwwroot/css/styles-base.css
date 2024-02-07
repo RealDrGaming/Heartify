@@ -56,8 +56,8 @@ header .head-info {
     justify-content: space-between;
     background-color: var(--background-color);
     padding: 1em;
-    border-bottom-left-radius: 3em;
-    border-bottom-right-radius: 3em;
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
 }
 
 header p {

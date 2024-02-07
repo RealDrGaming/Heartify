@@ -3,11 +3,6 @@ header nav ul :nth-child(2) .button-direct a
     color: var(--text-hover-color);
 }
 
-.main-container
-{
-  width: 100%;
-}
-
 .creation-text
 {
   text-align: center;
@@ -16,7 +11,7 @@ header nav ul :nth-child(2) .button-direct a
 .my-container
 {
   padding: 16px;
-  width: 70%;
+  width: 60%;
   margin: 4em auto 4em auto;
   border: var(--background-color) 0.15em dashed;
   border-radius: 1em;
