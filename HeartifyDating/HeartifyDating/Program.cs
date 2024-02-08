@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+string connectionString = builder.Configuration.GetConnectionString("InSchoolConnection");
 builder.Services.AddDbContext<HeartifyDatingDbContext>(options =>
 {
     options.UseSqlServer(connectionString);
