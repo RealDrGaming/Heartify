@@ -30,8 +30,8 @@ input[type=password]:focus
   background-color: #ddd;
   outline: none;
 }
-  
-.loginbtn 
+
+.registerbtn 
 {
   background-color: var(--background-color);
   color: var(--text-fill-color);
@@ -43,13 +43,24 @@ input[type=password]:focus
   border-radius: 0.8em;
 }
 
-.loginbtn:hover
+.registerbtn:hover
 {
   opacity: 1;
   color: var(--text-hover-color);
 }
+  
+.signin {
+    background-color: var(--background-color);
+    text-align: center;
+    border-radius: 1em;
+}
 
-.login-text
+.emergency-mark
+{
+  font-size: 3em;
+}
+
+.register-text
 {
   text-align: center;
 }

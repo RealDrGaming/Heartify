@@ -16,6 +16,7 @@
     --text-hover-color: #E52E5D; /* rgb(0,113,182) */
     --background-color: #58474c; /* rgb(0, 50, 110) */
     --text-hyperlink-color: rgb(215, 113, 255); /* #dodgerblue */
+    --text-hyperlink-hover-color: rgb(178, 93, 212);
     --headers-font: 'BeMyGlittertine';
     --text-font: 'BeMyGlittertine';
 }
@@ -160,4 +161,16 @@ footer .socials :hover {
 
 #terms-button {
     color: var(--text-hyperlink-color);
+}
+
+#terms-button:hover {
+    color: var(--text-hyperlink-hover-color);
+}
+
+a {
+    color: var(--text-hyperlink-color);
+}
+
+a:hover {
+   color: var(--text-hyperlink-hover-color);
 }
