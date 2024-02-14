@@ -6,10 +6,10 @@ namespace HeartifyDating.Infrastructure.Data.Configuration
 {
     public class PersonProfileConfiguration : IEntityTypeConfiguration<PersonProfile>
     {
-        private PersonProfile[] initialProfiles = new PersonProfile[] 
+        private PersonProfile[] initialProfiles = new PersonProfile[]
         {
             new PersonProfile()
-            { 
+            {
                 Id = 1,
                 FirstName = "Alejandro",
                 LastName = "Himenez",

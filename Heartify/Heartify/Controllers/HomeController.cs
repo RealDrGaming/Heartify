@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Heartify.Models;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using Heartify.Models;
 
 namespace HeartifyDating.Controllers
 {
@@ -25,7 +25,7 @@ namespace HeartifyDating.Controllers
             return View();
         }
 
-        public IActionResult FAQs() 
+        public IActionResult FAQs()
         {
             return View();
         }

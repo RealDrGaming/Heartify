@@ -42,3 +42,16 @@ app.MapControllerRoute(
 app.MapRazorPages();
 
 app.Run();
+
+
+/*
+ Scaffold :
+ Identity Account Manage
+ Identity Account Manage Email
+ Identity Account Manage ChangePassword
+ Identity Account Manage TwoFactorAuth
+ Identity Account Manage PersonalData
+ Identity Account Manage DeletePersonalData
+ Identity Account RegisterConfirmation
+ Identity Account ConfirmEmail
+ */

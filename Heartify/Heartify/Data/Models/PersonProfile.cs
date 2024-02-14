@@ -1,6 +1,6 @@
-﻿using static HeartifyDating.Infrastructure.Constants.ValidationConstants;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
+using static HeartifyDating.Infrastructure.Constants.ValidationConstants;
 
 
 namespace HeartifyDating.Infrastructure.Data.Models
@@ -44,7 +44,7 @@ namespace HeartifyDating.Infrastructure.Data.Models
         [Required]
         [StringLength(DescriptionMaxLength)]
         [Comment("Person Description")]
-        public string Description { get; set;}
+        public string Description { get; set; }
 
         [Required]
         [Comment("Person Profile Picture")] //MAKE IMAGE

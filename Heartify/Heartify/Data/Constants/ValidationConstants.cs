@@ -54,7 +54,7 @@
         /// Minimal Description length
         /// </summary>
         public const int DescriptionMinLength = 2;
-        
+
         /// <summary>
         /// Require Error Message Text
         /// </summary>
