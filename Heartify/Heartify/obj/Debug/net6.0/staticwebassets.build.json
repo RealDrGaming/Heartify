@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/x2Q0Z9phYNWdpNKxV5NYDrxqRvJSkHXke/EtnfdPTs=",
+  "Hash": "R3FCxtf5Vi/ScCOQ9SV7PgJh6wW5vBGcj1qQ5Skq7f4=",
   "Source": "Heartify",
   "BasePath": "_content/Heartify",
   "Mode": "Default",
@@ -1360,12 +1360,12 @@
       "OriginalItemSpec": "wwwroot\\images\\hearts_no_bg.png"
     },
     {
-      "Identity": "C:\\Users\\XI_B\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\XI_B\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\wwwroot\\js\\accordion.js",
       "SourceId": "Heartify",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\XI_B\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\wwwroot\\",
       "BasePath": "_content/Heartify",
-      "RelativePath": "js/site.js",
+      "RelativePath": "js/accordion.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1374,7 +1374,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\site.js"
+      "OriginalItemSpec": "wwwroot\\js\\accordion.js"
+    },
+    {
+      "Identity": "C:\\Users\\XI_B\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\wwwroot\\js\\indicateImageUploaded.js",
+      "SourceId": "Heartify",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\XI_B\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\wwwroot\\",
+      "BasePath": "_content/Heartify",
+      "RelativePath": "js/indicateImageUploaded.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\indicateImageUploaded.js"
     },
     {
       "Identity": "C:\\Users\\XI_B\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
