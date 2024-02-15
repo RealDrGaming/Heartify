@@ -11142,11 +11142,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\XI_B\\Documents\\GitHub\\HeartifyDating\\Heartify\\Heartify\\Heartify.csproj",
+      "projectUniqueName": "C:\\Users\\XI_B\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.csproj",
       "projectName": "Heartify",
-      "projectPath": "C:\\Users\\XI_B\\Documents\\GitHub\\HeartifyDating\\Heartify\\Heartify\\Heartify.csproj",
+      "projectPath": "C:\\Users\\XI_B\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.csproj",
       "packagesPath": "C:\\Users\\XI_B\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\XI_B\\Documents\\GitHub\\HeartifyDating\\Heartify\\Heartify\\obj\\",
+      "outputPath": "C:\\Users\\XI_B\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

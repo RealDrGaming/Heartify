@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace HeartifyDating.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class BaseController : Controller
     {
 
