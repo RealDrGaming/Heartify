@@ -1,4 +1,4 @@
-﻿namespace HeartifyDating.Infrastructure.Constants
+﻿namespace Heartify.Constants
 {
     /// <summary>
     /// Validation Constants

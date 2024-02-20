@@ -6,12 +6,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("SchoolConnection");
-builder.Services.AddDbContext<HeartifyDatingDbContext>(options =>
+builder.Services.AddDbContext<HeartifyDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<HeartifyDatingDbContext>();
+    .AddEntityFrameworkStores<HeartifyDbContext>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

@@ -43,12 +43,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/FindSomebodyElse/FindSomebodyElse.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluZFNvbWVib2R5RWxzZVxGaW5kU29tZWJvZHlFbHNlLmNzaHRtbA==
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Dating/FindSomebodyElse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0aW5nXEZpbmRTb21lYm9keUVsc2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/FindYourself/FindYourself.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluZFlvdXJzZWxmXEZpbmRZb3Vyc2VsZi5jc2h0bWw=
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Dating/FindYourself.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0aW5nXEZpbmRZb3Vyc2VsZi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Home/FAQs.cshtml]

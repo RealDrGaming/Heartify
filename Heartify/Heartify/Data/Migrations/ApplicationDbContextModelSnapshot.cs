@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Heartify.Data.Migrations
 {
-    [DbContext(typeof(HeartifyDatingDbContext))]
+    [DbContext(typeof(HeartifyDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

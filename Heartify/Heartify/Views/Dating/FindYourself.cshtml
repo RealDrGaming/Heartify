@@ -1,0 +1,134 @@
+﻿@using HeartifyDating.Core.Models
+
+@model PersonProfileFormModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<link rel="stylesheet" href="~/css/styles-base.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/find-yourself-styles.css" asp-append-version="true" />
+
+<main>
+    <section>
+        <article>
+            <div class="main-container">
+                <form asp-action="FindYourself" method="post">
+                    <div class="my-container">
+                        <div class="creation-text">
+                            <h1>@ViewBag.Title</h1>
+                            <p>Please fill in this form to create your dating profile.</p>
+                        </div>
+
+                        <hr class="inbetween-form">
+
+                        <label asp-for="@Model.FirstName">First Name</label>
+                        <input asp-for="@Model.FirstName" aria-required="true" />
+                        <span asp-validation-for="@Model.FirstName" class="text-danger"></span>
+
+                        <hr class="inbetween-form">
+
+                        <label asp-for="@Model.LastName">Last Name</label>
+                        <input asp-for="@Model.LastName" aria-required="true" />
+                        <span asp-validation-for="@Model.LastName" class="text-danger"></span>
+
+                        <hr class="inbetween-form">
+
+                        <label asp-for="@Model.Age">Age</label>
+                        <input asp-for="@Model.Age" placeholder="18-99 yrs" />
+                        <span asp-validation-for="@Model.Age" class="text-danger"></span>
+
+                        <hr class="inbetween-form">
+
+                        <label asp-for="@Model.Gender">I am a</label>
+                        <div class="my-sexuality">
+                            <select name="iAm" id="iAm" asp-for="@Model.Gender" aria-required="true">
+                                <option disabled selected value="">Select Gender...</option>
+                                @foreach (var gender in Model.Genders)
+                                {
+                                    <option value="@gender.Id">@gender.GenderName</option>
+                                }
+                            </select>
+                        </div>
+                        <span asp-validation-for="@Model.Gender" class="text-danger"></span>
+
+                        <label asp-for="@Model.WantedGender">I am looking for</label>
+                        <div class="looking-for-sexuality">
+                            <select name="lookingFor" id="lookingFor" asp-for="@Model.WantedGender" aria-required="true">
+                                <option disabled selected value="">Select Wanted Gender...</option>
+                                @foreach (var gender in Model.Genders)
+                                {
+                                    <option value="@gender.Id">@gender.GenderName</option>
+                                }
+                            </select>
+                        </div>
+                        <span asp-validation-for="@Model.WantedGender" class="text-danger"></span>
+
+                        <label asp-for="@Model.RelationshipType">I am looking for a(n)</label>
+                        <div class="looking-for-relationship">
+                            <select name="lookingForRelationship" id="lookingForRelationship" asp-for="@Model.RelationshipType" aria-required="true">
+                                <option disabled selected value="">Select Wanted Relationship Type...</option>
+                                <option value="Open">Open Relationship</option>
+                                <option value="Love">Love Relationship</option>
+                                <option value="Asexual">Asexual Relationship</option>
+                                <option value="Aromantical">Aromantical Relationship</option>
+                            </select>
+                        </div>
+                        <span asp-validation-for="@Model.RelationshipType" class="text-danger"></span>
+
+                        <hr class="inbetween-form">
+
+                        <label asp-for="@Model.Description">More Info</label>
+                        <textarea asp-for="@Model.Description" aria-required="true"></textarea>
+                        <span asp-validation-for="@Model.Description" class="text-danger"></span>
+
+                        <hr class="inbetween-form">
+
+                        <div class="pictures-section">
+                            <p>Select a couple of pictures to add to your account.</p>
+
+                            <div class="profile-pic">
+                                <p>Your main profile picture:</p>
+                                <input type="file" id="profile-picture" name="profile-picture" class="inputPicture" accept="image/*" required>
+                                <label id="profile-picture-label" for="profile-picture">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512"><path fill="currentColor" d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM216 408c0 13.3-10.7 24-24 24s-24-10.7-24-24V305.9l-31 31c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l72-72c9.4-9.4 24.6-9.4 33.9 0l72 72c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-31-31V408z" /></svg>
+                                    <span>Select a File</span>
+                                </label>
+                            </div>
+
+                            <div class="username-pic">
+                                <p>You holding a piece of paper with your username written on it: (Will not be accessible to other users)</p>
+                                <input type="file" id="username-picture" name="username-picture" class="inputPicture" accept="image/*" required>
+                                <label id="username-picture-label" for="username-picture">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512"><path fill="currentColor" d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM216 408c0 13.3-10.7 24-24 24s-24-10.7-24-24V305.9l-31 31c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l72-72c9.4-9.4 24.6-9.4 33.9 0l72 72c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-31-31V408z" /></svg>
+                                    <span>Select a File</span>
+                                </label>
+                            </div>
+
+                            <div class="random-pic">
+                                <p>A random picture of you:</p>
+                                <input type="file" id="random-picture" name="random-picture" class="inputPicture" accept="image/*" required>
+                                <label id="random-picture-label" for="random-picture">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512"><path fill="currentColor" d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM216 408c0 13.3-10.7 24-24 24s-24-10.7-24-24V305.9l-31 31c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l72-72c9.4-9.4 24.6-9.4 33.9 0l72 72c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-31-31V408z" /></svg>
+                                    <span>Select a File</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <hr class="inbetween-form">
+
+                        <p><span class="emergency-mark">!</span> Catfishing is strictly forbidden and will be punished accordingly.</p>
+
+                        <button type="submit" class="registerbtn">Create profile</button>
+                    </div>
+                </form>
+            </div>
+        </article>
+    </section>
+</main>
+
+<script src="~/js/IndicateImageUploaded.js" asp-append-version="true"></script>
+
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+}

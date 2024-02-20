@@ -1,13 +1,13 @@
-﻿using HeartifyDating.Infrastructure.Data.Configuration;
+﻿using Heartify.Data.Configuration;
 using HeartifyDating.Infrastructure.Data.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Heartify.Data
 {
-    public class HeartifyDatingDbContext : IdentityDbContext
+    public class HeartifyDbContext : IdentityDbContext
     {
-        public HeartifyDatingDbContext(DbContextOptions<HeartifyDatingDbContext> options)
+        public HeartifyDbContext(DbContextOptions<HeartifyDbContext> options)
             : base(options)
         {
         }

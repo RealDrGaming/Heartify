@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Heartify.Data.Migrations
 {
-    [DbContext(typeof(HeartifyDatingDbContext))]
+    [DbContext(typeof(HeartifyDbContext))]
     [Migration("20240213101503_identityAdded")]
     partial class identityAdded
     {

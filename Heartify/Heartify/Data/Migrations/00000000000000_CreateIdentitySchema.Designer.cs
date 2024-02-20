@@ -9,7 +9,7 @@ using System;
 
 namespace Heartify.Data.Migrations
 {
-    [DbContext(typeof(HeartifyDatingDbContext))]
+    [DbContext(typeof(HeartifyDbContext))]
     [Migration("00000000000000_CreateIdentitySchema")]
     partial class CreateIdentitySchema
     {

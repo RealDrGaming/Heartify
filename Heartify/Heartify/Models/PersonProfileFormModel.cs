@@ -1,12 +1,13 @@
-﻿using System.ComponentModel.DataAnnotations;
-using static HeartifyDating.Infrastructure.Constants.ValidationConstants;
+﻿using Heartify.Models;
+using System.ComponentModel.DataAnnotations;
+using static Heartify.Constants.ValidationConstants;
 
 namespace HeartifyDating.Core.Models
 {
     /// <summary>
     /// Person Profile Data Transfer Model
     /// </summary>
-    public class PersonProfileModel
+    public class PersonProfileFormModel
     {
         /// <summary>
         /// Person Profile Identifier
@@ -18,20 +19,20 @@ namespace HeartifyDating.Core.Models
         /// </summary>
         [Required(ErrorMessage = RequiredErrorMessage)]
         [StringLength(NamesMaxLength, MinimumLength = NamesMinLength, ErrorMessage = StringLengthErrorMessage)]
-        public string FirstName { get; set; }
+        public string FirstName { get; set; } = string.Empty;
 
         /// <summary>
         /// Person Last Name
         /// </summary>
         [Required(ErrorMessage = RequiredErrorMessage)]
         [StringLength(NamesMaxLength, MinimumLength = NamesMinLength, ErrorMessage = StringLengthErrorMessage)]
-        public string LastName { get; set; }
+        public string LastName { get; set; } = string.Empty;
 
         /// <summary>
         /// Person Age
         /// </summary>
         [Required(ErrorMessage = RequiredErrorMessage)]
-        [Range(MinAge, MinAge, ErrorMessage = AgeIsntInRangeErrorMessage)]
+        [Range(MinAge, MaxAge, ErrorMessage = AgeIsntInRangeErrorMessage)]
         public int Age { get; set; }
 
         /// <summary>
@@ -39,36 +40,38 @@ namespace HeartifyDating.Core.Models
         /// </summary>
         [Required(ErrorMessage = RequiredErrorMessage)]
         [StringLength(GenderMaxLength, MinimumLength = GenderMinLength, ErrorMessage = StringLengthErrorMessage)]
-        public string Gender { get; set; }
+        public string Gender { get; set; } = string.Empty;
 
         /// <summary>
         /// Gender wanted by Person
         /// </summary>
         [Required(ErrorMessage = RequiredErrorMessage)]
         [StringLength(GenderMaxLength, MinimumLength = GenderMinLength, ErrorMessage = StringLengthErrorMessage)]
-        public string WantedGender { get; set; }
+        public string WantedGender { get; set; } = string.Empty;
 
         /// <summary>
         /// Relationship type wanted by Person
         /// </summary>
         [Required(ErrorMessage = RequiredErrorMessage)]
         [StringLength(RelationshipTypeMaxLength, MinimumLength = RelationshipTypeMinLength, ErrorMessage = StringLengthErrorMessage)]
-        public string RelationshipType { get; set; }
+        public string RelationshipType { get; set; } = string.Empty;
 
         /// <summary>
         /// Person Description
         /// </summary>
         [Required(ErrorMessage = RequiredErrorMessage)]
         [StringLength(DescriptionMaxLength, MinimumLength = DescriptionMinLength, ErrorMessage = StringLengthErrorMessage)]
-        public string Description { get; set; }
+        public string Description { get; set; } = string.Empty;
 
         [Required(ErrorMessage = RequiredErrorMessage)]
-        public string ProfileImage { get; set; } //MAKE IMAGE
+        public string ProfileImage { get; set; } = string.Empty; //MAKE IMAGE
 
         [Required(ErrorMessage = RequiredErrorMessage)]
-        public string UsernamePicture { get; set; } //MAKE IMAGE
+        public string UsernamePicture { get; set; } = string.Empty; //MAKE IMAGE
 
         [Required(ErrorMessage = RequiredErrorMessage)]
-        public string RandomPicture { get; set; } //MAKE IMAGE
+        public string RandomPicture { get; set; } = string.Empty; //MAKE IMAGE
+
+        public IEnumerable<GenderViewModel> Genders { get; set; } = new List<GenderViewModel>();
     }
 }
