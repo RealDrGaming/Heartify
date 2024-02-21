@@ -22,6 +22,89 @@ namespace Heartify.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("Heartify.Data.Models.Gender", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasComment("Gender Unique Identifier");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("GenderName")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)")
+                        .HasComment("Gender Name");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Genders");
+
+                    b.HasComment("Gender");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            GenderName = "Male"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            GenderName = "Female"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            GenderName = "Non-binary"
+                        });
+                });
+
+            modelBuilder.Entity("Heartify.Data.Models.Relationship", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasComment("Relationship Unique Identifier");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("RelationshipType")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)")
+                        .HasComment("Relationship Type");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Relationships");
+
+                    b.HasComment("Relationships users want");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            RelationshipType = "Open Relationship"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            RelationshipType = "Love Relationship"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            RelationshipType = "Asexual Relationship"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            RelationshipType = "Aromantical Relationship"
+                        });
+                });
+
             modelBuilder.Entity("HeartifyDating.Infrastructure.Data.Models.PersonProfile", b =>
                 {
                     b.Property<int>("Id")
@@ -31,9 +114,13 @@ namespace Heartify.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("Age")
-                        .HasColumnType("int")
-                        .HasComment("Person Age");
+                    b.Property<DateTime>("DateOfBirth")
+                        .HasColumnType("datetime2")
+                        .HasComment("Person Date of Birth");
+
+                    b.Property<string>("DaterId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -47,11 +134,8 @@ namespace Heartify.Data.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasComment("Person First Name");
 
-                    b.Property<string>("Gender")
-                        .IsRequired()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)")
-                        .HasComment("Person Sexual Orientation");
+                    b.Property<int>("GenderId")
+                        .HasColumnType("int");
 
                     b.Property<string>("LastName")
                         .IsRequired()
@@ -59,82 +143,25 @@ namespace Heartify.Data.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasComment("Person Last Name");
 
-                    b.Property<string>("ProfileImage")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasComment("Person Profile Picture");
+                    b.Property<int>("RelationshipId")
+                        .HasColumnType("int");
 
-                    b.Property<string>("RandomPicture")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasComment("Person Random Picture");
-
-                    b.Property<string>("RelationshipType")
-                        .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)")
-                        .HasComment("Wanted Relationship Type");
-
-                    b.Property<string>("UsernamePicture")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasComment("Person Username Picture");
-
-                    b.Property<string>("WantedGender")
-                        .IsRequired()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)")
-                        .HasComment("Seuxal Orientation of Wanted Person");
+                    b.Property<int>("WantedGenderId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("DaterId");
+
+                    b.HasIndex("GenderId");
+
+                    b.HasIndex("RelationshipId");
+
+                    b.HasIndex("WantedGenderId");
 
                     b.ToTable("PersonProfiles");
 
                     b.HasComment("Person Profiles Table");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Age = 22,
-                            Description = "Fit, strong, tall, rich, looking for ma queen.",
-                            FirstName = "Alejandro",
-                            Gender = "Male",
-                            LastName = "Himenez",
-                            ProfileImage = "",
-                            RandomPicture = "",
-                            RelationshipType = "Love",
-                            UsernamePicture = "",
-                            WantedGender = "Female"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Age = 18,
-                            Description = "Biggest ass in town, looking for multiple partners that don't have a problem to be in open relationships.",
-                            FirstName = "Hristina",
-                            Gender = "Female",
-                            LastName = "Petkova",
-                            ProfileImage = "",
-                            RandomPicture = "",
-                            RelationshipType = "Open",
-                            UsernamePicture = "",
-                            WantedGender = "Male"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Age = 27,
-                            Description = "Im just a gay dude looking for hook-ups and sex.",
-                            FirstName = "Alek",
-                            Gender = "Male",
-                            LastName = "Ritaro",
-                            ProfileImage = "",
-                            RandomPicture = "",
-                            RelationshipType = "Aromantical",
-                            UsernamePicture = "",
-                            WantedGender = "Male"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -339,6 +366,41 @@ namespace Heartify.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("HeartifyDating.Infrastructure.Data.Models.PersonProfile", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "Dater")
+                        .WithMany()
+                        .HasForeignKey("DaterId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Heartify.Data.Models.Gender", "Gender")
+                        .WithMany("PersonProfiles")
+                        .HasForeignKey("GenderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Heartify.Data.Models.Relationship", "Relationship")
+                        .WithMany("PersonProfiles")
+                        .HasForeignKey("RelationshipId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Heartify.Data.Models.Gender", "WantedGender")
+                        .WithMany()
+                        .HasForeignKey("WantedGenderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Dater");
+
+                    b.Navigation("Gender");
+
+                    b.Navigation("Relationship");
+
+                    b.Navigation("WantedGender");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -388,6 +450,16 @@ namespace Heartify.Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Heartify.Data.Models.Gender", b =>
+                {
+                    b.Navigation("PersonProfiles");
+                });
+
+            modelBuilder.Entity("Heartify.Data.Models.Relationship", b =>
+                {
+                    b.Navigation("PersonProfiles");
                 });
 #pragma warning restore 612, 618
         }

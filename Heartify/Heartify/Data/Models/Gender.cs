@@ -1,9 +1,11 @@
 ﻿using Heartify.Constants;
+using HeartifyDating.Infrastructure.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
 namespace Heartify.Data.Models
 {
+    [Comment("Gender")]
     public class Gender
     {
         [Key]
@@ -14,5 +16,7 @@ namespace Heartify.Data.Models
         [StringLength(ValidationConstants.GenderMaxLength)]
         [Comment("Gender Name")]
         public string GenderName { get; set; } = string.Empty;
+
+        public IList<PersonProfile> PersonProfiles { get; set;} = new List<PersonProfile>();
     }
 }

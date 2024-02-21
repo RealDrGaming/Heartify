@@ -1,11 +1,10 @@
 ﻿using Heartify.Data.Models;
-using HeartifyDating.Infrastructure.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Heartify.Data.Configuration
 {
-    public class GenderConfiguration : IEntityTypeConfiguration<PersonProfile>
+    public class GenderConfiguration : IEntityTypeConfiguration<Gender>
     {
         private Gender[] initialGenders = new Gender[]
         {
@@ -26,7 +25,7 @@ namespace Heartify.Data.Configuration
             },
         };
 
-        public void Configure(EntityTypeBuilder<PersonProfile> builder)
+        public void Configure(EntityTypeBuilder<Gender> builder)
         {
             builder.HasData(initialGenders);
         }

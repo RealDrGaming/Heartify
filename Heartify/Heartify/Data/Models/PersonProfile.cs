@@ -1,4 +1,5 @@
 ﻿using Heartify.Data.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -25,8 +26,8 @@ namespace HeartifyDating.Infrastructure.Data.Models
         public string LastName { get; set; } = string.Empty;
 
         [Required]
-        [Comment("Person Age")]
-        public int Age { get; set; }
+        [Comment("Person Date of Birth")]
+        public DateTime DateOfBirth { get; set; }
 
         [Required]
         public int GenderId { get; set; }
@@ -57,15 +58,23 @@ namespace HeartifyDating.Infrastructure.Data.Models
         [Comment("Person Description")]
         public string Description { get; set; } = string.Empty;
 
-        [Required]
+        /*[Required]
         [Comment("Person Profile Picture")] //MAKE IMAGE
         public string ProfileImage { get; set; } = string.Empty;
 
         [Required]
         [Comment("Person Username Picture")] //MAKE IMAGE
         public string UsernamePicture { get; set; } = string.Empty;
+
         [Required]
         [Comment("Person Random Picture")] //MAKE IMAGE
-        public string RandomPicture { get; set; } = string.Empty;
-    }
+        public string RandomPicture { get; set; } = string.Empty;*/
+
+		[Required]
+		public string DaterId { get; set; } = string.Empty;
+
+        [Required]
+		[ForeignKey(nameof(DaterId))]
+		public IdentityUser Dater { get; set; } = null!;
+	}
 }

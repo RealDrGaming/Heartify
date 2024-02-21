@@ -6,6 +6,11 @@
     public static class ValidationConstants
     {
         /// <summary>
+        /// Format of Date in App
+        /// </summary>
+        public const string DateFormat = "dd-MM-yyyy";
+
+        /// <summary>
         /// Maximal First and Last Name length
         /// </summary>
         public const int NamesMaxLength = 50;

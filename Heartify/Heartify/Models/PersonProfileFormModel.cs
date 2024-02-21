@@ -10,11 +10,6 @@ namespace HeartifyDating.Core.Models
     public class PersonProfileFormModel
     {
         /// <summary>
-        /// Person Profile Identifier
-        /// </summary>
-        public int Id { get; set; }
-
-        /// <summary>
         /// Person First Name
         /// </summary>
         [Required(ErrorMessage = RequiredErrorMessage)]
@@ -32,8 +27,7 @@ namespace HeartifyDating.Core.Models
         /// Person Age
         /// </summary>
         [Required(ErrorMessage = RequiredErrorMessage)]
-        [Range(MinAge, MaxAge, ErrorMessage = AgeIsntInRangeErrorMessage)]
-        public int Age { get; set; }
+        public string DateOfBirth { get; set; } = string.Empty;
 
         /// <summary>
         /// Person Gender
@@ -60,17 +54,16 @@ namespace HeartifyDating.Core.Models
         [StringLength(DescriptionMaxLength, MinimumLength = DescriptionMinLength, ErrorMessage = StringLengthErrorMessage)]
         public string Description { get; set; } = string.Empty;
 
-        [Required(ErrorMessage = RequiredErrorMessage)]
+        /*[Required(ErrorMessage = RequiredErrorMessage)]
         public string ProfileImage { get; set; } = string.Empty; //MAKE IMAGE
 
         [Required(ErrorMessage = RequiredErrorMessage)]
         public string UsernamePicture { get; set; } = string.Empty; //MAKE IMAGE
 
         [Required(ErrorMessage = RequiredErrorMessage)]
-        public string RandomPicture { get; set; } = string.Empty; //MAKE IMAGE
+        public string RandomPicture { get; set; } = string.Empty; //MAKE IMAGE */
 
         public IEnumerable<GenderViewModel> Genders { get; set; } = new List<GenderViewModel>();
-
         public IEnumerable<RelationshipViewModel> Relationships { get; set; } = new List<RelationshipViewModel>();
     }
 }

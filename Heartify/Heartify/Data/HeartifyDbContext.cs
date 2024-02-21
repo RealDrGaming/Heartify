@@ -13,15 +13,25 @@ namespace Heartify.Data
         {
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+		public DbSet<PersonProfile> PersonProfiles { get; set; }
+		public DbSet<Gender> Genders { get; set; }
+		public DbSet<Relationship> Relationships { get; set; }
+
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Gender>()
+                .HasMany(g => g.PersonProfiles);
+
+            modelBuilder.Entity<Relationship>()
+                .HasMany(r => r.PersonProfiles);
+
+            modelBuilder.Entity<PersonProfile>().HasOne(pp => pp.Gender);
+            modelBuilder.Entity<PersonProfile>().HasOne(pp => pp.Relationship);
+
             modelBuilder.ApplyConfiguration(new GenderConfiguration());
+            modelBuilder.ApplyConfiguration(new RelationshipConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }
-
-        public DbSet<PersonProfile> PersonProfiles { get; set; }
-        public DbSet<Gender> Genders { get; set; }
-        public DbSet<Relationship> Relationships { get; set; }
     }
 }

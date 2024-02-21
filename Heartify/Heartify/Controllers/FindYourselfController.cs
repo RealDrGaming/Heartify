@@ -1,18 +1,21 @@
-﻿using Heartify.Data;
+﻿using Heartify.Constants;
+using Heartify.Data;
 using Heartify.Models;
 using HeartifyDating.Core.Models;
 using HeartifyDating.Infrastructure.Data.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualBasic;
+using System.Globalization;
 using System.Security.Claims;
 
 namespace Heartify.Controllers
 {
-    public class DatingController : BaseController
+    public class FindYourselfController : BaseController
     {
 		private readonly HeartifyDbContext data;
 
-        public DatingController(HeartifyDbContext context)
+        public FindYourselfController(HeartifyDbContext context)
         {
 			data = context;
         }
@@ -30,10 +33,22 @@ namespace Heartify.Controllers
         [HttpPost]
 		public async Task<IActionResult> FindYourself(PersonProfileFormModel model)
 		{
-			if (!ModelState.IsValid)
+            DateTime dateOfBirth = DateTime.Now;
+
+            if (!DateTime.TryParseExact(
+                model.DateOfBirth,
+                ValidationConstants.DateFormat,
+                CultureInfo.InvariantCulture,
+                DateTimeStyles.None,
+                out dateOfBirth))
+            {
+                ModelState.AddModelError(nameof(model.DateOfBirth), $"Invalid date! Format must be: {ValidationConstants.DateFormat}");
+            }
+
+            if (!ModelState.IsValid)
 			{
 				model.Genders = await GetGenders();
-				model.Relationships = await GetRelatioships();
+                model.Relationships = await GetRelatioships();
 
 				return View(model);
 			}
@@ -42,26 +57,23 @@ namespace Heartify.Controllers
 			{
 				FirstName = model.FirstName,
 				LastName = model.LastName,
-				Age = model.Age,
+				DateOfBirth = dateOfBirth,
 				GenderId = model.GenderId,
 				WantedGenderId = model.WantedGenderId,
 				RelationshipId = model.RelationshipId,
 				Description = model.Description,
-				ProfileImage = model.ProfileImage,
+                DaterId = GetUserId(),
+                /*ProfileImage = model.ProfileImage,
 				UsernamePicture = model.UsernamePicture,
-				RandomPicture = model.RandomPicture,
+				RandomPicture = model.RandomPicture */
+				
 			};
 
 			await data.PersonProfiles.AddAsync(entity);
 			await data.SaveChangesAsync();
 
-			return RedirectToAction(nameof(FindSomebodyElse));
+			return RedirectToAction("FindSomebodyElse", "FindSomebodyElse");
 		}
-
-		public IActionResult FindSomebodyElse()
-        {
-            return View();
-        }
 
 		private string GetUserId()
 		{
@@ -84,10 +96,10 @@ namespace Heartify.Controllers
 		{
 			return await data.Relationships
 				.AsNoTracking()
-				.Select(g => new RelationshipViewModel
+				.Select(r => new RelationshipViewModel
 				{
-					Id = g.Id,
-					RelationshipType = g.RelationshipType
+					Id = r.Id,
+					RelationshipType = r.RelationshipType
 				})
 				.ToListAsync();
 		}
