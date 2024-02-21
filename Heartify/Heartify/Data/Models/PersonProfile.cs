@@ -45,9 +45,12 @@ namespace HeartifyDating.Infrastructure.Data.Models
         public Gender WantedGender { get; set; } = null!;
 
         [Required]
-        [StringLength(RelationshipTypeMaxLength)]
+        public int RelationshipId { get; set; }
+
+        [Required]
         [Comment("Wanted Relationship Type")]
-        public string RelationshipType { get; set; } = string.Empty;
+        [ForeignKey(nameof(RelationshipId))]
+        public Relationship Relationship { get; set; } = null!;
 
         [Required]
         [StringLength(DescriptionMaxLength)]

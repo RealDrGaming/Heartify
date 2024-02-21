@@ -39,22 +39,19 @@ namespace HeartifyDating.Core.Models
         /// Person Gender
         /// </summary>
         [Required(ErrorMessage = RequiredErrorMessage)]
-        [StringLength(GenderMaxLength, MinimumLength = GenderMinLength, ErrorMessage = StringLengthErrorMessage)]
-        public string Gender { get; set; } = string.Empty;
+        public int GenderId { get; set; }
 
         /// <summary>
         /// Gender wanted by Person
         /// </summary>
         [Required(ErrorMessage = RequiredErrorMessage)]
-        [StringLength(GenderMaxLength, MinimumLength = GenderMinLength, ErrorMessage = StringLengthErrorMessage)]
-        public string WantedGender { get; set; } = string.Empty;
+        public int WantedGenderId { get; set; }
 
         /// <summary>
         /// Relationship type wanted by Person
         /// </summary>
         [Required(ErrorMessage = RequiredErrorMessage)]
-        [StringLength(RelationshipTypeMaxLength, MinimumLength = RelationshipTypeMinLength, ErrorMessage = StringLengthErrorMessage)]
-        public string RelationshipType { get; set; } = string.Empty;
+        public int RelationshipId { get; set; }
 
         /// <summary>
         /// Person Description
@@ -73,5 +70,7 @@ namespace HeartifyDating.Core.Models
         public string RandomPicture { get; set; } = string.Empty; //MAKE IMAGE
 
         public IEnumerable<GenderViewModel> Genders { get; set; } = new List<GenderViewModel>();
+
+        public IEnumerable<RelationshipViewModel> Relationships { get; set; } = new List<RelationshipViewModel>();
     }
 }
