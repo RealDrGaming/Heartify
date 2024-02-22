@@ -51,6 +51,8 @@
                     </div>
                     <span asp-validation-for="@Model.GenderId" class="text-danger"></span>
 
+                    <hr class="inbetween-form">
+
                     <label asp-for="@Model.WantedGenderId">I am looking for</label>
                     <div class="looking-for-sexuality">
                         <select asp-for="@Model.WantedGenderId" aria-required="true">
@@ -62,6 +64,8 @@
                         </select>
                     </div>
                     <span asp-validation-for="@Model.WantedGenderId" class="text-danger"></span>
+
+                    <hr class="inbetween-form">
 
                     <label asp-for="@Model.RelationshipId">I am looking for a(n)</label>
                     <div class="looking-for-relationship">

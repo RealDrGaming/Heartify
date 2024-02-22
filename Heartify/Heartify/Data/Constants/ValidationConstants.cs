@@ -73,6 +73,6 @@
         /// <summary>
         /// Age is not in the permitted range
         /// </summary>
-        public const string AgeIsntInRangeErrorMessage = "{0} must be in the range {2} - {1}";
+        public const string AgeIsntInRangeErrorMessage = "{0} must be in the range {1} - {2}";
     }
 }
