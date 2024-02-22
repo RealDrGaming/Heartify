@@ -6,7 +6,7 @@ using System.Security.Claims;
 
 namespace Heartify.Controllers
 {
-    public class ReturnerController : Controller
+    public class ReturnerController : BaseController
     {
 		private readonly HeartifyDbContext data;
 

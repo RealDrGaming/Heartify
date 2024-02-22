@@ -4,25 +4,23 @@ using System.Security.Claims;
 
 namespace Heartify.Controllers
 {
-    public class FindSomebodyElseController : Controller
+    public class DatingController : BaseController
     {
         private readonly HeartifyDbContext data;
 
-        public FindSomebodyElseController(HeartifyDbContext context)
+        public DatingController(HeartifyDbContext context)
         {
             data = context;
         }
 
-        public IActionResult FindSomebodyElse()
+        public IActionResult FindPerson()
         {
-            /*
             if (!data.PersonProfiles.Any(pp => pp.DaterId == GetUserId()))
             {
-                return RedirectToAction("FindSomebodyElse", "FindSomebodyElse");
+                return RedirectToAction("CreatePersonProfile", "PersonProfile");
             }
 
-            return View();
-            */
+            return View();   
         }
 
         private string GetUserId()

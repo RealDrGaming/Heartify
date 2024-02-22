@@ -1,0 +1,34 @@
+﻿@model DeleteShowInfoPersonProfileModel
+
+@{
+	ViewData["Title"] = "Delete Seminar";
+}
+
+<link rel="stylesheet" href="~/css/styles-base.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/delete-person-profile-styles.css" asp-append-version="true" />
+
+<main>
+	<section>
+		<article>
+			<div class="my-container">
+				<div class="text">
+					<h2>@Model.FirstName!</h2>
+					<h3 class="text-danger">Are you sure you want to delete your dating profile?</h3>
+				</div>
+				<div class="buttons">
+					<form asp-action="DeletePersonProfileConfirmed" method="post">
+						<input type="hidden" asp-for="@Model.Id" />
+						<button type="submit" class="btn btn-danger">Confirm Delete</button>
+						<a asp-action="CreatePersonProfile" class="button">Cancel</a>
+					</form>
+				</div>
+			</div>
+		</article>
+	</section>
+</main>
+
+<script src="~/js/IndicateImageUploaded.js" asp-append-version="true"></script>
+
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+}

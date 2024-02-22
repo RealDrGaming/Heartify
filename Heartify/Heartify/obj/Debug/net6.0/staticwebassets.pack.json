@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Heartify.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\delete-person-profile-styles.css",
+      "PackagePath": "staticwebassets\\css\\delete-person-profile-styles.css"
+    },
+    {
       "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\faqs-styles.css",
       "PackagePath": "staticwebassets\\css\\faqs-styles.css"
     },
@@ -39,6 +43,10 @@
     {
       "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\terms-and-privacy-styles.css",
       "PackagePath": "staticwebassets\\css\\terms-and-privacy-styles.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\view-person-profile-styles.css",
+      "PackagePath": "staticwebassets\\css\\view-person-profile-styles.css"
     },
     {
       "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\favicon.ico",
