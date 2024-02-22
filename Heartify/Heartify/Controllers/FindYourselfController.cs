@@ -23,6 +23,11 @@ namespace Heartify.Controllers
 		[HttpGet]
 		public async Task<IActionResult> FindYourself()
 		{
+            if (data.PersonProfiles.Any(pp => pp.DaterId == GetUserId()))
+            {
+				return RedirectToAction("PersonProfileInfo", "Returner");
+            }
+
 			var model = new PersonProfileFormModel();
 			model.Genders = await GetGenders();
 			model.Relationships = await GetRelatioships();

@@ -1,0 +1,41 @@
+﻿@using HeartifyDating.Core.Models
+
+@model PersonProfileInfoViewModel
+
+@{
+    ViewData["Title"] = "Person Profile Info";
+}
+
+<link rel="stylesheet" href="~/css/styles-base.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/view-person-profile-styles.css" asp-append-version="true" />
+
+<main>
+    <section>
+        <article>
+            <div class="my-container">
+                <h4 class="">Name: @Model.FirstName @Model.LastName</h4>
+
+                <hr class="inbetween-form">
+
+                <h5 class="">Gender: @Model.Gender</h5>
+                <h5 class="">Wanted Gender: @Model.WantedGender</h5>
+
+                <hr class="inbetween-form">
+
+                <h5 class="">Looking for a(n): @Model.Relationship</h5>
+                <h5 class="">Date of birth: @Model.DateOfBirth</h5>
+
+                <hr class="inbetween-form">
+
+                <p class="">Description: @Model.Description</p>
+
+                <hr class="inbetween-form">
+
+                <div class="buttons">
+                    <a asp-controller="Seminar" asp-action="Edit" asp-route-id="@Model.Id" class="button">Edit</a>
+                    <a asp-controller="Seminar" asp-action="Delete" asp-route-id="@Model.Id" class="button">Delete</a>
+                </div>
+            </div>
+        </article>
+    </section>
+</main>

@@ -1,0 +1,46 @@
+﻿header nav ul :nth-child(2) .button-direct a {
+    color: var(--text-hover-color);
+}
+
+.my-container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    width: 60%;
+    margin: 4em auto 4em auto;
+    border: var(--background-color) 0.15em dashed;
+    border-radius: 1em;
+    text-align: center;
+}
+
+
+h4, h5, p {
+    padding: 0.3em 0 0.3em 0;
+    margin: 0;
+}
+
+.my-container .buttons {
+    display: flex;
+    margin: 0 auto 0 auto;
+    gap: 2em;
+}
+
+.buttons .button {
+    background-color: var(--background-color);
+    color: var(--text-fill-color);
+    padding: 0.5em 2em;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 0.8em;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.buttons .button:hover {
+    opacity: 1;
+    color: var(--text-hover-color);
+}
