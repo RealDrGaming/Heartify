@@ -178,3 +178,7 @@ a {
 a:hover {
    color: var(--text-hyperlink-hover-color);
 }
+
+footer {
+    margin-top: auto;
+}
