@@ -1,4 +1,4 @@
-namespace Heartify.Models
+namespace Heartify.Core.Models
 {
     public class ErrorViewModel
     {

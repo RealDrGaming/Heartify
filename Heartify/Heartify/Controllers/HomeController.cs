@@ -1,11 +1,11 @@
-﻿using Heartify.Models;
+﻿using Heartify.Core.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace Heartify.Controllers
 {
-    [AllowAnonymous]
+	[AllowAnonymous]
     public class HomeController : BaseController
     {
         private readonly ILogger<HomeController> logger;

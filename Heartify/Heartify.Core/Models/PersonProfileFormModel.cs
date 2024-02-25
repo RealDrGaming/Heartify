@@ -1,8 +1,8 @@
-﻿using Heartify.Models;
+﻿using Heartify.Core.Attributes;
 using System.ComponentModel.DataAnnotations;
 using static Heartify.Infrastructure.Constants.ValidationConstants;
 
-namespace HeartifyDating.Core.Models
+namespace Heartify.Core.Models
 {
 	/// <summary>
 	/// Person Profile Data Transfer Model
@@ -27,7 +27,7 @@ namespace HeartifyDating.Core.Models
         /// Person Age
         /// </summary>
         [Required(ErrorMessage = RequiredErrorMessage)]
-        [IsAdult(18, 99, ErrorMessage = "Your age must be between 18 and 99!")]
+		[IsAdult(18, 99, ErrorMessage = "Your age must be between 18 and 99!")]
         public string DateOfBirth { get; set; } = string.Empty;
 
         /// <summary>

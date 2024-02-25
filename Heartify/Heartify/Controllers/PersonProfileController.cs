@@ -1,7 +1,6 @@
-﻿using Heartify.Infrastructure.Constants;
+﻿using Heartify.Core.Models;
+using Heartify.Infrastructure.Constants;
 using Heartify.Infrastructure.Data;
-using Heartify.Models;
-using HeartifyDating.Core.Models;
 using HeartifyDating.Infrastructure.Data.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -10,7 +9,7 @@ using System.Security.Claims;
 
 namespace Heartify.Controllers
 {
-    public class PersonProfileController : BaseController
+	public class PersonProfileController : BaseController
     {
 		private readonly HeartifyDbContext data;
 

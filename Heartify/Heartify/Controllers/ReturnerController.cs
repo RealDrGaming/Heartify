@@ -1,5 +1,5 @@
 ﻿using Heartify.Infrastructure.Data;
-using HeartifyDating.Core.Models;
+using Heartify.Core.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;

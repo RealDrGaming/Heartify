@@ -1,0 +1,337 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Heartify.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Heartify.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\delete-person-profile-styles.css",
+      "PackagePath": "staticwebassets\\css\\delete-person-profile-styles.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\faqs-styles.css",
+      "PackagePath": "staticwebassets\\css\\faqs-styles.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\find-someone-else-styles.css",
+      "PackagePath": "staticwebassets\\css\\find-someone-else-styles.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\find-yourself-styles.css",
+      "PackagePath": "staticwebassets\\css\\find-yourself-styles.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\fonts\\BeMyGlittertine.ttf",
+      "PackagePath": "staticwebassets\\css\\fonts\\BeMyGlittertine.ttf"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\index-styles.css",
+      "PackagePath": "staticwebassets\\css\\index-styles.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\login-styles.css",
+      "PackagePath": "staticwebassets\\css\\login-styles.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\register-styles.css",
+      "PackagePath": "staticwebassets\\css\\register-styles.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\styles-base.css",
+      "PackagePath": "staticwebassets\\css\\styles-base.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\terms-and-privacy-styles.css",
+      "PackagePath": "staticwebassets\\css\\terms-and-privacy-styles.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\view-person-profile-styles.css",
+      "PackagePath": "staticwebassets\\css\\view-person-profile-styles.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\images\\4couples_no_bg.png",
+      "PackagePath": "staticwebassets\\images\\4couples_no_bg.png"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\images\\couple2_bg.jpg",
+      "PackagePath": "staticwebassets\\images\\couple2_bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\images\\couple2_no_bg.png",
+      "PackagePath": "staticwebassets\\images\\couple2_no_bg.png"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\images\\couple_no_bg.png",
+      "PackagePath": "staticwebassets\\images\\couple_no_bg.png"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\images\\hand_holding.jpg",
+      "PackagePath": "staticwebassets\\images\\hand_holding.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\images\\hearts_bg.jpg",
+      "PackagePath": "staticwebassets\\images\\hearts_bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\images\\hearts_no_bg.png",
+      "PackagePath": "staticwebassets\\images\\hearts_no_bg.png"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\js\\accordion.js",
+      "PackagePath": "staticwebassets\\js\\accordion.js"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\js\\indicateImageUploaded.js",
+      "PackagePath": "staticwebassets\\js\\indicateImageUploaded.js"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Heartify.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Heartify.props",
+      "PackagePath": "build\\Heartify.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Heartify.props",
+      "PackagePath": "buildMultiTargeting\\Heartify.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Heartify.props",
+      "PackagePath": "buildTransitive\\Heartify.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
