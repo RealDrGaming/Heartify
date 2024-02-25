@@ -18,7 +18,7 @@
     <header>
         <div class="head-info">
 
-            <h2>Heartify</h2>
+            <h2><a class="button-direct" asp-controller="Home" asp-action="Index">Heartify</a></h2>
             
             @await Component.InvokeAsync(nameof(MainMenuComponent))
 
@@ -44,7 +44,7 @@
             </div>
 
             <div>
-                <p>All rights reserved. &copy;</p>
+                <p>&copy; All rights reserved - @DateTime.Today.Year</p>
                 <hr class="inbetween-in-footer">
                 <a id="terms-button" asp-controller="Home" asp-action="Terms">Terms & Privacy</a>
             </div>
