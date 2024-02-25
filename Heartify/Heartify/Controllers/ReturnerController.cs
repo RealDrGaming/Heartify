@@ -1,4 +1,4 @@
-﻿using Heartify.Data;
+﻿using Heartify.Infrastructure.Data;
 using HeartifyDating.Core.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;

@@ -3984,6 +3984,33 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "Heartify.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Heartify.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Heartify.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Heartify.Core.dll": {}
+        }
+      },
+      "Heartify.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.26",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.26"
+        },
+        "compile": {
+          "bin/placeholder/Heartify.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Heartify.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -11540,10 +11567,21 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "Heartify.Core/1.0.0": {
+      "type": "project",
+      "path": "../Heartify.Core/Heartify.Core.csproj",
+      "msbuildProject": "../Heartify.Core/Heartify.Core.csproj"
+    },
+    "Heartify.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Heartify.Infrastructure/Heartify.Infrastructure.csproj",
+      "msbuildProject": "../Heartify.Infrastructure/Heartify.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Heartify.Core >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.2",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.26",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.26",
@@ -11579,7 +11617,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.Core\\Heartify.Core.csproj": {
+              "projectPath": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.Core\\Heartify.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

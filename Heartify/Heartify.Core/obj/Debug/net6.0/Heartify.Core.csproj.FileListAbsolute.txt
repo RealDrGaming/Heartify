@@ -1,0 +1,16 @@
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Core\obj\Debug\net6.0\Heartify.Core.csproj.AssemblyReference.cache
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Core\obj\Debug\net6.0\Heartify.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Core\obj\Debug\net6.0\Heartify.Core.AssemblyInfoInputs.cache
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Core\obj\Debug\net6.0\Heartify.Core.AssemblyInfo.cs
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Core\obj\Debug\net6.0\Heartify.Core.csproj.CoreCompileInputs.cache
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Core\obj\Debug\net6.0\Heartify.Core.sourcelink.json
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Core\bin\Debug\net6.0\Heartify.Core.deps.json
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Core\bin\Debug\net6.0\Heartify.Core.dll
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Core\bin\Debug\net6.0\Heartify.Core.pdb
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Core\bin\Debug\net6.0\Heartify.Infrastructure.dll
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Core\bin\Debug\net6.0\Heartify.Infrastructure.pdb
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Core\obj\Debug\net6.0\Heartify.Core.csproj.CopyComplete
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Core\obj\Debug\net6.0\Heartify.Core.dll
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Core\obj\Debug\net6.0\refint\Heartify.Core.dll
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Core\obj\Debug\net6.0\Heartify.Core.pdb
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Core\obj\Debug\net6.0\ref\Heartify.Core.dll

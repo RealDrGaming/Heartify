@@ -1,7 +1,7 @@
 ﻿using Heartify.Attributes;
 using Heartify.Models;
 using System.ComponentModel.DataAnnotations;
-using static Heartify.Constants.ValidationConstants;
+using static Heartify.Infrastructure.Constants.ValidationConstants;
 
 namespace HeartifyDating.Core.Models
 {

@@ -1,4 +1,4 @@
-﻿header nav ul :nth-child(2) .button-direct a {
+﻿header nav ul :nth-child(3) .button-direct a {
     color: var(--text-hover-color);
 }
 

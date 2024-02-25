@@ -1,5 +1,4 @@
-﻿using Heartify.Constants;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Heartify.Infrastructure.Constants;
 using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 

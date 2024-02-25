@@ -1,4 +1,4 @@
-﻿using Heartify.Constants;
+﻿using Heartify.Infrastructure.Constants;
 
 namespace HeartifyDating.Core.Models
 {
