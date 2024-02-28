@@ -1,4 +1,6 @@
-﻿using Heartify.Core.Models;
+﻿using Heartify.Core.Models.Gender;
+using Heartify.Core.Models.PersonProfile;
+using Heartify.Core.Models.Relationship;
 using Heartify.Infrastructure.Constants;
 using Heartify.Infrastructure.Data;
 using HeartifyDating.Infrastructure.Data.Models;
@@ -9,7 +11,7 @@ using System.Security.Claims;
 
 namespace Heartify.Controllers
 {
-	public class PersonProfileController : BaseController
+    public class PersonProfileController : BaseController
     {
 		private readonly HeartifyDbContext data;
 

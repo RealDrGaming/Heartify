@@ -1,6 +1,6 @@
 ﻿using Heartify.Infrastructure.Constants;
 
-namespace Heartify.Core.Models
+namespace Heartify.Core.Models.PersonProfile
 {
     public class PersonProfileInfoViewModel
     {

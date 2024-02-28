@@ -1,13 +1,15 @@
 ﻿using Heartify.Core.Attributes;
+using Heartify.Core.Models.Gender;
+using Heartify.Core.Models.Relationship;
 using System.ComponentModel.DataAnnotations;
 using static Heartify.Infrastructure.Constants.ValidationConstants;
 
-namespace Heartify.Core.Models
+namespace Heartify.Core.Models.PersonProfile
 {
-	/// <summary>
-	/// Person Profile Data Transfer Model
-	/// </summary>
-	public class PersonProfileFormModel
+    /// <summary>
+    /// Person Profile Data Transfer Model
+    /// </summary>
+    public class PersonProfileFormModel
     {
         /// <summary>
         /// Person First Name
@@ -27,7 +29,7 @@ namespace Heartify.Core.Models
         /// Person Age
         /// </summary>
         [Required(ErrorMessage = RequiredErrorMessage)]
-		[IsAdult(18, 99, ErrorMessage = "Your age must be between 18 and 99!")]
+        [IsAdult(18, 99, ErrorMessage = "Your age must be between 18 and 99!")]
         public string DateOfBirth { get; set; } = string.Empty;
 
         /// <summary>

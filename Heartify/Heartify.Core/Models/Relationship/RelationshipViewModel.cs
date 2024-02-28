@@ -1,4 +1,4 @@
-﻿namespace Heartify.Core.Models
+﻿namespace Heartify.Core.Models.Relationship
 {
     public class RelationshipViewModel
     {

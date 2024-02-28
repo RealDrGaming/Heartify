@@ -1,5 +1,5 @@
-﻿using Heartify.Infrastructure.Data;
-using Heartify.Core.Models;
+﻿using Heartify.Core.Models.PersonProfile;
+using Heartify.Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
