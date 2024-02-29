@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\XI_B\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Infrastructure\\Heartify.Infrastructure.csproj": {}
+    "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.Infrastructure\\Heartify.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\XI_B\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Infrastructure\\Heartify.Infrastructure.csproj": {
+    "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.Infrastructure\\Heartify.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\XI_B\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Infrastructure\\Heartify.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.Infrastructure\\Heartify.Infrastructure.csproj",
         "projectName": "Heartify.Infrastructure",
-        "projectPath": "C:\\Users\\XI_B\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Infrastructure\\Heartify.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\XI_B\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\XI_B\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.Infrastructure\\Heartify.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\danko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\XI_B\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\danko\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,7 +55,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -68,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
