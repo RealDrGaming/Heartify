@@ -192,11 +192,6 @@ namespace Heartify.Controllers
             return RedirectToAction(nameof(CreatePersonProfile));
         }
 
-        private string GetUserId()
-		{
-			return User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? string.Empty;
-		}
-
 		private async Task<IEnumerable<GenderViewModel>> GetGenders()
 		{
 			return await data.Genders

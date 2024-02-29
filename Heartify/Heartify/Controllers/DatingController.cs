@@ -22,10 +22,5 @@ namespace Heartify.Controllers
 
             return View();   
         }
-
-        private string GetUserId()
-        {
-            return User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? string.Empty;
-        }
     }
 }

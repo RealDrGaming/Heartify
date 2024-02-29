@@ -12,7 +12,7 @@ namespace Microsoft.Extensions.DependencyInjection
         }
         public static IServiceCollection AddApplicationDbContext(this IServiceCollection services, IConfiguration config)
         {
-            var connectionString = config.GetConnectionString("DefaultConnection");
+            var connectionString = config.GetConnectionString("SchoolConnection");
             services.AddDbContext<HeartifyDbContext>(options =>
                 options.UseSqlServer(connectionString));
 
