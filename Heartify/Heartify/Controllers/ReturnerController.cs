@@ -2,7 +2,6 @@
 using Heartify.Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Security.Claims;
 
 namespace Heartify.Controllers
 {
