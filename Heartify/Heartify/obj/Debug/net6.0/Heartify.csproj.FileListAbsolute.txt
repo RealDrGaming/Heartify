@@ -1040,3 +1040,4 @@ C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify\bin\Debug\net6.0\Heart
 C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify\bin\Debug\net6.0\Heartify.Infrastructure.dll
 C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify\bin\Debug\net6.0\Heartify.Core.pdb
 C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify\bin\Debug\net6.0\Heartify.Infrastructure.pdb
+C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify\bin\Debug\net6.0\appsettings.Production.json
