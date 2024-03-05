@@ -1035,9 +1035,9 @@ C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify\bin\Debug\ne
 C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify\bin\Debug\net6.0\Heartify.Infrastructure.dll
 C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify\bin\Debug\net6.0\Heartify.Core.pdb
 C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify\bin\Debug\net6.0\Heartify.Infrastructure.pdb
-C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify\obj\Debug\net6.0\Heartify.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify\bin\Debug\net6.0\Heartify.Core.dll
 C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify\bin\Debug\net6.0\Heartify.Infrastructure.dll
 C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify\bin\Debug\net6.0\Heartify.Core.pdb
 C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify\bin\Debug\net6.0\Heartify.Infrastructure.pdb
 C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify\bin\Debug\net6.0\appsettings.Production.json
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify\bin\Debug\net6.0\appsettings.Production.json

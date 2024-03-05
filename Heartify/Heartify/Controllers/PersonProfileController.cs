@@ -1,29 +1,28 @@
-﻿using Heartify.Core.Models.Gender;
+﻿using Heartify.Core.Contracts;
+using Heartify.Core.Models.Gender;
 using Heartify.Core.Models.PersonProfile;
 using Heartify.Core.Models.Relationship;
+using Heartify.Extensions;
 using Heartify.Infrastructure.Constants;
-using Heartify.Infrastructure.Data;
-using HeartifyDating.Infrastructure.Data.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Globalization;
-using System.Security.Claims;
 
 namespace Heartify.Controllers
 {
     public class PersonProfileController : BaseController
     {
-		private readonly HeartifyDbContext data;
+        private readonly IPersonProfileService personProfile;
 
-        public PersonProfileController(HeartifyDbContext context)
+        public PersonProfileController(IPersonProfileService _personProfile)
         {
-			data = context;
+            personProfile = _personProfile;
         }
 
-		[HttpGet]
+        [HttpGet]
 		public async Task<IActionResult> CreatePersonProfile()
 		{
-            if (data.PersonProfiles.Any(pp => pp.DaterId == GetUserId()))
+            if (await personProfile.ExistsByIdAsync(User.Id()))
             {
 				return RedirectToAction("PersonProfileInfo", "Returner");
             }
@@ -58,24 +57,14 @@ namespace Heartify.Controllers
 				return View(model);
 			}
 
-			var entity = new PersonProfile()
-			{
-				FirstName = model.FirstName,
-				LastName = model.LastName,
-				DateOfBirth = dateOfBirth,
-				GenderId = model.GenderId,
-				WantedGenderId = model.WantedGenderId,
-				RelationshipId = model.RelationshipId,
-				Description = model.Description,
-                DaterId = GetUserId(),
-                /*ProfileImage = model.ProfileImage,
-				UsernamePicture = model.UsernamePicture,
-				RandomPicture = model.RandomPicture */
-				
-			};
-
-			await data.PersonProfiles.AddAsync(entity);
-			await data.SaveChangesAsync();
+            await personProfile.CreateAsync(model.FirstName,
+                model.LastName,
+                dateOfBirth,
+                model.GenderId,
+                model.WantedGenderId,
+                model.RelationshipId,
+                model.Description,
+                User.Id());
 
 			return RedirectToAction(nameof(CreatePersonProfile));
 		}
@@ -83,7 +72,7 @@ namespace Heartify.Controllers
         [HttpGet]
         public async Task<IActionResult> EditPersonProfile(int id)
         {
-            var pp = await data.PersonProfiles.FindAsync(id);
+            var pp = await personProfile.GetPersonProfileByIdAsync(id);
 
             if (pp == null)
             {
@@ -110,7 +99,7 @@ namespace Heartify.Controllers
         [HttpPost]
         public async Task<IActionResult> EditPersonProfile(PersonProfileFormModel model, int id)
         {
-            var pp = await data.PersonProfiles.FindAsync(id);
+            var pp = await personProfile.GetPersonProfileByIdAsync(id);
 
             if (pp == null)
             {
@@ -137,6 +126,7 @@ namespace Heartify.Controllers
                 return View(model);
             }
 
+            /*
             pp.FirstName = model.FirstName;
             pp.LastName = model.LastName;
             pp.DateOfBirth = dateOfBirth;
@@ -144,30 +134,26 @@ namespace Heartify.Controllers
             pp.WantedGenderId = model.WantedGenderId;
             pp.RelationshipId = model.RelationshipId;
             pp.Description = model.Description;
+            
+            CURRENTLY NOT WORKING, MODIFY REPOSITORYIES AND THE SERVICES
+            
+            */
 
-            await data.SaveChangesAsync();
+            await personProfile.EditAsync(pp, model.FirstName, model.LastName, dateOfBirth, model.GenderId, model.WantedGenderId, model.RelationshipId, model.Description);
 
             return RedirectToAction(nameof(CreatePersonProfile));
         }
 
         public async Task<IActionResult> DeletePersonProfile(int id)
         {
-            var pp = await data.PersonProfiles.FindAsync(id);
+            var pp = await personProfile.GetPersonProfileByIdAsync(id);
 
             if (pp == null)
             {
                 return BadRequest();
             }
 
-            var model = await data.PersonProfiles
-                .Where(dpp => dpp.Id == id)
-                .AsNoTracking()
-                .Select(dpp => new DeleteShowInfoPersonProfileModel()
-                {
-                    Id = dpp.Id,
-                    FirstName = dpp.FirstName,
-                })
-                .FirstOrDefaultAsync();
+            var model = await personProfile.GetDeleteInfoAsync(id);
 
             if (model == null)
             {
@@ -179,41 +165,26 @@ namespace Heartify.Controllers
 
         public async Task<IActionResult> DeletePersonProfileConfirmed(int id)
         {
-            var pp = await data.PersonProfiles.FindAsync(id);
+            var pp = await personProfile.GetPersonProfileByIdAsync(id);
 
             if (pp == null)
             {
                 return BadRequest();
             }
 
-            data.PersonProfiles.Remove(pp);
-            await data.SaveChangesAsync();
+            personProfile.DeleteAsync(pp);
 
             return RedirectToAction(nameof(CreatePersonProfile));
         }
 
 		private async Task<IEnumerable<GenderViewModel>> GetGenders()
 		{
-			return await data.Genders
-				.AsNoTracking()
-				.Select(g => new GenderViewModel
-				{
-					Id = g.Id,
-					GenderName = g.GenderName
-				})
-				.ToListAsync();
+            return await personProfile.AllGenders();
 		}
 
 		private async Task<IEnumerable<RelationshipViewModel>> GetRelationships()
 		{
-			return await data.Relationships
-				.AsNoTracking()
-				.Select(r => new RelationshipViewModel
-				{
-					Id = r.Id,
-					RelationshipType = r.RelationshipType
-				})
-				.ToListAsync();
+            return await personProfile.AllRelationships();
 		}
 	}
 }

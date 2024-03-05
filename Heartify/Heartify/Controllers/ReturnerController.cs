@@ -1,5 +1,6 @@
-﻿using Heartify.Core.Models.PersonProfile;
-using Heartify.Infrastructure.Data;
+﻿using Heartify.Core.Contracts;
+using Heartify.Core.Models.PersonProfile;
+using Heartify.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,29 +8,16 @@ namespace Heartify.Controllers
 {
     public class ReturnerController : BaseController
     {
-		private readonly HeartifyDbContext data;
+        private readonly IPersonProfileService personProfile;
 
-		public ReturnerController(HeartifyDbContext context)
-		{
-			data = context;
-		}
+        public ReturnerController(IPersonProfileService _personProfile)
+        {
+            personProfile = _personProfile;
+        }
 
-		public async Task<IActionResult> PersonProfileInfo()
+        public async Task<IActionResult> PersonProfileInfo()
 		{
-			var model = await data.PersonProfiles
-				.AsNoTracking()
-				.Where(pp => pp.DaterId == GetUserId())
-				.Select(pp => new PersonProfileInfoViewModel(
-					pp.Id,
-					pp.FirstName,
-					pp.LastName,
-					pp.DateOfBirth,
-					pp.Gender.GenderName,
-					pp.WantedGender.GenderName,
-					pp.Relationship.RelationshipType,
-					pp.Description
-					))
-				.FirstOrDefaultAsync();
+			var model = await personProfile.GetPersonProfileInfoAsync(User.Id());
 
 			return View(model);
 		}

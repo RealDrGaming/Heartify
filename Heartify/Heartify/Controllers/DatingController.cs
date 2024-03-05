@@ -1,4 +1,6 @@
-﻿using Heartify.Infrastructure.Data;
+﻿using Heartify.Core.Contracts;
+using Heartify.Extensions;
+using Heartify.Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
@@ -6,16 +8,16 @@ namespace Heartify.Controllers
 {
     public class DatingController : BaseController
     {
-        private readonly HeartifyDbContext data;
+        private readonly IPersonProfileService personProfile;
 
-        public DatingController(HeartifyDbContext context)
+        public DatingController(IPersonProfileService _personProfile)
         {
-            data = context;
+            personProfile = _personProfile;
         }
 
-        public IActionResult FindPerson()
+        public async Task<IActionResult> FindPerson()
         {
-            if (!data.PersonProfiles.Any(pp => pp.DaterId == GetUserId()))
+            if (await personProfile.ExistsByIdAsync(User.Id()) == false)
             {
                 return RedirectToAction("CreatePersonProfile", "PersonProfile");
             }
