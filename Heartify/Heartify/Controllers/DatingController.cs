@@ -1,8 +1,6 @@
 ﻿using Heartify.Core.Contracts;
 using Heartify.Extensions;
-using Heartify.Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
 
 namespace Heartify.Controllers
 {

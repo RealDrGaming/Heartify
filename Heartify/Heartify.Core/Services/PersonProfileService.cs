@@ -6,7 +6,6 @@ using Heartify.Data.Models;
 using Heartify.Infrastructure.Data.Common;
 using HeartifyDating.Infrastructure.Data.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Query;
 
 namespace Heartify.Core.Services
 {
@@ -81,9 +80,18 @@ namespace Heartify.Core.Services
             await repository.SaveChangesAsync();
         }
 
-        public Task EditAsync(PersonProfile personProfileToEdit, string firstName, string lastName, DateTime dateOfBirth, int genderId, int wantedGenderId, int relationshipId, string description)
+        public async Task EditAsync(PersonProfile personProfileToEdit, PersonProfileFormModel model, DateTime dateOfBirth)
         {
-            throw new NotImplementedException();
+            personProfileToEdit.FirstName = model.FirstName;
+            personProfileToEdit.LastName = model.LastName;
+            personProfileToEdit.DateOfBirth = dateOfBirth;
+            personProfileToEdit.GenderId = model.GenderId;
+            personProfileToEdit.WantedGenderId = model.WantedGenderId;
+            personProfileToEdit.RelationshipId = model.RelationshipId;
+            personProfileToEdit.Description = model.Description;
+
+            repository.Edit(personProfileToEdit);
+            await repository.SaveChangesAsync();
         }
 
         public async Task<PersonProfileInfoViewModel> GetPersonProfileInfoAsync(string userId)
@@ -117,7 +125,7 @@ namespace Heartify.Core.Services
 
         public void DeleteAsync(PersonProfile personProfileToDelete)
         {
-            repository.DeleteAsync(personProfileToDelete);
+            repository.Delete(personProfileToDelete);
             repository.SaveChangesAsync();
         }
     }

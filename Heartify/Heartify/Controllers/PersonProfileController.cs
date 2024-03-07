@@ -126,20 +126,7 @@ namespace Heartify.Controllers
                 return View(model);
             }
 
-            /*
-            pp.FirstName = model.FirstName;
-            pp.LastName = model.LastName;
-            pp.DateOfBirth = dateOfBirth;
-            pp.GenderId = model.GenderId;
-            pp.WantedGenderId = model.WantedGenderId;
-            pp.RelationshipId = model.RelationshipId;
-            pp.Description = model.Description;
-            
-            CURRENTLY NOT WORKING, MODIFY REPOSITORYIES AND THE SERVICES
-            
-            */
-
-            await personProfile.EditAsync(pp, model.FirstName, model.LastName, dateOfBirth, model.GenderId, model.WantedGenderId, model.RelationshipId, model.Description);
+            await personProfile.EditAsync(pp, model, dateOfBirth);
 
             return RedirectToAction(nameof(CreatePersonProfile));
         }
@@ -186,5 +173,5 @@ namespace Heartify.Controllers
 		{
             return await personProfile.AllRelationships();
 		}
-	}
+    }
 }

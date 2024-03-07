@@ -27,17 +27,7 @@ namespace Heartify.Core.Contracts
         UsernamePicture = model.UsernamePicture,
         RandomPicture = model.RandomPicture */
 
-        Task EditAsync(PersonProfile personProfileToEdit,
-            string firstName,
-            string lastName,
-            DateTime dateOfBirth,
-            int genderId,
-            int wantedGenderId,
-            int relationshipId,
-            string description);
-        /*ProfileImage = model.ProfileImage,
-        UsernamePicture = model.UsernamePicture,
-        RandomPicture = model.RandomPicture */
+        Task EditAsync(PersonProfile personProfileToEdit, PersonProfileFormModel model, DateTime dateOfBirth);
 
         Task<PersonProfileInfoViewModel> GetPersonProfileInfoAsync(string userId);
 
