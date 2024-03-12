@@ -46,3 +46,5 @@ await app.RunAsync();
  Identity Account RegisterConfirmation
  Identity Account ConfirmEmail
  */
+
+// https://stackoverflow.com/questions/25400555/save-and-retrieve-image-binary-from-sql-server-using-entity-framework-6   IMAGE TO BYTE[]
