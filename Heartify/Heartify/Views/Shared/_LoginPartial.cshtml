@@ -4,14 +4,15 @@
 
 <link rel="stylesheet" href="~/css/styles-base.css" asp-append-version="true" />
 
+
 @if (SignInManager.IsSignedIn(User))
 {
     <div class="login-button">
-        <div class="button-direct"><a class="button-direct" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity?.Name!</a></div>
+        <div class="button-direct"><a class="button-direct" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">@User.Identity?.Name</a></div>
     </div>
     <div class="register-button">
         <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-            <button type="submit" class="button-direct logout-button">Logout</button>
+            <button type="submit" class="logout-button btn btn-outline-danger">Logout</button>
         </form>
     </div>
 }
