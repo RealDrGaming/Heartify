@@ -58,7 +58,7 @@ namespace HeartifyDating.Infrastructure.Data.Models
         [Comment("Person Description")]
         public string Description { get; set; } = string.Empty;
 
-        [Required]
+        /*[Required]
         [Comment("Person Profile Picture")]
         public byte[] ProfilePicture { get; set; } = null!;
 
@@ -68,7 +68,7 @@ namespace HeartifyDating.Infrastructure.Data.Models
 
         [Required]
         [Comment("Person Random Picture")]
-        public byte[] RandomPicture { get; set; } = null!;
+        public byte[] RandomPicture { get; set; } = null!;*/
 
 		[Required]
 		public string DaterId { get; set; } = string.Empty;

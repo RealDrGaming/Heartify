@@ -21,11 +21,11 @@ namespace Heartify.Core.Contracts
             int genderId,
             int wantedGenderId,
             int relationshipId,
+            /*byte[] profilePicture,
+            byte[] usernamePicture,
+            byte[] randomPicture,*/
             string description,
             string daterId);
-        /*ProfilePicture = model.ProfilePicture,
-        UsernamePicture = model.UsernamePicture,
-        RandomPicture = model.RandomPicture */
 
         Task EditAsync(PersonProfile personProfileToEdit, PersonProfileFormModel model, DateTime dateOfBirth);
 

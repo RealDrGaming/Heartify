@@ -74,7 +74,7 @@ namespace Heartify.Core.Services
                 RelationshipId = relationshipId,
                 Description = description,
                 DaterId = daterId,
-                /*ProfilePicture = ProfilePicture,
+                /*ProfilePicture = profilePicture,
 				UsernamePicture = usernamePicture,
 				RandomPicture = randomPicture*/ 
 
@@ -109,6 +109,9 @@ namespace Heartify.Core.Services
                     pp.Gender.GenderName,
                     pp.WantedGender.GenderName,
                     pp.Relationship.RelationshipType,
+                    /*pp.ProfilePicture,
+                    pp.UsernamePicture,
+                    pp.RandomPicture,*/
                     pp.Description
                     ))
                 .FirstAsync();
