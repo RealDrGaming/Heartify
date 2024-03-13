@@ -58,17 +58,17 @@ namespace HeartifyDating.Infrastructure.Data.Models
         [Comment("Person Description")]
         public string Description { get; set; } = string.Empty;
 
-        /*[Required]
-        [Comment("Person Profile Picture")] //MAKE IMAGE
-        public string ProfileImage { get; set; } = string.Empty;
+        [Required]
+        [Comment("Person Profile Picture")]
+        public byte[] ProfilePicture { get; set; } = null!;
 
         [Required]
-        [Comment("Person Username Picture")] //MAKE IMAGE
-        public string UsernamePicture { get; set; } = string.Empty;
+        [Comment("Person Username Picture")]
+        public byte[] UsernamePicture { get; set; } = null!;
 
         [Required]
-        [Comment("Person Random Picture")] //MAKE IMAGE
-        public string RandomPicture { get; set; } = string.Empty;*/
+        [Comment("Person Random Picture")]
+        public byte[] RandomPicture { get; set; } = null!;
 
 		[Required]
 		public string DaterId { get; set; } = string.Empty;

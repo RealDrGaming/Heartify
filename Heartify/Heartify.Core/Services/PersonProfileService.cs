@@ -49,7 +49,7 @@ namespace Heartify.Core.Services
         public async Task<PersonProfile> GetPersonProfileByIdAsync(int personProfileId)
         {
             return await repository.All<PersonProfile>()
-                .FirstOrDefaultAsync(pp => pp.Id == personProfileId);
+                .FirstAsync(pp => pp.Id == personProfileId);
         }
 
         public async Task CreateAsync(string firstName,
@@ -59,6 +59,9 @@ namespace Heartify.Core.Services
             int wantedGenderId,
             int relationshipId,
             string description,
+            /*byte[] profilePicture,
+            byte[] usernamePicture,
+            byte[] randomPicture,*/
             string daterId)
         {
             await repository.AddAsync(new PersonProfile()
@@ -71,9 +74,9 @@ namespace Heartify.Core.Services
                 RelationshipId = relationshipId,
                 Description = description,
                 DaterId = daterId,
-                /*ProfileImage = model.ProfileImage,
-				UsernamePicture = model.UsernamePicture,
-				RandomPicture = model.RandomPicture */
+                /*ProfilePicture = ProfilePicture,
+				UsernamePicture = usernamePicture,
+				RandomPicture = randomPicture*/ 
 
             });
 
@@ -108,7 +111,7 @@ namespace Heartify.Core.Services
                     pp.Relationship.RelationshipType,
                     pp.Description
                     ))
-                .FirstOrDefaultAsync();
+                .FirstAsync();
         }
 
         public async Task<DeleteShowInfoPersonProfileModel> GetDeleteInfoAsync(int id)
@@ -120,7 +123,7 @@ namespace Heartify.Core.Services
                     Id = dpp.Id,
                     FirstName = dpp.FirstName,
                 })
-                .FirstOrDefaultAsync();
+                .FirstAsync();
         }
 
         public void DeleteAsync(PersonProfile personProfileToDelete)

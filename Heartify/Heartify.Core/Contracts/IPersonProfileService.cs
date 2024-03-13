@@ -23,7 +23,7 @@ namespace Heartify.Core.Contracts
             int relationshipId,
             string description,
             string daterId);
-        /*ProfileImage = model.ProfileImage,
+        /*ProfilePicture = model.ProfilePicture,
         UsernamePicture = model.UsernamePicture,
         RandomPicture = model.RandomPicture */
 

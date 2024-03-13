@@ -58,13 +58,13 @@ namespace Heartify.Core.Models.PersonProfile
         public string Description { get; set; } = string.Empty;
 
         /*[Required(ErrorMessage = RequiredErrorMessage)]
-        public string ProfileImage { get; set; } = string.Empty; //MAKE IMAGE
+        public byte[] ProfilePicture { get; set; } = null!;
 
         [Required(ErrorMessage = RequiredErrorMessage)]
-        public string UsernamePicture { get; set; } = string.Empty; //MAKE IMAGE
+        public byte[] UsernamePicture { get; set; } = null!;
 
         [Required(ErrorMessage = RequiredErrorMessage)]
-        public string RandomPicture { get; set; } = string.Empty; //MAKE IMAGE */
+        public byte[] RandomPicture { get; set; } = null!;*/
 
         public IEnumerable<GenderViewModel> Genders { get; set; } = new List<GenderViewModel>();
         public IEnumerable<RelationshipViewModel> Relationships { get; set; } = new List<RelationshipViewModel>();
