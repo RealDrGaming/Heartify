@@ -5,7 +5,6 @@ using Heartify.Core.Models.Relationship;
 using Heartify.Extensions;
 using Heartify.Infrastructure.Constants;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using System.Globalization;
 
 namespace Heartify.Controllers
