@@ -1,8 +1,6 @@
 ﻿using Heartify.Core.Contracts;
-using Heartify.Core.Models.PersonProfile;
 using Heartify.Extensions;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace Heartify.Controllers
 {

@@ -34,6 +34,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 {
                     options.SignIn.RequireConfirmedAccount = true;
                     options.Password.RequireNonAlphanumeric = false;
+                    options.Password.RequireUppercase = false;
                 })
                 .AddEntityFrameworkStores<HeartifyDbContext>();
 
