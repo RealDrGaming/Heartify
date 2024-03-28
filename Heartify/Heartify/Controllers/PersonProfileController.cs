@@ -56,7 +56,8 @@ namespace Heartify.Controllers
 				return View(model);
 			}
 
-            await personProfile.CreateAsync(model.FirstName,
+            await personProfile.CreateAsync(
+                model.FirstName,
                 model.LastName,
                 dateOfBirth,
                 model.GenderId,
