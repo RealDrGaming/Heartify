@@ -12,6 +12,7 @@ namespace Microsoft.Extensions.DependencyInjection
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
             services.AddScoped<IPersonProfileService, PersonProfileService>();
+            services.AddScoped<IStatisticService, StatisticService>();
 
             return services;
         }

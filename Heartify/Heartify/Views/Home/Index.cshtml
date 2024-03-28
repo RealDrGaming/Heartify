@@ -78,6 +78,20 @@
 
                 <img src="~/images/hearts_no_bg.png" width="600" height="600" />
             </div>
+
+            <div class="stats" id="statistics">
+                 <h2 id="total-users"></h2>
+            </div>
         </article>
     </section>
 </main>
+
+@section Scripts {
+    <script>
+        setInterval(function () {
+            $.get('/api/statistic', data => {
+                $('#total-users').text(data.totalUsers + ' people are using Heartify');
+            });
+        }, 5000);
+    </script>
+}

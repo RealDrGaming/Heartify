@@ -64,3 +64,14 @@ article {
 .starting-tip a {
     color: var(--text-hyperlink-color);
 }
+
+#total-users {
+    margin: 0 auto 0 auto;
+}
+
+.stats {
+    border-radius: 1em;
+    display: flex;
+    padding: 1em 1em 1em 1em;
+    border: var(--background-color) 0.15em dashed;
+}
