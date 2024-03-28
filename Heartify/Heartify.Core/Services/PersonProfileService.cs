@@ -48,8 +48,10 @@ namespace Heartify.Core.Services
 
         public async Task<PersonProfile> GetPersonProfileByIdAsync(int personProfileId)
         {
-            return await repository.All<PersonProfile>()
-                .FirstAsync(pp => pp.Id == personProfileId);
+
+                return await repository.All<PersonProfile>()
+                    .FirstOrDefaultAsync(pp => pp.Id == personProfileId);
+            
         }
 
         public async Task CreateAsync(string firstName,
@@ -114,7 +116,7 @@ namespace Heartify.Core.Services
                     pp.RandomPicture,*/
                     pp.Description
                     ))
-                .FirstAsync();
+                .FirstOrDefaultAsync();
         }
 
         public async Task<DeleteShowInfoPersonProfileModel> GetDeleteInfoAsync(int id)
@@ -126,7 +128,7 @@ namespace Heartify.Core.Services
                     Id = dpp.Id,
                     FirstName = dpp.FirstName,
                 })
-                .FirstAsync();
+                .FirstOrDefaultAsync();
         }
 
         public void DeleteAsync(PersonProfile personProfileToDelete)

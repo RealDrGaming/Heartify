@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\delete-person-profile-styles.css"
     },
     {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\error-styles.css",
+      "PackagePath": "staticwebassets\\css\\error-styles.css"
+    },
+    {
       "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\faqs-styles.css",
       "PackagePath": "staticwebassets\\css\\faqs-styles.css"
     },
@@ -71,6 +75,18 @@
     {
       "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\images\\hand_holding.jpg",
       "PackagePath": "staticwebassets\\images\\hand_holding.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\images\\heartbroken_1_no_bg.png",
+      "PackagePath": "staticwebassets\\images\\heartbroken_1_no_bg.png"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\images\\heartbroken_2_no_bg.png",
+      "PackagePath": "staticwebassets\\images\\heartbroken_2_no_bg.png"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\images\\heartbroken_no_bg.png",
+      "PackagePath": "staticwebassets\\images\\heartbroken_no_bg.png"
     },
     {
       "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\images\\hearts_bg.jpg",

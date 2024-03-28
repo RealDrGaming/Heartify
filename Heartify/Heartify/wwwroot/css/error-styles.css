@@ -1,0 +1,29 @@
+﻿.container-main {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+    flex-direction: column;
+}
+
+.title-stuff {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container-main h1,
+.container-main p {
+    margin: 0;
+}
+
+.container-main .text {
+    width: 20em;
+}
+
+article {
+    width: 100%;
+    margin: auto;
+}
