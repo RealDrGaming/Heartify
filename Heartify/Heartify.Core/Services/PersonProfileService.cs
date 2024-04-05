@@ -150,7 +150,7 @@ namespace Heartify.Core.Services
 		public async Task<IEnumerable<PersonProfileInfoViewModel>> AllUsersForReview()
 		{
             return await repository.AllReadOnly<PersonProfile>()
-                .Where(pp => pp.IsApproved)
+                .Where(pp => !pp.IsApproved)
                 .Select(pp => new PersonProfileInfoViewModel(
                     pp.Id,
                     pp.FirstName,
@@ -170,7 +170,8 @@ namespace Heartify.Core.Services
 		public async Task<IEnumerable<PersonProfileInfoViewModel>> AllReviewedUsers()
 		{
 			return await repository.AllReadOnly<PersonProfile>()
-				.Select(pp => new PersonProfileInfoViewModel(
+                .Where(pp => pp.IsApproved)
+                .Select(pp => new PersonProfileInfoViewModel(
 					pp.Id,
 					pp.FirstName,
 					pp.LastName,

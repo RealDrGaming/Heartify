@@ -5,3 +5,29 @@
 }
 
 <link rel="stylesheet" href="~/css/multiple-profiles-styles.css" asp-append-version="true" />
+
+<h2 class="text-center">@ViewBag.Title</h2>
+
+<hr />
+
+<h4>User Profiles that have been reviewed</h4>
+@if (!Model.ProfilesArray.Any())
+{
+    <h2 text-center>There are no accessable user profiles at the moment!</h2>
+}
+
+<div class="row">
+    @foreach (var profile in Model.ProfilesArray)
+    {
+        <div class="col-md-4">
+            <div class="card mb-3 my-card">
+                <!--<img class="card-img-top" src="IMAGES FOR REVIEW SOURCE FROM MODEL HERE" alt="House Image">-->
+                <div class="card-body text-center">
+                    <h5>@profile.FirstName @profile.LastName, born on @profile.DateOfBirth is looking for a @profile.Relationship.</h5>
+                    <h5>@profile.FirstName is @profile.Gender and is looking for @profile.WantedGender</h5>
+                    <h6>"@profile.Description"</h6>
+                </div>
+            </div>
+        </div>
+    }
+</div>
