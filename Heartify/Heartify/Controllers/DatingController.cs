@@ -1,6 +1,7 @@
 ﻿using Heartify.Core.Contracts;
 using Heartify.Extensions;
 using Microsoft.AspNetCore.Mvc;
+using static Heartify.Core.Constants.MessageConstants;
 
 namespace Heartify.Controllers
 {
@@ -17,6 +18,8 @@ namespace Heartify.Controllers
         {
             if (await personProfile.ExistsByIdReviewedAsync(User.Id()) == false)
             {
+                TempData[UserMessageWarning] = "You cannot see profiles until yours is reviewed!";
+
                 return RedirectToAction("CreatePersonProfile", "PersonProfile");
             }
 

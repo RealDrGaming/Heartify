@@ -1,4 +1,5 @@
-﻿using Heartify.Core.Contracts;
+﻿using Heartify.Core.Constants;
+using Heartify.Core.Contracts;
 using Heartify.Core.Models.Gender;
 using Heartify.Core.Models.PersonProfile;
 using Heartify.Core.Models.Relationship;
@@ -6,6 +7,7 @@ using Heartify.Extensions;
 using Heartify.Infrastructure.Constants;
 using Microsoft.AspNetCore.Mvc;
 using System.Globalization;
+using static Heartify.Core.Constants.MessageConstants;
 
 namespace Heartify.Controllers
 {
@@ -66,8 +68,8 @@ namespace Heartify.Controllers
                 model.Description,
                 User.Id());
 
-			return RedirectToAction(nameof(CreatePersonProfile));
-		}
+            return RedirectToAction("PersonProfileInfo", "Returner");
+        }
 
         [HttpGet]
         public async Task<IActionResult> EditPersonProfile(int id)
@@ -131,6 +133,7 @@ namespace Heartify.Controllers
             return RedirectToAction(nameof(CreatePersonProfile));
         }
 
+        [HttpGet]
         public async Task<IActionResult> DeletePersonProfile(int id)
         {
             var pp = await personProfile.GetApprovedProfileByIdAsync(id);
@@ -150,6 +153,7 @@ namespace Heartify.Controllers
             return View(model);
         }
 
+        [HttpPost]
         public async Task<IActionResult> DeletePersonProfileConfirmed(int id)
         {
             var pp = await personProfile.GetApprovedProfileByIdAsync(id);
@@ -160,6 +164,8 @@ namespace Heartify.Controllers
             }
 
             personProfile.DeleteAsync(pp);
+
+            TempData[UserMessageError] = "Dating profile deleted!";
 
             return RedirectToAction(nameof(CreatePersonProfile));
         }

@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Heartify.Core.Constants;
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -6,6 +8,7 @@
     <title>@ViewData["Title"] Heartify</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/styles-base.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/toastr/toastr.min.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/font-awesome.min.css">
 
@@ -46,13 +49,39 @@
             <div>
                 <p>&copy; All rights reserved - @DateTime.Today.Year</p>
                 <hr class="inbetween-in-footer">
-                <a id="terms-button" asp-controller="Home" asp-action="Terms">Terms & Privacy</a>
+                <a id="terms-button" asp-area="" asp-controller="Home" asp-action="Terms">Terms & Privacy</a>
             </div>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/accordion.js" asp-append-version="true"></script>
+    <script src="~/lib/toastr/toastr.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+    @if (TempData[MessageConstants.UserMessageSuccess] != null)
+    {
+        <script defer>
+            message.sh('@TempData[MessageConstants.UserMessageSuccess]');
+        </script>
+    }
+    @if (TempData[MessageConstants.UserMessageError] != null)
+    {
+        <script defer>
+            message.showError('@TempData[MessageConstants.UserMessageError]');
+        </script>
+    }
+    @if (TempData[MessageConstants.UserMessageInfo] != null)
+    {
+        <script defer>
+            message.showInfo('@TempData[MessageConstants.UserMessageInfo]');
+        </script>
+    }
+    @if (TempData[MessageConstants.UserMessageWarning] != null)
+    {
+        <script defer>
+            message.showWarning('@TempData[MessageConstants.UserMessageWarning]');
+        </script>
+    }
 </body>
 </html>

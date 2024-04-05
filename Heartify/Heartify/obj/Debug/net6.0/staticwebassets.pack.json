@@ -113,6 +113,10 @@
       "PackagePath": "staticwebassets\\js\\indicateImageUploaded.js"
     },
     {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
       "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
@@ -339,6 +343,22 @@
     {
       "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\toastr\\toastr.css",
+      "PackagePath": "staticwebassets\\lib\\toastr\\toastr.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\toastr\\toastr.js.map",
+      "PackagePath": "staticwebassets\\lib\\toastr\\toastr.js.map"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\toastr\\toastr.min.css",
+      "PackagePath": "staticwebassets\\lib\\toastr\\toastr.min.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\lib\\toastr\\toastr.min.js",
+      "PackagePath": "staticwebassets\\lib\\toastr\\toastr.min.js"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Heartify.Microsoft.AspNetCore.StaticWebAssets.props",
