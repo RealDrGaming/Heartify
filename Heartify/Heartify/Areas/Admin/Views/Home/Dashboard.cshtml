@@ -1,0 +1,23 @@
+﻿@{
+	ViewData["Title"] = "Dashboard";
+}
+
+<link rel="stylesheet" href="~/css/styles-base.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/admin-dashboard-styles.css" asp-append-version="true" />
+
+<main>
+	<section>
+		<article>
+			<div class="my-container">
+
+				<h2>Admin Dashboard</h2>
+
+				<div class="buttons">
+					<a asp-area="Admin" asp-controller="PersonProfile" asp-action="ForReview" class="button">For review</a>
+
+					<a asp-area="Admin" asp-controller="PersonProfile" asp-action="AllReviewedUsers" class="button">All users</a>
+				</div>
+			</div>
+		</article>
+	</section>
+</main>

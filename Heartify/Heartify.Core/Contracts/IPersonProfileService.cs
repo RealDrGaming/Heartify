@@ -7,9 +7,10 @@ namespace Heartify.Core.Contracts
 {
     public interface IPersonProfileService
     {
-        Task<bool> ExistsByIdAsync(string userId);
+        Task<bool> ExistsByIdReviewedAsync(string userId);
+		Task<bool> ExistsByIdAllAsync(string userId);
 
-        Task<PersonProfile> GetPersonProfileByIdAsync(int personProfileId);
+		Task<PersonProfile> GetPersonProfileByIdAsync(int personProfileId);
 
         Task<IEnumerable<GenderViewModel>> AllGenders();
 
@@ -34,5 +35,9 @@ namespace Heartify.Core.Contracts
         Task<DeleteShowInfoPersonProfileModel> GetDeleteInfoAsync(int id);
 
         void DeleteAsync(PersonProfile personProfileToDelete);
-    }
+
+        Task<IEnumerable<PersonProfileInfoViewModel>> AllUsersForReview();
+
+		Task<IEnumerable<PersonProfileInfoViewModel>> AllReviewedUsers();
+	}
 }

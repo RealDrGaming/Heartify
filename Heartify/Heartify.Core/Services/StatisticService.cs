@@ -18,6 +18,7 @@ namespace Heartify.Core.Services
         public async Task<StatisticServiceModel> TotalAsync()
         {
             int totalUsers = await repository.AllReadOnly<PersonProfile>()
+                .Where(pp => pp.IsApproved)
                 .CountAsync();
 
             return new StatisticServiceModel()

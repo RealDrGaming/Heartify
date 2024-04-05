@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zUm6KvfCYqsNFbUSN38jcdYYgAR4W0Ikp9Fn/PZAN5k=",
+  "Hash": "T5J9+qUL5/8sPjYYmiHxS1ftI1roXmMyJ381m5GKEQQ=",
   "Source": "Heartify",
   "BasePath": "_content/Heartify",
   "Mode": "Default",
@@ -1195,6 +1195,25 @@
       "OriginalItemSpec": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Heartify.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\admin-dashboard-styles.css",
+      "SourceId": "Heartify",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\",
+      "BasePath": "_content/Heartify",
+      "RelativePath": "css/admin-dashboard-styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\admin-dashboard-styles.css"
+    },
+    {
       "Identity": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\delete-person-profile-styles.css",
       "SourceId": "Heartify",
       "SourceType": "Discovered",
@@ -1345,6 +1364,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\login-styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\multiple-profiles-styles.css",
+      "SourceId": "Heartify",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\",
+      "BasePath": "_content/Heartify",
+      "RelativePath": "css/multiple-profiles-styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\multiple-profiles-styles.css"
     },
     {
       "Identity": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\register-styles.css",

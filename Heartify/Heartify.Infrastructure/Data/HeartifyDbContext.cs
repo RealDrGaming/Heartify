@@ -30,6 +30,7 @@ namespace Heartify.Infrastructure.Data
 
             modelBuilder.ApplyConfiguration(new GenderConfiguration());
             modelBuilder.ApplyConfiguration(new RelationshipConfiguration());
+            modelBuilder.ApplyConfiguration(new AdminConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }

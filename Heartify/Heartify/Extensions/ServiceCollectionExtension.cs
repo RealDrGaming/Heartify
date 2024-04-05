@@ -37,6 +37,7 @@ namespace Microsoft.Extensions.DependencyInjection
                     options.Password.RequireNonAlphanumeric = false;
                     options.Password.RequireUppercase = false;
                 })
+                .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<HeartifyDbContext>();
 
             return services;

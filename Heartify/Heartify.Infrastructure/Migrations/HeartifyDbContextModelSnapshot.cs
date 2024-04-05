@@ -17,7 +17,7 @@ namespace Heartify.Infrastructure.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.26")
+                .HasAnnotation("ProductVersion", "6.0.27")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -136,6 +136,10 @@ namespace Heartify.Infrastructure.Migrations
 
                     b.Property<int>("GenderId")
                         .HasColumnType("int");
+
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("bit")
+                        .HasComment("Is profile approved by admin");
 
                     b.Property<string>("LastName")
                         .IsRequired()
@@ -279,6 +283,24 @@ namespace Heartify.Infrastructure.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "621feec7-9420-4ba0-8362-1f8b2505b88c",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "adfb45dc-c806-4ce0-8135-aadb8ce83e60",
+                            Email = "admin@mail.com",
+                            EmailConfirmed = false,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "ADMIN@MAIL.COM",
+                            NormalizedUserName = "ADMIN@MAIL.COM",
+                            PasswordHash = "AQAAAAEAACcQAAAAEN9skB0nYWMx2Y00iJhqQW9XU4Do5CWmDmYralOyz5T/2v6KhNnuEMdprfv/z1bzbQ==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "2cd2fb76-800e-4b33-8803-a1ad941b7c18",
+                            TwoFactorEnabled = false,
+                            UserName = "admin@mail.com"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>

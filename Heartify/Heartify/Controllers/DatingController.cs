@@ -15,7 +15,7 @@ namespace Heartify.Controllers
 
         public async Task<IActionResult> FindPerson()
         {
-            if (await personProfile.ExistsByIdAsync(User.Id()) == false)
+            if (await personProfile.ExistsByIdReviewedAsync(User.Id()) == false)
             {
                 return RedirectToAction("CreatePersonProfile", "PersonProfile");
             }

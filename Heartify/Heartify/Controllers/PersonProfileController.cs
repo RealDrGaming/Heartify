@@ -21,7 +21,7 @@ namespace Heartify.Controllers
         [HttpGet]
 		public async Task<IActionResult> CreatePersonProfile()
 		{
-            if (await personProfile.ExistsByIdAsync(User.Id()))
+            if (await personProfile.ExistsByIdAllAsync(User.Id()))
             {
 				return RedirectToAction("PersonProfileInfo", "Returner");
             }

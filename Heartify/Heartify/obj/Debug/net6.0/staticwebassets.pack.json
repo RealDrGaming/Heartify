@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Heartify.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\admin-dashboard-styles.css",
+      "PackagePath": "staticwebassets\\css\\admin-dashboard-styles.css"
+    },
+    {
       "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\delete-person-profile-styles.css",
       "PackagePath": "staticwebassets\\css\\delete-person-profile-styles.css"
     },
@@ -35,6 +39,10 @@
     {
       "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\login-styles.css",
       "PackagePath": "staticwebassets\\css\\login-styles.css"
+    },
+    {
+      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\multiple-profiles-styles.css",
+      "PackagePath": "staticwebassets\\css\\multiple-profiles-styles.css"
     },
     {
       "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\register-styles.css",

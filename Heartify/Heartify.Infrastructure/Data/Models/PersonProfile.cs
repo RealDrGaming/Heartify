@@ -76,5 +76,8 @@ namespace HeartifyDating.Infrastructure.Data.Models
         [Required]
 		[ForeignKey(nameof(DaterId))]
 		public IdentityUser Dater { get; set; } = null!;
+
+        [Comment("Is profile approved by admin")]
+        public bool IsApproved { get; set; }
 	}
 }

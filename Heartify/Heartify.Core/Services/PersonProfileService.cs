@@ -18,13 +18,20 @@ namespace Heartify.Core.Services
             repository = _repository;
         }
 
-        public async Task<bool> ExistsByIdAsync(string userId)
+        public async Task<bool> ExistsByIdReviewedAsync(string userId)
         {
             return await repository.AllReadOnly<PersonProfile>()
+                .Where(pp => pp.IsApproved)
                 .AnyAsync(pp => pp.DaterId == userId);
         }
 
-        public async Task<IEnumerable<GenderViewModel>> AllGenders()
+		public async Task<bool> ExistsByIdAllAsync(string userId)
+		{
+			return await repository.AllReadOnly<PersonProfile>()
+				.AnyAsync(pp => pp.DaterId == userId);
+		}
+
+		public async Task<IEnumerable<GenderViewModel>> AllGenders()
         {
             return await repository.AllReadOnly<Gender>()
                 .Select(g => new GenderViewModel
@@ -50,7 +57,8 @@ namespace Heartify.Core.Services
         {
 
                 return await repository.All<PersonProfile>()
-                    .FirstOrDefaultAsync(pp => pp.Id == personProfileId);
+				    .Where(pp => pp.IsApproved)
+					.FirstOrDefaultAsync(pp => pp.Id == personProfileId);
             
         }
 
@@ -102,7 +110,8 @@ namespace Heartify.Core.Services
         public async Task<PersonProfileInfoViewModel> GetPersonProfileInfoAsync(string userId)
         {
             return await repository.AllReadOnly<PersonProfile>()
-                .Where(pp => pp.DaterId == userId)
+				.Where(pp => pp.IsApproved)
+				.Where(pp => pp.DaterId == userId)
                 .Select(pp => new PersonProfileInfoViewModel(
                     pp.Id,
                     pp.FirstName,
@@ -123,7 +132,8 @@ namespace Heartify.Core.Services
         {
             return await repository.AllReadOnly<PersonProfile>()
                 .Where(dpp => dpp.Id == id)
-                .Select(dpp => new DeleteShowInfoPersonProfileModel()
+				.Where(pp => pp.IsApproved)
+				.Select(dpp => new DeleteShowInfoPersonProfileModel()
                 {
                     Id = dpp.Id,
                     FirstName = dpp.FirstName,
@@ -136,5 +146,44 @@ namespace Heartify.Core.Services
             repository.Delete(personProfileToDelete);
             repository.SaveChangesAsync();
         }
-    }
+
+		public async Task<IEnumerable<PersonProfileInfoViewModel>> AllUsersForReview()
+		{
+            return await repository.AllReadOnly<PersonProfile>()
+                .Where(pp => pp.IsApproved)
+                .Select(pp => new PersonProfileInfoViewModel(
+                    pp.Id,
+                    pp.FirstName,
+                    pp.LastName,
+                    pp.DateOfBirth,
+                    pp.Gender.GenderName,
+                    pp.WantedGender.GenderName,
+                    pp.Relationship.RelationshipType,
+                    /*pp.ProfilePicture,
+                    pp.UsernamePicture,
+                    pp.RandomPicture,*/
+                    pp.Description
+                    ))
+                .ToListAsync();
+		}
+
+		public async Task<IEnumerable<PersonProfileInfoViewModel>> AllReviewedUsers()
+		{
+			return await repository.AllReadOnly<PersonProfile>()
+				.Select(pp => new PersonProfileInfoViewModel(
+					pp.Id,
+					pp.FirstName,
+					pp.LastName,
+					pp.DateOfBirth,
+					pp.Gender.GenderName,
+					pp.WantedGender.GenderName,
+					pp.Relationship.RelationshipType,
+					/*pp.ProfilePicture,
+                    pp.UsernamePicture,
+                    pp.RandomPicture,*/
+					pp.Description
+					))
+				.ToListAsync();
+		}
+	}
 }

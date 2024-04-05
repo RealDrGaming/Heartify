@@ -1,0 +1,6 @@
+﻿.my-card {
+    background-color: var(--body-background-color);
+    padding: 5px 3px 5px 3px;
+    border: var(--background-color) 0.15em dashed;
+    border-radius: 1em;
+}

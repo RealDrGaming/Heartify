@@ -15,9 +15,19 @@ namespace Heartify.Controllers
 
         public async Task<IActionResult> PersonProfileInfo()
 		{
-			var model = await personProfile.GetPersonProfileInfoAsync(User.Id());
+            if (await personProfile.ExistsByIdReviewedAsync(User.Id()))
+            {
+				var model = await personProfile.GetPersonProfileInfoAsync(User.Id());
 
-			return View(model);
+				return View(model);
+			}
+
+            return RedirectToAction(nameof(WaitingForReview));
+		}
+
+        public IActionResult WaitingForReview() 
+        {
+			return View();
 		}
 	}
 }
