@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using static Heartify.Core.Constants.RoleConstants;
+using static Heartify.Core.Constants.AdministratorConstants;
 
 namespace Microsoft.AspNetCore.Builder
 {

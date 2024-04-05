@@ -1,6 +1,10 @@
 ﻿using Heartify.Core.Contracts;
+using Heartify.Core.Models.Admin;
+using Heartify.Core.Models.PersonProfile;
 using Heartify.Extensions;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
+using static Heartify.Core.Constants.UserConstants;
 
 namespace Heartify.Controllers
 {
@@ -17,8 +21,8 @@ namespace Heartify.Controllers
 		{
             if (await personProfile.ExistsByIdReviewedAsync(User.Id()))
             {
-				var model = await personProfile.GetPersonProfileInfoAsync(User.Id());
-
+                var model = await personProfile.GetPersonProfileInfoAsync(User.Id());
+                
 				return View(model);
 			}
 

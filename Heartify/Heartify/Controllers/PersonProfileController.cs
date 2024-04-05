@@ -72,7 +72,7 @@ namespace Heartify.Controllers
         [HttpGet]
         public async Task<IActionResult> EditPersonProfile(int id)
         {
-            var pp = await personProfile.GetPersonProfileByIdAsync(id);
+            var pp = await personProfile.GetApprovedProfileByIdAsync(id);
 
             if (pp == null)
             {
@@ -99,7 +99,7 @@ namespace Heartify.Controllers
         [HttpPost]
         public async Task<IActionResult> EditPersonProfile(PersonProfileFormModel model, int id)
         {
-            var pp = await personProfile.GetPersonProfileByIdAsync(id);
+            var pp = await personProfile.GetApprovedProfileByIdAsync(id);
 
             if (pp == null)
             {
@@ -133,7 +133,7 @@ namespace Heartify.Controllers
 
         public async Task<IActionResult> DeletePersonProfile(int id)
         {
-            var pp = await personProfile.GetPersonProfileByIdAsync(id);
+            var pp = await personProfile.GetApprovedProfileByIdAsync(id);
 
             if (pp == null)
             {
@@ -152,7 +152,7 @@ namespace Heartify.Controllers
 
         public async Task<IActionResult> DeletePersonProfileConfirmed(int id)
         {
-            var pp = await personProfile.GetPersonProfileByIdAsync(id);
+            var pp = await personProfile.GetApprovedProfileByIdAsync(id);
 
             if (pp == null)
             {

@@ -1,4 +1,13 @@
-﻿.my-card {
+﻿h2 {
+    margin-top: 2em;
+}
+
+h4 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.my-card {
     background-color: var(--body-background-color);
     padding: 5px 3px 5px 3px;
     border: var(--background-color) 0.15em dashed;

@@ -26,8 +26,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGVyc29uUHJvZmlsZVxBbGxSZXZpZXdlZFVzZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Areas/Admin/Views/PersonProfile/ForReview.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGVyc29uUHJvZmlsZVxGb3JSZXZpZXcuY3NodG1s
+[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Areas/Admin/Views/PersonProfile/ApproveProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGVyc29uUHJvZmlsZVxBcHByb3ZlUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Areas/Admin/Views/Shared/Components/AdminMenuComponent/Default.cshtml]

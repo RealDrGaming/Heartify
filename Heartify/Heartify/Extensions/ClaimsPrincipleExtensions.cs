@@ -1,5 +1,5 @@
 ﻿using System.Security.Claims;
-using static Heartify.Core.Constants.RoleConstants;
+using static Heartify.Core.Constants.AdministratorConstants;
 
 namespace Heartify.Extensions
 {

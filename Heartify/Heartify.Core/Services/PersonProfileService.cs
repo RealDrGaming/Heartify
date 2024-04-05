@@ -53,13 +53,21 @@ namespace Heartify.Core.Services
                 .ToListAsync();
         }
 
-        public async Task<PersonProfile> GetPersonProfileByIdAsync(int personProfileId)
+        public async Task<PersonProfile> GetApprovedProfileByIdAsync(int personProfileId)
         {
-
-                return await repository.All<PersonProfile>()
+                var profile = await repository.All<PersonProfile>()
 				    .Where(pp => pp.IsApproved)
 					.FirstOrDefaultAsync(pp => pp.Id == personProfileId);
-            
+
+            return profile ?? null;
+        }
+
+        public async Task<PersonProfile> GetProfileApproveProfileByIdAsync(int personProfileId)
+        {
+            var profile = await repository.All<PersonProfile>()
+                .FirstOrDefaultAsync(pp => pp.Id == personProfileId);
+
+            return profile ?? null;
         }
 
         public async Task CreateAsync(string firstName,
@@ -109,7 +117,7 @@ namespace Heartify.Core.Services
 
         public async Task<PersonProfileInfoViewModel> GetPersonProfileInfoAsync(string userId)
         {
-            return await repository.AllReadOnly<PersonProfile>()
+            var profile = await repository.AllReadOnly<PersonProfile>()
 				.Where(pp => pp.IsApproved)
 				.Where(pp => pp.DaterId == userId)
                 .Select(pp => new PersonProfileInfoViewModel(
@@ -126,11 +134,13 @@ namespace Heartify.Core.Services
                     pp.Description
                     ))
                 .FirstOrDefaultAsync();
+
+            return profile ?? null;
         }
 
         public async Task<DeleteShowInfoPersonProfileModel> GetDeleteInfoAsync(int id)
         {
-            return await repository.AllReadOnly<PersonProfile>()
+            var profile =  await repository.AllReadOnly<PersonProfile>()
                 .Where(dpp => dpp.Id == id)
 				.Where(pp => pp.IsApproved)
 				.Select(dpp => new DeleteShowInfoPersonProfileModel()
@@ -139,6 +149,8 @@ namespace Heartify.Core.Services
                     FirstName = dpp.FirstName,
                 })
                 .FirstOrDefaultAsync();
+
+            return profile ?? null;
         }
 
         public void DeleteAsync(PersonProfile personProfileToDelete)
@@ -147,7 +159,7 @@ namespace Heartify.Core.Services
             repository.SaveChangesAsync();
         }
 
-		public async Task<IEnumerable<PersonProfileInfoViewModel>> AllUsersForReview()
+		public async Task<IEnumerable<PersonProfileInfoViewModel>> GetUserForReviewAsync()
 		{
             return await repository.AllReadOnly<PersonProfile>()
                 .Where(pp => !pp.IsApproved)
@@ -167,7 +179,7 @@ namespace Heartify.Core.Services
                 .ToListAsync();
 		}
 
-		public async Task<IEnumerable<PersonProfileInfoViewModel>> AllReviewedUsers()
+		public async Task<IEnumerable<PersonProfileInfoViewModel>> GetReviewedUsersAsync()
 		{
 			return await repository.AllReadOnly<PersonProfile>()
                 .Where(pp => pp.IsApproved)
@@ -186,5 +198,17 @@ namespace Heartify.Core.Services
 					))
 				.ToListAsync();
 		}
-	}
+
+        public async Task ApprovePersonProfileAsync(int personProfileId)
+        {
+            var profile = await GetProfileApproveProfileByIdAsync(personProfileId);
+
+            if (profile != null) 
+            {
+                profile.IsApproved = true;
+
+                await repository.SaveChangesAsync();
+            }
+        }
+    }
 }
