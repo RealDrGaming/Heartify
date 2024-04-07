@@ -1,7 +1,6 @@
-﻿using System.Security.Claims;
-using static Heartify.Core.Constants.AdministratorConstants;
+﻿using static Heartify.Core.Constants.AdministratorConstants;
 
-namespace Heartify.Extensions
+namespace System.Security.Claims
 {
     public static class ClaimsPrincipleExtensions
     {

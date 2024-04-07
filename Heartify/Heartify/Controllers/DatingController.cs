@@ -1,6 +1,6 @@
 ﻿using Heartify.Core.Contracts;
-using Heartify.Extensions;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using static Heartify.Core.Constants.MessageConstants;
 
 namespace Heartify.Controllers
@@ -22,6 +22,8 @@ namespace Heartify.Controllers
 
                 return RedirectToAction("CreatePersonProfile", "PersonProfile");
             }
+
+
 
             return View();   
         }

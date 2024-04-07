@@ -1,12 +1,11 @@
-﻿using Heartify.Core.Constants;
-using Heartify.Core.Contracts;
+﻿using Heartify.Core.Contracts;
 using Heartify.Core.Models.Gender;
 using Heartify.Core.Models.PersonProfile;
 using Heartify.Core.Models.Relationship;
-using Heartify.Extensions;
 using Heartify.Infrastructure.Constants;
 using Microsoft.AspNetCore.Mvc;
 using System.Globalization;
+using System.Security.Claims;
 using static Heartify.Core.Constants.MessageConstants;
 
 namespace Heartify.Controllers

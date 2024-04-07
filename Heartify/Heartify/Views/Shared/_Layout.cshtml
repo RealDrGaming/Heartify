@@ -1,6 +1,4 @@
-﻿@using Heartify.Core.Constants;
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -21,7 +19,7 @@
     <header>
         <div class="head-info">
 
-            <h2><a class="button-direct" asp-controller="Home" asp-action="Index">Heartify</a></h2>
+            <h2><a class="button-direct" asp-area="" asp-controller="Home" asp-action="Index">Heartify</a></h2>
             
             @await Component.InvokeAsync(nameof(MainMenuComponent))
 
@@ -59,29 +57,6 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 
-    @if (TempData[MessageConstants.UserMessageSuccess] != null)
-    {
-        <script defer>
-            message.sh('@TempData[MessageConstants.UserMessageSuccess]');
-        </script>
-    }
-    @if (TempData[MessageConstants.UserMessageError] != null)
-    {
-        <script defer>
-            message.showError('@TempData[MessageConstants.UserMessageError]');
-        </script>
-    }
-    @if (TempData[MessageConstants.UserMessageInfo] != null)
-    {
-        <script defer>
-            message.showInfo('@TempData[MessageConstants.UserMessageInfo]');
-        </script>
-    }
-    @if (TempData[MessageConstants.UserMessageWarning] != null)
-    {
-        <script defer>
-            message.showWarning('@TempData[MessageConstants.UserMessageWarning]');
-        </script>
-    }
+    <partial name="_TempDataPartial" />
 </body>
 </html>

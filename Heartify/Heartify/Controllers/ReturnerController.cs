@@ -1,10 +1,6 @@
 ﻿using Heartify.Core.Contracts;
-using Heartify.Core.Models.Admin;
-using Heartify.Core.Models.PersonProfile;
-using Heartify.Extensions;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Caching.Memory;
-using static Heartify.Core.Constants.UserConstants;
+using System.Security.Claims;
 
 namespace Heartify.Controllers
 {

@@ -1,7 +1,6 @@
 ﻿using Heartify.Core.Contracts;
 using Heartify.Core.Models.Admin;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Caching.Memory;
 
 namespace Heartify.Areas.Admin.Controllers
 {

@@ -1,0 +1,26 @@
+﻿@using Heartify.Core.Constants;
+
+@if (TempData[MessageConstants.UserMessageSuccess] != null)
+{
+    <script defer>
+        message.sh('@TempData[MessageConstants.UserMessageSuccess]');
+    </script>
+}
+@if (TempData[MessageConstants.UserMessageError] != null)
+{
+    <script defer>
+        message.showError('@TempData[MessageConstants.UserMessageError]');
+    </script>
+}
+@if (TempData[MessageConstants.UserMessageInfo] != null)
+{
+    <script defer>
+        message.showInfo('@TempData[MessageConstants.UserMessageInfo]');
+    </script>
+}
+@if (TempData[MessageConstants.UserMessageWarning] != null)
+{
+    <script defer>
+        message.showWarning('@TempData[MessageConstants.UserMessageWarning]');
+    </script>
+}
