@@ -18,14 +18,12 @@ namespace Heartify.Controllers
         {
             if (await personProfile.ExistsByIdReviewedAsync(User.Id()) == false)
             {
-                TempData[UserMessageWarning] = "You cannot see profiles until yours is reviewed!";
+                TempData[UserMessageWarning] = "You cannot see other profiles until yours is reviewed!";
 
                 return RedirectToAction("CreatePersonProfile", "PersonProfile");
             }
 
-
-
-            return View();   
+            return View();
         }
     }
 }

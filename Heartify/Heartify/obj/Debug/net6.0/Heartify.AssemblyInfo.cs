@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Heartify")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e47bf461fe4ff3ac41010ff5c53aa900e9968ce7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49d06b872808d864ac060318bedb0e93be0b4fdd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Heartify")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Heartify")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

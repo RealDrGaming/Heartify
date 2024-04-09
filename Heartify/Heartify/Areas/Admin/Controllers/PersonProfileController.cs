@@ -42,5 +42,13 @@ namespace Heartify.Areas.Admin.Controllers
 
             return RedirectToAction(nameof(ApproveProfile));
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(int personProfileId)
+        {
+            await personProfileService.DeletePersonProfileAsync(personProfileId);
+
+            return RedirectToAction(nameof(ApproveProfile));
+        }
     }
 }

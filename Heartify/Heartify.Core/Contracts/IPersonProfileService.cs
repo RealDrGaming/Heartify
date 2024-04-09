@@ -12,7 +12,7 @@ namespace Heartify.Core.Contracts
 
 		Task<PersonProfile> GetApprovedProfileByIdAsync(int personProfileId);
 
-        Task<PersonProfile> GetProfileApproveProfileByIdAsync(int personProfileId);
+        Task<PersonProfile> GetProfileByIdAsync(int personProfileId);
 
         Task<IEnumerable<GenderViewModel>> AllGenders();
 
@@ -36,12 +36,14 @@ namespace Heartify.Core.Contracts
 
         Task<DeleteShowInfoPersonProfileModel> GetDeleteInfoAsync(int id);
 
-        void DeleteAsync(PersonProfile personProfileToDelete);
+        Task DeleteAsync(PersonProfile personProfileToDelete);
 
         Task<IEnumerable<PersonProfileInfoViewModel>> GetUserForReviewAsync();
 
 		Task<IEnumerable<PersonProfileInfoViewModel>> GetReviewedUsersAsync();
 
         Task ApprovePersonProfileAsync(int personProfileId);
-	}
+
+        Task DeletePersonProfileAsync(int personProfileId);
+    }
 }

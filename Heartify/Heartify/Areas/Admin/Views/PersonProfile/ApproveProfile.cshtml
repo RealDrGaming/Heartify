@@ -27,8 +27,12 @@
                     <h5>@profile.FirstName is @profile.Gender and is looking for @profile.WantedGender</h5>
                     <h6>"@profile.Description"</h6>
 
-                    <form asp-area="Admin" asp-controller="PersonProfile" asp-action="ApproveProfile" asp-route-personProfileId="@profile.Id" method="post">
+                    <form asp-area="Admin" asp-controller="PersonProfile" asp-action="ApproveProfile" asp-route-personProfileId="@profile.Id" class="mb-1" method="post">
                         <button type="submit" class="btn btn-success">Approve</button>
+                    </form>
+
+                    <form asp-area="Admin" asp-controller="PersonProfile" asp-action="Delete" asp-route-personProfileId="@profile.Id" method="post">
+                        <button type="submit" class="btn btn-success">Delete</button>
                     </form>
                 </div>
             </div>
