@@ -101,17 +101,21 @@ namespace Heartify.Core.Services
             await repository.SaveChangesAsync();
         }
 
-        public async Task EditAsync(PersonProfile personProfileToEdit, PersonProfileFormModel model, DateTime dateOfBirth)
+        public async Task EditAsync(int personProfileId, PersonProfileFormModel model, DateTime dateOfBirth)
         {
-            personProfileToEdit.FirstName = model.FirstName;
-            personProfileToEdit.LastName = model.LastName;
-            personProfileToEdit.DateOfBirth = dateOfBirth;
-            personProfileToEdit.GenderId = model.GenderId;
-            personProfileToEdit.WantedGenderId = model.WantedGenderId;
-            personProfileToEdit.RelationshipId = model.RelationshipId;
-            personProfileToEdit.Description = model.Description;
+            var personProfile = await repository.GetByIdAsync<PersonProfile>(personProfileId);
 
-            repository.Edit(personProfileToEdit);
+            if (personProfile != null)
+            {
+                personProfile.FirstName = model.FirstName;
+                personProfile.LastName = model.LastName;
+                personProfile.DateOfBirth = dateOfBirth;
+                personProfile.GenderId = model.GenderId;
+                personProfile.WantedGenderId = model.WantedGenderId;
+                personProfile.RelationshipId = model.RelationshipId;
+                personProfile.Description = model.Description;
+            }
+
             await repository.SaveChangesAsync();
         }
 
@@ -153,9 +157,10 @@ namespace Heartify.Core.Services
             return profile ?? null;
         }
 
-        public async Task DeleteAsync(PersonProfile personProfileToDelete)
+        public async Task DeleteAsync(int personProfileId)
         {
-            repository.Delete(personProfileToDelete);
+            await repository.DeleteAsync<PersonProfile>(personProfileId);
+
             await repository.SaveChangesAsync();
         }
 
@@ -217,7 +222,7 @@ namespace Heartify.Core.Services
 
             if (profile != null)
             {
-                repository.Delete(profile);
+                await repository.DeleteAsync<PersonProfile>(personProfileId);
 
                 await repository.SaveChangesAsync();
             }

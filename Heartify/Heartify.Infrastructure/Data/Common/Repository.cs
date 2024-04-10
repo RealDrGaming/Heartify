@@ -32,19 +32,24 @@ namespace Heartify.Infrastructure.Data.Common
             await DbSet<T>().AddAsync(entity);
         }
 
-        public void Edit<T>(T entity) where T : class
-        {
-            DbSet<T>().Update(entity);
-        }
-
-        public void Delete<T>(T entity) where T : class
-        {
-            DbSet<T>().Remove(entity);
-        }
-
         public async Task<int> SaveChangesAsync()
         {
             return await context.SaveChangesAsync();
+        }
+
+        public async Task<T?> GetByIdAsync<T>(object id) where T : class
+        {
+            return await DbSet<T>().FindAsync(id);
+        }
+
+        public async Task DeleteAsync<T>(object id) where T : class
+        {
+            T? entity = await GetByIdAsync<T>(id);
+
+            if (entity != null)
+            {
+                DbSet<T>().Remove(entity);
+            }
         }
     }
 }

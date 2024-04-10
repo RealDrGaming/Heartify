@@ -127,7 +127,7 @@ namespace Heartify.Controllers
                 return View(model);
             }
 
-            await personProfile.EditAsync(pp, model, dateOfBirth);
+            await personProfile.EditAsync(id, model, dateOfBirth);
 
             return RedirectToAction(nameof(CreatePersonProfile));
         }
@@ -162,7 +162,7 @@ namespace Heartify.Controllers
                 return BadRequest();
             }
 
-            personProfile.DeleteAsync(pp);
+            await personProfile.DeleteAsync(id);
 
             TempData[UserMessageError] = "Dating profile deleted!";
 

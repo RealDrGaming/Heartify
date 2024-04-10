@@ -30,13 +30,13 @@ namespace Heartify.Core.Contracts
             string description,
             string daterId);
 
-        Task EditAsync(PersonProfile personProfileToEdit, PersonProfileFormModel model, DateTime dateOfBirth);
+        Task EditAsync(int personProfileToEdit, PersonProfileFormModel model, DateTime dateOfBirth);
 
         Task<PersonProfileInfoViewModel> GetPersonProfileInfoAsync(string userId);
 
         Task<DeleteShowInfoPersonProfileModel> GetDeleteInfoAsync(int id);
 
-        Task DeleteAsync(PersonProfile personProfileToDelete);
+        Task DeleteAsync(int personProfileId);
 
         Task<IEnumerable<PersonProfileInfoViewModel>> GetUserForReviewAsync();
 
