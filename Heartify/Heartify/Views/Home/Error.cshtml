@@ -1,5 +1,5 @@
 ﻿@{
-	ViewData["Title"] = "Error";
+    ViewData["Title"] = "Error";
 }
 
 <link rel="stylesheet" href="~/css/styles-base.css" asp-append-version="true" />
@@ -9,12 +9,16 @@
     <section>
         <article>
             <div class="container-main first-part">
-                <div class="text">
-                    <h1>@ViewBag.Title</h1>
-                    <p>Something went wrong</p>
+                <div class="title-stuff">
+                    <div class="text">
+                        <h1>@ViewBag.Title</h1>
+                        <p>Something went wrong!</p>
+                    </div>
+
+                    <img src="~/images/heartbroken_no_bg.png" height="600px" width="600px"/>
                 </div>
 
-                <img src="~/images/heartbroken_1_no_bg.png" width="600" height="600" />
+                <div>Go back to <a asp-area="" asp-controller="Home" asp-action="Index">Home</a></div>
             </div>
         </article>
     </section>
