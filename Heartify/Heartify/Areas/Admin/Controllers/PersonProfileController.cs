@@ -1,5 +1,5 @@
 ﻿using Heartify.Core.Contracts;
-using Heartify.Core.Models.Admin;
+using Heartify.Core.Models.PersonProfile;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Heartify.Areas.Admin.Controllers

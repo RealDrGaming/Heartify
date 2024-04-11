@@ -1,26 +1,41 @@
-﻿@{
-    ViewData["Title"] = "Find People";
+﻿@model PersonProfilesModel
+
+@{
+    ViewData["Title"] = "Find your soulmate";
 }
 
-<link rel="stylesheet" href="~/css/styles-base.css" asp-append-version="true" />
-<link rel="stylesheet" href="~/css/find-someone-else-styles.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/multiple-profiles-styles.css" asp-append-version="true" />
 
-<main>
-    <section>
-        <article>
-            <div class="my-container">
-                <img src="~/images/placeholder.png" width="450" height="450">
+<h2 class="text-center">@ViewBag.Title</h2>
 
-                <hr class="inbetween-form">
+<hr />
 
-                <p>First name, last name, aged is looking for a type_of_relationship.</p>
-                <p>Description: Sexuality, hobbies, interests.</p>
+<h4>User Profiles that have been reviewed</h4>
+@if (!Model.ProfilesArray.Any())
+{
+    <h2 text-center>There are no accessable user profiles at the moment!</h2>
+}
 
-                <div class="buttons">
-                    <input type="submit" value="Decline">
-                    <input type="submit" value="Accept">
+<div class="row">
+    @foreach (var profile in Model.ProfilesArray)
+    {
+        <div class="col-md-6">
+            <div class="card mb-5 my-card">
+                <!--<img class="card-img-top" src="IMAGES FOR REVIEW SOURCE FROM MODEL HERE" alt="House Image">-->
+            <div class="card-body text-center">
+                    <h5>@profile.FirstName @profile.LastName, born on @profile.DateOfBirth is looking for a @profile.Relationship.</h5>
+                    <h5>@profile.FirstName is a @profile.Gender and is looking for a @profile.WantedGender</h5>
+                    <h6>"@profile.Description"</h6>
+
+                    <form asp-area="" asp-controller="Dating" asp-action="Like" asp-route-personProfileId="@profile.Id" class="mb-1" method="post">
+                        <button type="submit" class="btn btn-success">Like</button>
+                    </form>
+
+                    <form asp-area="" asp-controller="Dating" asp-action="Decline" asp-route-personProfileId="@profile.Id" method="post">
+                        <button type="submit" class="btn btn-success">Decline</button>
+                    </form>
                 </div>
             </div>
-        </article>
-    </section>
-</main>
+        </div>
+    }
+</div>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "egrzO+W75FGQOs88NIR7idRyfM6AL2ZjxkwOIPTOdO0=",
+  "Hash": "jkvEMhSDAmSfjizvbUu914cCjwhKMX0eGnevpBWNiBw=",
   "Source": "Heartify",
   "BasePath": "_content/Heartify",
   "Mode": "Default",
@@ -1137,23 +1137,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\faqs-styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\XI_B\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\find-someone-else-styles.css",
-      "SourceId": "Heartify",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\XI_B\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\wwwroot\\",
-      "BasePath": "_content/Heartify",
-      "RelativePath": "css/find-someone-else-styles.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\find-someone-else-styles.css"
     },
     {
       "Identity": "C:\\Users\\XI_B\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\find-yourself-styles.css",

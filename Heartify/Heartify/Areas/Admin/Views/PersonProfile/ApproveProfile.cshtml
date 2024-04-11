@@ -24,7 +24,7 @@
                 <!--<img class="card-img-top" src="IMAGES FOR REVIEW SOURCE FROM MODEL HERE" alt="House Image">-->
                 <div class="card-body text-center">
                     <h5>@profile.FirstName @profile.LastName, born on @profile.DateOfBirth is looking for a @profile.Relationship.</h5>
-                    <h5>@profile.FirstName is @profile.Gender and is looking for @profile.WantedGender</h5>
+                    <h5>@profile.FirstName is a @profile.Gender and is looking for a @profile.WantedGender</h5>
                     <h6>"@profile.Description"</h6>
 
                     <form asp-area="Admin" asp-controller="PersonProfile" asp-action="ApproveProfile" asp-route-personProfileId="@profile.Id" class="mb-1" method="post">
