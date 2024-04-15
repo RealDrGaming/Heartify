@@ -13,6 +13,7 @@ namespace Microsoft.Extensions.DependencyInjection
         {
             services.AddScoped<IPersonProfileService, PersonProfileService>();
             services.AddScoped<IStatisticService, StatisticService>();
+            services.AddScoped<IDatingService, DatingService>();
 
             return services;
         }

@@ -9,13 +9,17 @@ namespace Heartify.Controllers
     public class DatingController : BaseController
     {
         private readonly IPersonProfileService personProfile;
+        private readonly IDatingService datingService;
 
-        public DatingController(IPersonProfileService _personProfile)
+        public DatingController(
+            IPersonProfileService _personProfile,
+            IDatingService _datingService)
         {
             personProfile = _personProfile;
+            datingService = _datingService;
         }
 
-        public async Task<IActionResult> FindPerson()
+        public async Task<IActionResult> FindPerson(int personProfileId)
         {
             if (await personProfile.ExistsByIdReviewedAsync(User.Id()) == false)
             {
@@ -26,7 +30,7 @@ namespace Heartify.Controllers
 
             var model = new PersonProfilesModel()
             {
-                ProfilesArray = await personProfile.GetReviewedUsersAsync(),
+                ProfilesArray = await personProfile.GetReviewedUsersAsync().Result.Where(pp => pp.Gender == datingService.GetWantedGender()),
             };
 
             return View(model);
@@ -38,6 +42,16 @@ namespace Heartify.Controllers
         }
 
         public async Task<IActionResult> Decline(int personProfileId)
+        {
+            return View();
+        }
+
+        public async Task<IActionResult> Matches()
+        {
+            return View();
+        }
+
+        public async Task<IActionResult> PendingRequests()
         {
             return View();
         }
