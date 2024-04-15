@@ -1,9 +1,10 @@
 ﻿using Heartify.Core.Models.PersonProfile;
+using HeartifyDating.Infrastructure.Data.Models;
 
 namespace Heartify.Core.Contracts
 {
     public interface IDatingService
     {
-        Task<string> GetWantedGender();
+        Task<IEnumerable<PersonProfileInfoViewModel>> GetNeededProfilesAsync(int personProfileId);
     }
 }

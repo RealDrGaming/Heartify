@@ -30,17 +30,19 @@ namespace Heartify.Controllers
 
             var model = new PersonProfilesModel()
             {
-                ProfilesArray = await personProfile.GetReviewedUsersAsync().Result.Where(pp => pp.Gender == datingService.GetWantedGender()),
+                ProfilesArray = await datingService.GetNeededProfilesAsync(personProfileId),
             };
 
             return View(model);
         }
 
+        [HttpPost]
         public async Task<IActionResult> Like(int personProfileId) 
         {
             return View();
         }
 
+        [HttpPost]
         public async Task<IActionResult> Decline(int personProfileId)
         {
             return View();
