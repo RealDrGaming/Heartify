@@ -16,15 +16,15 @@ namespace Heartify.Core.Services
         }
 
 
-        public async Task<IEnumerable<PersonProfileInfoViewModel>> GetNeededProfilesAsync(int personProfileId)
+        public async Task<IEnumerable<PersonProfileInfoViewModel>> GetNeededProfilesForInspectionAsync(string userId)
         {
-            var wantedGenderProfile = await repository.AllReadOnly<PersonProfile>()
+            var currentUserProfile = await repository.AllReadOnly<PersonProfile>()
                     .Where(pp => pp.IsApproved)
-                    .FirstOrDefaultAsync(pp => pp.Id == personProfileId);
+                    .FirstOrDefaultAsync(pp => pp.DaterId == userId);
 
             var model = await repository.AllReadOnly<PersonProfile>()
                 .Where(pp => pp.IsApproved)
-                .Where(pp => pp.Gender.GenderName == wantedGenderProfile.WantedGender.GenderName)
+                .Where(pp => pp.GenderId == currentUserProfile.WantedGenderId)
                 .Select(pp => new PersonProfileInfoViewModel(
                     pp.Id,
                     pp.FirstName,

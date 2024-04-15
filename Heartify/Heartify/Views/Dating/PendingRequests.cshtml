@@ -7,8 +7,9 @@
 <link rel="stylesheet" href="~/css/multiple-profiles-styles.css" asp-append-version="true" />
 
 <div class="row text-center mt-3 pending-matches">
-    <a class="button-direct col-sm-5 h4" asp-area="" asp-controller="Dating" asp-action="FindPerson">People</a>
-    <a class="button-direct col-sm-5 h4" asp-area="" asp-controller="Dating" asp-action="Matches">Matches</a>
+    <a class="button-direct col-sm-3 h4" asp-area="" asp-controller="Dating" asp-action="PendingRequests">Pending</a>
+    <a class="button-direct col-sm-3 h4" asp-area="" asp-controller="Dating" asp-action="People">People</a>
+    <a class="button-direct col-sm-3 h4" asp-area="" asp-controller="Dating" asp-action="Matches">Matches</a>
 </div>
 
 <h2 class="text-center">@ViewBag.Title</h2>

@@ -19,7 +19,12 @@ namespace Heartify.Controllers
             datingService = _datingService;
         }
 
-        public async Task<IActionResult> FindPerson(int personProfileId)
+        public IActionResult FindPerson()
+        {
+            return View();
+        }
+
+        public async Task<IActionResult> People()
         {
             if (await personProfile.ExistsByIdReviewedAsync(User.Id()) == false)
             {
@@ -30,22 +35,10 @@ namespace Heartify.Controllers
 
             var model = new PersonProfilesModel()
             {
-                ProfilesArray = await datingService.GetNeededProfilesAsync(personProfileId),
+                ProfilesArray = await datingService.GetNeededProfilesForInspectionAsync(User.Id()),
             };
 
             return View(model);
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Like(int personProfileId) 
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Decline(int personProfileId)
-        {
-            return View();
         }
 
         public async Task<IActionResult> Matches()
@@ -54,6 +47,18 @@ namespace Heartify.Controllers
         }
 
         public async Task<IActionResult> PendingRequests()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Like(int personProfileId)
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Decline(int personProfileId)
         {
             return View();
         }

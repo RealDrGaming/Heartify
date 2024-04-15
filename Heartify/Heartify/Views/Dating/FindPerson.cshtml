@@ -1,46 +1,15 @@
-﻿@model PersonProfilesModel
-
-@{
+﻿@{
     ViewData["Title"] = "People hub";
 }
 
 <link rel="stylesheet" href="~/css/multiple-profiles-styles.css" asp-append-version="true" />
 
-<div class="row text-center mt-3 pending-matches">
-    <a class="button-direct col-sm-5 h4" asp-area="" asp-controller="Dating" asp-action="PendingRequests">Pending</a>
-    <a class="button-direct col-sm-5 h4" asp-area="" asp-controller="Dating" asp-action="People">People</a>
-    <a class="button-direct col-sm-5 h4" asp-area="" asp-controller="Dating" asp-action="Matches">Matches</a>
-</div>
-
 <h2 class="text-center">@ViewBag.Title</h2>
 
 <hr />
 
-@if (!Model.ProfilesArray.Any())
-{
-    <h2 text-center>There are no accessable user profiles at the moment!</h2>
-}
-
-<div class="row">
-    @foreach (var profile in Model.ProfilesArray)
-    {
-        <div class="col-md-6">
-            <div class="card mb-5 my-card">
-                <!--<img class="card-img-top" src="IMAGES FOR REVIEW SOURCE FROM MODEL HERE" alt="House Image">-->
-            <div class="card-body text-center">
-                    <h5>@profile.FirstName @profile.LastName, born on @profile.DateOfBirth is looking for a @profile.Relationship.</h5>
-                    <h5>@profile.FirstName is a @profile.Gender and is looking for a @profile.WantedGender</h5>
-                    <h6>"@profile.Description"</h6>
-
-                    <form asp-area="" asp-controller="Dating" asp-action="Like" asp-route-personProfileId="@profile.Id" class="mb-1" method="post">
-                        <button type="submit" class="btn btn-success">Like</button>
-                    </form>
-
-                    <form asp-area="" asp-controller="Dating" asp-action="Decline" asp-route-personProfileId="@profile.Id" method="post">
-                        <button type="submit" class="btn btn-success">Decline</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    }
+<div class="row text-center mt-3 pending-matches">
+    <a class="button-direct col-sm-3 h4" asp-area="" asp-controller="Dating" asp-action="PendingRequests">Pending</a>
+    <a class="button-direct col-sm-3 h4" asp-area="" asp-controller="Dating" asp-action="People">People</a>
+    <a class="button-direct col-sm-3 h4" asp-area="" asp-controller="Dating" asp-action="Matches">Matches</a>
 </div>

@@ -79,5 +79,8 @@ namespace HeartifyDating.Infrastructure.Data.Models
 
         [Comment("Is profile approved by admin")]
         public bool IsApproved { get; set; }
+
+        /*[Comment("Current profile status")]
+        public int Status { get; set; }*/
 	}
 }
