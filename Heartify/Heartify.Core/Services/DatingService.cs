@@ -21,8 +21,8 @@ namespace Heartify.Core.Services
         public async Task<IEnumerable<PersonProfileInfoViewModel>> GetNeededProfilesForInspectionAsync(string userId)
         {
             var currentUserProfile = await repository.AllReadOnly<PersonProfile>()
-                    .Where(pp => pp.IsApproved)
-                    .FirstOrDefaultAsync(pp => pp.DaterId == userId);
+                .Where(pp => pp.IsApproved)
+                .FirstOrDefaultAsync(pp => pp.DaterId == userId);
 
             var likedProfiles = await repository.AllReadOnly<Like>()
                 .Where(like => like.LikerId == userId)
@@ -61,6 +61,7 @@ namespace Heartify.Core.Services
             };
 
             await repository.AddAsync(like);
+            await repository.SaveChangesAsync();
         }
 
         public async Task DeclineProfileAsync(string userId, int personProfileId)
