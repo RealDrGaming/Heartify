@@ -39,7 +39,7 @@ namespace Heartify.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Genders");
+                    b.ToTable("Genders", (string)null);
 
                     b.HasComment("Gender");
 
@@ -78,7 +78,7 @@ namespace Heartify.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Relationships");
+                    b.ToTable("Relationships", (string)null);
 
                     b.HasComment("Relationships users want");
 
@@ -103,6 +103,37 @@ namespace Heartify.Infrastructure.Migrations
                             Id = 4,
                             RelationshipType = "Aromantical Relationship"
                         });
+                });
+
+            modelBuilder.Entity("Heartify.Infrastructure.Data.Models.Like", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("LikedProfileId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("LikerId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int?>("PersonProfileId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("LikedProfileId");
+
+                    b.HasIndex("LikerId");
+
+                    b.HasIndex("PersonProfileId");
+
+                    b.ToTable("Likes", (string)null);
+
+                    b.HasComment("Likes of a Person Profile");
                 });
 
             modelBuilder.Entity("HeartifyDating.Infrastructure.Data.Models.PersonProfile", b =>
@@ -163,7 +194,7 @@ namespace Heartify.Infrastructure.Migrations
 
                     b.HasIndex("WantedGenderId");
 
-                    b.ToTable("PersonProfiles");
+                    b.ToTable("PersonProfiles", (string)null);
 
                     b.HasComment("Person Profiles Table");
                 });
@@ -289,15 +320,15 @@ namespace Heartify.Infrastructure.Migrations
                         {
                             Id = "621feec7-9420-4ba0-8362-1f8b2505b88c",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a5657890-0263-4675-adf2-0a11cdfe729d",
+                            ConcurrencyStamp = "059c617c-371b-4028-9390-5b54236a9ea9",
                             Email = "admin@mail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@MAIL.COM",
                             NormalizedUserName = "ADMIN@MAIL.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEBRxe4myR/KBo+fS5jyXfWsTdPSS9bo7a+x535bEE32NnVHBsT8xyi2ByMC0Nc1SaQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEAkkzGSuSVrOsEG/m6HAEinNcltJ44NUvuclHGdybYc1iuVnW5/Jc8TSdtNJqKReLQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "fded13e4-4f93-4637-9d70-04d81fac541c",
+                            SecurityStamp = "6afb4817-d7b8-4bda-ac9b-ead1180d4678",
                             TwoFactorEnabled = false,
                             UserName = "admin@mail.com"
                         });
@@ -386,6 +417,29 @@ namespace Heartify.Infrastructure.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("Heartify.Infrastructure.Data.Models.Like", b =>
+                {
+                    b.HasOne("HeartifyDating.Infrastructure.Data.Models.PersonProfile", "LikedProfile")
+                        .WithMany()
+                        .HasForeignKey("LikedProfileId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "Liker")
+                        .WithMany()
+                        .HasForeignKey("LikerId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("HeartifyDating.Infrastructure.Data.Models.PersonProfile", null)
+                        .WithMany("Likes")
+                        .HasForeignKey("PersonProfileId");
+
+                    b.Navigation("LikedProfile");
+
+                    b.Navigation("Liker");
                 });
 
             modelBuilder.Entity("HeartifyDating.Infrastructure.Data.Models.PersonProfile", b =>
@@ -482,6 +536,11 @@ namespace Heartify.Infrastructure.Migrations
             modelBuilder.Entity("Heartify.Data.Models.Relationship", b =>
                 {
                     b.Navigation("PersonProfiles");
+                });
+
+            modelBuilder.Entity("HeartifyDating.Infrastructure.Data.Models.PersonProfile", b =>
+                {
+                    b.Navigation("Likes");
                 });
 #pragma warning restore 612, 618
         }

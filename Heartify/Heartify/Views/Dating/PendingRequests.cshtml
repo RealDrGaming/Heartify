@@ -19,7 +19,7 @@
 
 @if (!Model.ProfilesArray.Any())
 {
-    <h2 text-center>There are no accessible user profiles at the moment!</h2>
+    <h2 text-center>You've got no pending requests at the moment!</h2>
 }
 
 <div class="row">
@@ -34,7 +34,7 @@
                     <h6>"@profile.Description"</h6>
 
                     <form asp-area="" asp-controller="Dating" asp-action="Like" asp-route-personProfileId="@profile.Id" class="mb-1" method="post">
-                        <button type="submit" class="btn btn-success">Like</button>
+                        <button type="submit" class="btn btn-success">Like back</button>
                     </form>
 
                     <form asp-area="" asp-controller="Dating" asp-action="Decline" asp-route-personProfileId="@profile.Id" method="post">

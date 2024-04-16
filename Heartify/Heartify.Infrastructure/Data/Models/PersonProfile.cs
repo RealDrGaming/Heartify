@@ -1,4 +1,5 @@
 ﻿using Heartify.Data.Models;
+using Heartify.Infrastructure.Data.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
@@ -80,7 +81,7 @@ namespace HeartifyDating.Infrastructure.Data.Models
         [Comment("Is profile approved by admin")]
         public bool IsApproved { get; set; }
 
-        /*[Comment("Current profile status")]
-        public int Status { get; set; }*/
-	}
+        [Comment("Likes this profile got")]
+        public ICollection<Like> Likes { get; set; } = new List<Like>();
+    }
 }

@@ -1,7 +1,6 @@
 ﻿using Heartify.Core.Contracts;
 using Heartify.Core.Models.PersonProfile;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Security.Claims;
 using static Heartify.Core.Constants.MessageConstants;
 
@@ -45,17 +44,22 @@ namespace Heartify.Controllers
             return View(model);
         }
 
-        public async Task<IActionResult> Matches()
+        public async Task<IActionResult> PendingRequests()
         {
             if (!await IsProfileReviewedAsync())
             {
                 return RedirectToCreateProfile();
             }
 
-            return View();
+            var model = new PersonProfilesModel()
+            {
+                ProfilesArray = await datingService.GetPendingRequests(User.Id()),
+            };
+
+            return View(model);
         }
 
-        public async Task<IActionResult> PendingRequests()
+        public async Task<IActionResult> Matches()
         {
             if (!await IsProfileReviewedAsync())
             {
@@ -68,13 +72,17 @@ namespace Heartify.Controllers
         [HttpPost]
         public async Task<IActionResult> Like(int personProfileId)
         {
-            return View();
+            await datingService.LikeProfileAsync(User.Id(), personProfileId);
+
+            return RedirectToAction(nameof(People));
         }
 
         [HttpPost]
         public async Task<IActionResult> Decline(int personProfileId)
         {
-            return View();
+            await datingService.DeclineProfileAsync(User.Id(), personProfileId);
+
+            return RedirectToAction(nameof(PendingRequests));
         }
 
         private async Task<bool> IsProfileReviewedAsync()
