@@ -1,0 +1,587 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\extensions\\servicecollectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\extensions\\servicecollectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\views\\dating\\pendingrequests.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\views\\dating\\pendingrequests.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Student\\AppData\\Roaming\\Microsoft\\UserSecrets\\aspnet-Heartify-20846FC7-762F-4C8C-9F02-59816ED661EA\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Infrastructure\\Migrations\\20240416083835_SchoolMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Heartify.Infrastructure\\Migrations\\20240416083835_SchoolMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\heartify.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\heartify.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\controllers\\datingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\controllers\\datingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\views\\dating\\people.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\views\\dating\\people.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\views\\dating\\matches.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\views\\dating\\matches.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\views\\dating\\findperson.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\views\\dating\\findperson.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7614E50B-D121-4995-BFEA-BE7110E2FB61}|Heartify.Core\\Heartify.Core.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify.core\\services\\datingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7614E50B-D121-4995-BFEA-BE7110E2FB61}|Heartify.Core\\Heartify.Core.csproj|solutionrelative:heartify.core\\services\\datingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\wwwroot\\css\\styles-base.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\wwwroot\\css\\styles-base.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\wwwroot\\css\\multiple-profiles-styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\wwwroot\\css\\multiple-profiles-styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\wwwroot\\css\\find-person-styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\wwwroot\\css\\find-person-styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\wwwroot\\css\\find-yourself-styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\wwwroot\\css\\find-yourself-styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEE0CDEC-92FB-4C7A-879D-377F1A1F1801}|Heartify.Infrastructure\\Heartify.Infrastructure.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify.infrastructure\\data\\models\\personprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEE0CDEC-92FB-4C7A-879D-377F1A1F1801}|Heartify.Infrastructure\\Heartify.Infrastructure.csproj|solutionrelative:heartify.infrastructure\\data\\models\\personprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7614E50B-D121-4995-BFEA-BE7110E2FB61}|Heartify.Core\\Heartify.Core.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify.core\\contracts\\idatingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7614E50B-D121-4995-BFEA-BE7110E2FB61}|Heartify.Core\\Heartify.Core.csproj|solutionrelative:heartify.core\\contracts\\idatingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7614E50B-D121-4995-BFEA-BE7110E2FB61}|Heartify.Core\\Heartify.Core.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify.core\\services\\personprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7614E50B-D121-4995-BFEA-BE7110E2FB61}|Heartify.Core\\Heartify.Core.csproj|solutionrelative:heartify.core\\services\\personprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7614E50B-D121-4995-BFEA-BE7110E2FB61}|Heartify.Core\\Heartify.Core.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify.core\\contracts\\ipersonprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7614E50B-D121-4995-BFEA-BE7110E2FB61}|Heartify.Core\\Heartify.Core.csproj|solutionrelative:heartify.core\\contracts\\ipersonprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\views\\returner\\personprofileinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\views\\returner\\personprofileinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\areas\\admin\\controllers\\personprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\areas\\admin\\controllers\\personprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\controllers\\personprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\controllers\\personprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\areas\\admin\\views\\personprofile\\allreviewedusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\areas\\admin\\views\\personprofile\\allreviewedusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\areas\\admin\\views\\personprofile\\approveprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\areas\\admin\\views\\personprofile\\approveprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7614E50B-D121-4995-BFEA-BE7110E2FB61}|Heartify.Core\\Heartify.Core.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify.core\\models\\personprofile\\personprofilesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7614E50B-D121-4995-BFEA-BE7110E2FB61}|Heartify.Core\\Heartify.Core.csproj|solutionrelative:heartify.core\\models\\personprofile\\personprofilesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\views\\home\\error401.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\views\\home\\error401.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\views\\home\\error400.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\views\\home\\error400.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify\\views\\home\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}|Heartify\\Heartify.csproj|solutionrelative:heartify\\views\\home\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEE0CDEC-92FB-4C7A-879D-377F1A1F1801}|Heartify.Infrastructure\\Heartify.Infrastructure.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify.infrastructure\\data\\common\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEE0CDEC-92FB-4C7A-879D-377F1A1F1801}|Heartify.Infrastructure\\Heartify.Infrastructure.csproj|solutionrelative:heartify.infrastructure\\data\\common\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEE0CDEC-92FB-4C7A-879D-377F1A1F1801}|Heartify.Infrastructure\\Heartify.Infrastructure.csproj|c:\\users\\student\\documents\\github\\heartify\\heartify\\heartify.infrastructure\\data\\common\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEE0CDEC-92FB-4C7A-879D-377F1A1F1801}|Heartify.Infrastructure\\Heartify.Infrastructure.csproj|solutionrelative:heartify.infrastructure\\data\\common\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20240416083835_SchoolMigration.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Infrastructure\\Migrations\\20240416083835_SchoolMigration.cs",
+              "RelativeDocumentMoniker": "Heartify.Infrastructure\\Migrations\\20240416083835_SchoolMigration.cs",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Infrastructure\\Migrations\\20240416083835_SchoolMigration.cs",
+              "RelativeToolTip": "Heartify.Infrastructure\\Migrations\\20240416083835_SchoolMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T08:38:35.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\appsettings.json",
+              "RelativeDocumentMoniker": "Heartify\\appsettings.json",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\appsettings.json",
+              "RelativeToolTip": "Heartify\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-16T08:32:46.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\Student\\AppData\\Roaming\\Microsoft\\UserSecrets\\aspnet-Heartify-20846FC7-762F-4C8C-9F02-59816ED661EA\\secrets.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\aspnet-Heartify-20846FC7-762F-4C8C-9F02-59816ED661EA\\secrets.json",
+              "ToolTip": "C:\\Users\\Student\\AppData\\Roaming\\Microsoft\\UserSecrets\\aspnet-Heartify-20846FC7-762F-4C8C-9F02-59816ED661EA\\secrets.json",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\aspnet-Heartify-20846FC7-762F-4C8C-9F02-59816ED661EA\\secrets.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-16T08:32:04.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DatingController.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Controllers\\DatingController.cs",
+              "RelativeDocumentMoniker": "Heartify\\Controllers\\DatingController.cs",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Controllers\\DatingController.cs",
+              "RelativeToolTip": "Heartify\\Controllers\\DatingController.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAswFoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T08:31:20.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PendingRequests.cshtml",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Views\\Dating\\PendingRequests.cshtml",
+              "RelativeDocumentMoniker": "Heartify\\Views\\Dating\\PendingRequests.cshtml",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Views\\Dating\\PendingRequests.cshtml",
+              "RelativeToolTip": "Heartify\\Views\\Dating\\PendingRequests.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T08:31:20.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IPersonProfileService.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Core\\Contracts\\IPersonProfileService.cs",
+              "RelativeDocumentMoniker": "Heartify.Core\\Contracts\\IPersonProfileService.cs",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Core\\Contracts\\IPersonProfileService.cs",
+              "RelativeToolTip": "Heartify.Core\\Contracts\\IPersonProfileService.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAA1wCIAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T08:31:20.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Heartify\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Heartify\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABwAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T08:31:20.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "multiple-profiles-styles.css",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\multiple-profiles-styles.css",
+              "RelativeDocumentMoniker": "Heartify\\wwwroot\\css\\multiple-profiles-styles.css",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\multiple-profiles-styles.css",
+              "RelativeToolTip": "Heartify\\wwwroot\\css\\multiple-profiles-styles.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-16T08:31:20.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServiceCollectionExtension.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Extensions\\ServiceCollectionExtension.cs",
+              "RelativeDocumentMoniker": "Heartify\\Extensions\\ServiceCollectionExtension.cs",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Extensions\\ServiceCollectionExtension.cs",
+              "RelativeToolTip": "Heartify\\Extensions\\ServiceCollectionExtension.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T08:31:20.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Heartify.csproj",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.csproj",
+              "RelativeDocumentMoniker": "Heartify\\Heartify.csproj",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.csproj",
+              "RelativeToolTip": "Heartify\\Heartify.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-16T08:31:20.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Matches.cshtml",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Views\\Dating\\Matches.cshtml",
+              "RelativeDocumentMoniker": "Heartify\\Views\\Dating\\Matches.cshtml",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Views\\Dating\\Matches.cshtml",
+              "RelativeToolTip": "Heartify\\Views\\Dating\\Matches.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T08:31:20.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PersonProfileService.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Core\\Services\\PersonProfileService.cs",
+              "RelativeDocumentMoniker": "Heartify.Core\\Services\\PersonProfileService.cs",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Core\\Services\\PersonProfileService.cs",
+              "RelativeToolTip": "Heartify.Core\\Services\\PersonProfileService.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAQwH0AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T08:31:20.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.Production.json",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\appsettings.Production.json",
+              "RelativeDocumentMoniker": "Heartify\\appsettings.Production.json",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\appsettings.Production.json",
+              "RelativeToolTip": "Heartify\\appsettings.Production.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-16T08:31:20.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FindPerson.cshtml",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Views\\Dating\\FindPerson.cshtml",
+              "RelativeDocumentMoniker": "Heartify\\Views\\Dating\\FindPerson.cshtml",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Views\\Dating\\FindPerson.cshtml",
+              "RelativeToolTip": "Heartify\\Views\\Dating\\FindPerson.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T08:31:20.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DatingService.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Core\\Services\\DatingService.cs",
+              "RelativeDocumentMoniker": "Heartify.Core\\Services\\DatingService.cs",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Core\\Services\\DatingService.cs",
+              "RelativeToolTip": "Heartify.Core\\Services\\DatingService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAxwBwAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T08:31:20.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "People.cshtml",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Views\\Dating\\People.cshtml",
+              "RelativeDocumentMoniker": "Heartify\\Views\\Dating\\People.cshtml",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Views\\Dating\\People.cshtml",
+              "RelativeToolTip": "Heartify\\Views\\Dating\\People.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T08:31:20.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "find-person-styles.css",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\find-person-styles.css",
+              "RelativeDocumentMoniker": "Heartify\\wwwroot\\css\\find-person-styles.css",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\find-person-styles.css",
+              "RelativeToolTip": "Heartify\\wwwroot\\css\\find-person-styles.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-16T08:31:20.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "styles-base.css",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\styles-base.css",
+              "RelativeDocumentMoniker": "Heartify\\wwwroot\\css\\styles-base.css",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\styles-base.css",
+              "RelativeToolTip": "Heartify\\wwwroot\\css\\styles-base.css",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAiwK4AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-16T08:31:20.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "find-yourself-styles.css",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\find-yourself-styles.css",
+              "RelativeDocumentMoniker": "Heartify\\wwwroot\\css\\find-yourself-styles.css",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\find-yourself-styles.css",
+              "RelativeToolTip": "Heartify\\wwwroot\\css\\find-yourself-styles.css",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAAAJsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-16T08:31:20.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IDatingService.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Core\\Contracts\\IDatingService.cs",
+              "RelativeDocumentMoniker": "Heartify.Core\\Contracts\\IDatingService.cs",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Core\\Contracts\\IDatingService.cs",
+              "RelativeToolTip": "Heartify.Core\\Contracts\\IDatingService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T08:31:20.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PersonProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Infrastructure\\Data\\Models\\PersonProfile.cs",
+              "RelativeDocumentMoniker": "Heartify.Infrastructure\\Data\\Models\\PersonProfile.cs",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Infrastructure\\Data\\Models\\PersonProfile.cs",
+              "RelativeToolTip": "Heartify.Infrastructure\\Data\\Models\\PersonProfile.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAswFEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T08:31:20.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PersonProfileInfo.cshtml",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Views\\Returner\\PersonProfileInfo.cshtml",
+              "RelativeDocumentMoniker": "Heartify\\Views\\Returner\\PersonProfileInfo.cshtml",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Views\\Returner\\PersonProfileInfo.cshtml",
+              "RelativeToolTip": "Heartify\\Views\\Returner\\PersonProfileInfo.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAACVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T08:31:20.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PersonProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Areas\\Admin\\Controllers\\PersonProfileController.cs",
+              "RelativeDocumentMoniker": "Heartify\\Areas\\Admin\\Controllers\\PersonProfileController.cs",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Areas\\Admin\\Controllers\\PersonProfileController.cs",
+              "RelativeToolTip": "Heartify\\Areas\\Admin\\Controllers\\PersonProfileController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwCIAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T08:31:20.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PersonProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Controllers\\PersonProfileController.cs",
+              "RelativeDocumentMoniker": "Heartify\\Controllers\\PersonProfileController.cs",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Controllers\\PersonProfileController.cs",
+              "RelativeToolTip": "Heartify\\Controllers\\PersonProfileController.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAswKQAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T08:31:20.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Error400.cshtml",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Views\\Home\\Error400.cshtml",
+              "RelativeDocumentMoniker": "Heartify\\Views\\Home\\Error400.cshtml",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Views\\Home\\Error400.cshtml",
+              "RelativeToolTip": "Heartify\\Views\\Home\\Error400.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T08:31:20.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Views\\Home\\Error.cshtml",
+              "RelativeDocumentMoniker": "Heartify\\Views\\Home\\Error.cshtml",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Views\\Home\\Error.cshtml",
+              "RelativeToolTip": "Heartify\\Views\\Home\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T08:31:20.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Error401.cshtml",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Views\\Home\\Error401.cshtml",
+              "RelativeDocumentMoniker": "Heartify\\Views\\Home\\Error401.cshtml",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Views\\Home\\Error401.cshtml",
+              "RelativeToolTip": "Heartify\\Views\\Home\\Error401.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T08:31:20.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ApproveProfile.cshtml",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Areas\\Admin\\Views\\PersonProfile\\ApproveProfile.cshtml",
+              "RelativeDocumentMoniker": "Heartify\\Areas\\Admin\\Views\\PersonProfile\\ApproveProfile.cshtml",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Areas\\Admin\\Views\\PersonProfile\\ApproveProfile.cshtml",
+              "RelativeToolTip": "Heartify\\Areas\\Admin\\Views\\PersonProfile\\ApproveProfile.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T08:31:20.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Heartify\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Heartify\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T08:31:20.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Heartify\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Heartify\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T08:31:20.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AllReviewedUsers.cshtml",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Areas\\Admin\\Views\\PersonProfile\\AllReviewedUsers.cshtml",
+              "RelativeDocumentMoniker": "Heartify\\Areas\\Admin\\Views\\PersonProfile\\AllReviewedUsers.cshtml",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Areas\\Admin\\Views\\PersonProfile\\AllReviewedUsers.cshtml",
+              "RelativeToolTip": "Heartify\\Areas\\Admin\\Views\\PersonProfile\\AllReviewedUsers.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T08:31:20.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PersonProfilesModel.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Core\\Models\\PersonProfile\\PersonProfilesModel.cs",
+              "RelativeDocumentMoniker": "Heartify.Core\\Models\\PersonProfile\\PersonProfilesModel.cs",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Core\\Models\\PersonProfile\\PersonProfilesModel.cs",
+              "RelativeToolTip": "Heartify.Core\\Models\\PersonProfile\\PersonProfilesModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T08:31:20.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Heartify\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Heartify\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T08:31:20.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Infrastructure\\Data\\Common\\Repository.cs",
+              "RelativeDocumentMoniker": "Heartify.Infrastructure\\Data\\Common\\Repository.cs",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Infrastructure\\Data\\Common\\Repository.cs",
+              "RelativeToolTip": "Heartify.Infrastructure\\Data\\Common\\Repository.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAwwCAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T08:31:21.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Infrastructure\\Data\\Common\\IRepository.cs",
+              "RelativeDocumentMoniker": "Heartify.Infrastructure\\Data\\Common\\IRepository.cs",
+              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Infrastructure\\Data\\Common\\IRepository.cs",
+              "RelativeToolTip": "Heartify.Infrastructure\\Data\\Common\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T08:31:21.175Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

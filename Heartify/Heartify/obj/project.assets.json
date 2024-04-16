@@ -11592,19 +11592,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\danko\\.nuget\\packages\\": {}
+    "C:\\Users\\Student\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\Heartify.csproj",
+      "projectUniqueName": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.csproj",
       "projectName": "Heartify",
-      "projectPath": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\Heartify.csproj",
-      "packagesPath": "C:\\Users\\danko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\obj\\",
+      "projectPath": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.csproj",
+      "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\danko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11618,8 +11618,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.Core\\Heartify.Core.csproj": {
-              "projectPath": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.Core\\Heartify.Core.csproj"
+            "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Core\\Heartify.Core.csproj": {
+              "projectPath": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Core\\Heartify.Core.csproj"
             }
           }
         }
@@ -11628,6 +11628,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -11684,7 +11689,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }

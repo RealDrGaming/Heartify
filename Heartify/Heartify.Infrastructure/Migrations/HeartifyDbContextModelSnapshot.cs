@@ -289,15 +289,15 @@ namespace Heartify.Infrastructure.Migrations
                         {
                             Id = "621feec7-9420-4ba0-8362-1f8b2505b88c",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "adfb45dc-c806-4ce0-8135-aadb8ce83e60",
+                            ConcurrencyStamp = "a5657890-0263-4675-adf2-0a11cdfe729d",
                             Email = "admin@mail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@MAIL.COM",
                             NormalizedUserName = "ADMIN@MAIL.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEN9skB0nYWMx2Y00iJhqQW9XU4Do5CWmDmYralOyz5T/2v6KhNnuEMdprfv/z1bzbQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEBRxe4myR/KBo+fS5jyXfWsTdPSS9bo7a+x535bEE32NnVHBsT8xyi2ByMC0Nc1SaQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "2cd2fb76-800e-4b33-8803-a1ad941b7c18",
+                            SecurityStamp = "fded13e4-4f93-4637-9d70-04d81fac541c",
                             TwoFactorEnabled = false,
                             UserName = "admin@mail.com"
                         });

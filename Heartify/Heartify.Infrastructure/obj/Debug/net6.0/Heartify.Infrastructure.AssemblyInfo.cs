@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Heartify.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2ab59769ba65d4e57341faf8225ebebca5523cc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+502b0ee5d38c0159cff139a721ec8e3ea2f2cc61")]
 [assembly: System.Reflection.AssemblyProductAttribute("Heartify.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Heartify.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

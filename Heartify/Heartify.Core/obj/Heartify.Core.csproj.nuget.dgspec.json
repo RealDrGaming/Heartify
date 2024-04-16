@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.Core\\Heartify.Core.csproj": {}
+    "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Core\\Heartify.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.Core\\Heartify.Core.csproj": {
+    "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Core\\Heartify.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.Core\\Heartify.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Core\\Heartify.Core.csproj",
         "projectName": "Heartify.Core",
-        "projectPath": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.Core\\Heartify.Core.csproj",
-        "packagesPath": "C:\\Users\\danko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.Core\\obj\\",
+        "projectPath": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Core\\Heartify.Core.csproj",
+        "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\danko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.Infrastructure\\Heartify.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.Infrastructure\\Heartify.Infrastructure.csproj"
+              "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Infrastructure\\Heartify.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Infrastructure\\Heartify.Infrastructure.csproj"
               }
             }
           }
@@ -38,6 +38,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -59,21 +64,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.Infrastructure\\Heartify.Infrastructure.csproj": {
+    "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Infrastructure\\Heartify.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.Infrastructure\\Heartify.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Infrastructure\\Heartify.Infrastructure.csproj",
         "projectName": "Heartify.Infrastructure",
-        "projectPath": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.Infrastructure\\Heartify.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\danko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Infrastructure\\Heartify.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Student\\Documents\\GitHub\\Heartify\\Heartify\\Heartify.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\danko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -93,6 +98,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -124,7 +134,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }
