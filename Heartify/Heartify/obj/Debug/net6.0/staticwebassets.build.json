@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IBESPyjorRxBETfnkV/M6RIwZVb1bcgPf+LxLJ4lO+M=",
+  "Hash": "MPzYKWrJSNKNalTAv0OrAnPa20dPEsbZTqhWf4wkNwE=",
   "Source": "Heartify",
   "BasePath": "_content/Heartify",
   "Mode": "Default",
@@ -1269,6 +1269,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\faqs-styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\find-person-styles.css",
+      "SourceId": "Heartify",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\",
+      "BasePath": "_content/Heartify",
+      "RelativePath": "css/find-person-styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\find-person-styles.css"
     },
     {
       "Identity": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\css\\find-yourself-styles.css",

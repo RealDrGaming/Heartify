@@ -1,6 +1,7 @@
 ﻿using Heartify.Core.Contracts;
 using Heartify.Core.Models.PersonProfile;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Security.Claims;
 using static Heartify.Core.Constants.MessageConstants;
 
@@ -19,18 +20,21 @@ namespace Heartify.Controllers
             datingService = _datingService;
         }
 
-        public IActionResult FindPerson()
+        public async Task<IActionResult> FindPerson()
         {
+            if (!await IsProfileReviewedAsync())
+            {
+                return RedirectToCreateProfile();
+            }
+
             return View();
         }
 
         public async Task<IActionResult> People()
         {
-            if (await personProfile.ExistsByIdReviewedAsync(User.Id()) == false)
+            if (!await IsProfileReviewedAsync())
             {
-                TempData[UserMessageWarning] = "You cannot see other profiles until yours is reviewed!";
-
-                return RedirectToAction("CreatePersonProfile", "PersonProfile");
+                return RedirectToCreateProfile();
             }
 
             var model = new PersonProfilesModel()
@@ -43,11 +47,21 @@ namespace Heartify.Controllers
 
         public async Task<IActionResult> Matches()
         {
+            if (!await IsProfileReviewedAsync())
+            {
+                return RedirectToCreateProfile();
+            }
+
             return View();
         }
 
         public async Task<IActionResult> PendingRequests()
         {
+            if (!await IsProfileReviewedAsync())
+            {
+                return RedirectToCreateProfile();
+            }
+
             return View();
         }
 
@@ -61,6 +75,17 @@ namespace Heartify.Controllers
         public async Task<IActionResult> Decline(int personProfileId)
         {
             return View();
+        }
+
+        private async Task<bool> IsProfileReviewedAsync()
+        {
+            return await personProfile.ExistsByIdReviewedAsync(User.Id());
+        }
+
+        private IActionResult RedirectToCreateProfile()
+        {
+            TempData[UserMessageWarning] = "You cannot see other profiles until yours is reviewed!";
+            return RedirectToAction("CreatePersonProfile", "PersonProfile");
         }
     }
 }

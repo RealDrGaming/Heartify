@@ -3,6 +3,7 @@ using Heartify.Core.Models.PersonProfile;
 using Heartify.Infrastructure.Data.Common;
 using HeartifyDating.Infrastructure.Data.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace Heartify.Core.Services
 {
@@ -25,6 +26,7 @@ namespace Heartify.Core.Services
             var model = await repository.AllReadOnly<PersonProfile>()
                 .Where(pp => pp.IsApproved)
                 .Where(pp => pp.GenderId == currentUserProfile.WantedGenderId)
+                .Where(pp => pp.DaterId != userId)
                 .Select(pp => new PersonProfileInfoViewModel(
                     pp.Id,
                     pp.FirstName,
@@ -40,7 +42,7 @@ namespace Heartify.Core.Services
                     ))
                 .ToListAsync();
 
-            return model;
+            return model ?? null;
         }
     }
 }
