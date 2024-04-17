@@ -103,7 +103,7 @@ a
   font-size: 3em;
 }
 
-.profile-pic,
+/* .profile-pic,
 .username-pic,
 .random-pic,
 .pictures-section
@@ -153,4 +153,4 @@ input[type='file']
 {
   opacity: 1;
   border: 2px solid var(--background-color);
-}
+} */

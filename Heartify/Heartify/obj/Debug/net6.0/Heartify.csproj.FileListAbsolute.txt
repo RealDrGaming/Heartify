@@ -1315,3 +1315,4 @@ C:\Users\Student\Documents\GitHub\Heartify\Heartify\Heartify\obj\Debug\net6.0\re
 C:\Users\Student\Documents\GitHub\Heartify\Heartify\Heartify\obj\Debug\net6.0\Heartify.pdb
 C:\Users\Student\Documents\GitHub\Heartify\Heartify\Heartify\obj\Debug\net6.0\Heartify.genruntimeconfig.cache
 C:\Users\Student\Documents\GitHub\Heartify\Heartify\Heartify\obj\Debug\net6.0\ref\Heartify.dll
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify\obj\Debug\net6.0\Heartify.MvcApplicationPartsAssemblyInfo.cs
