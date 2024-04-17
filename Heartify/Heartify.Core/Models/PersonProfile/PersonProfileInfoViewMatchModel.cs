@@ -12,9 +12,6 @@ namespace Heartify.Core.Models.PersonProfile
             string gender,
             string wantedGender,
             string relationship,
-            /*byte[] profilePicture,
-            byte[] usernamePicture,
-            byte[] randomPicture,*/
             string description)
         {
             Id = id;
@@ -25,9 +22,6 @@ namespace Heartify.Core.Models.PersonProfile
             WantedGender = wantedGender;
             Relationship = relationship;
             Description = description;
-            /*ProfilePicture = profilePicture;
-            UsernamePicture = usernamePicture;
-            RandomPicture = randomPicture;*/
         }
 
         public int Id { get; set; }
@@ -45,11 +39,5 @@ namespace Heartify.Core.Models.PersonProfile
         public string Relationship { get; set; }
 
         public string Description { get; set; } = string.Empty;
-
-        /*public byte[] ProfilePicture { get; set; }
-
-        public byte[] UsernamePicture { get; set; }
-
-        public byte[] RandomPicture { get; set; }*/
     }
 }

@@ -85,9 +85,6 @@ namespace Heartify.Core.Services
             int wantedGenderId,
             int relationshipId,
             string description,
-            /*byte[] profilePicture,
-            byte[] usernamePicture,
-            byte[] randomPicture,*/
             string daterId)
         {
             await repository.AddAsync(new PersonProfile()
@@ -100,9 +97,6 @@ namespace Heartify.Core.Services
                 RelationshipId = relationshipId,
                 Description = description,
                 DaterId = daterId,
-                /*ProfilePicture = profilePicture,
-				UsernamePicture = usernamePicture,
-				RandomPicture = randomPicture*/ 
 
             });
 
@@ -140,9 +134,6 @@ namespace Heartify.Core.Services
                     pp.Gender.GenderName,
                     pp.WantedGender.GenderName,
                     pp.Relationship.RelationshipType,
-                    /*pp.ProfilePicture,
-                    pp.UsernamePicture,
-                    pp.RandomPicture,*/
                     pp.Description
                     ))
                 .FirstOrDefaultAsync();
@@ -177,9 +168,6 @@ namespace Heartify.Core.Services
                     pp.Gender.GenderName,
                     pp.WantedGender.GenderName,
                     pp.Relationship.RelationshipType,
-                    /*pp.ProfilePicture,
-                    pp.UsernamePicture,
-                    pp.RandomPicture,*/
                     pp.Description
                     ))
                 .ToListAsync();
@@ -197,9 +185,6 @@ namespace Heartify.Core.Services
 					pp.Gender.GenderName,
 					pp.WantedGender.GenderName,
 					pp.Relationship.RelationshipType,
-					/*pp.ProfilePicture,
-                    pp.UsernamePicture,
-                    pp.RandomPicture,*/
 					pp.Description
 					))
 				.ToListAsync();

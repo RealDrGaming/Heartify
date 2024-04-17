@@ -57,15 +57,6 @@ namespace Heartify.Core.Models.PersonProfile
         [StringLength(DescriptionMaxLength, MinimumLength = DescriptionMinLength, ErrorMessage = StringLengthErrorMessage)]
         public string Description { get; set; } = string.Empty;
 
-        /*[Required(ErrorMessage = RequiredErrorMessage)]
-        public byte[] ProfilePicture { get; set; } = null!;
-
-        [Required(ErrorMessage = RequiredErrorMessage)]
-        public byte[] UsernamePicture { get; set; } = null!;
-
-        [Required(ErrorMessage = RequiredErrorMessage)]
-        public byte[] RandomPicture { get; set; } = null!;*/
-
         public IEnumerable<GenderViewModel> Genders { get; set; } = new List<GenderViewModel>();
         public IEnumerable<RelationshipViewModel> Relationships { get; set; } = new List<RelationshipViewModel>();
     }

@@ -26,9 +26,6 @@ namespace Heartify.Core.Contracts
             int genderId,
             int wantedGenderId,
             int relationshipId,
-            /*byte[] profilePicture,
-            byte[] usernamePicture,
-            byte[] randomPicture,*/
             string description,
             string daterId);
 

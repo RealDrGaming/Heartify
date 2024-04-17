@@ -40,9 +40,6 @@ namespace Heartify.Core.Services
                     pp.Gender.GenderName,
                     pp.WantedGender.GenderName,
                     pp.Relationship.RelationshipType,
-                    /*pp.ProfilePicture,
-                    pp.UsernamePicture,
-                    pp.RandomPicture,*/
                     pp.Description
                     ))
                 .ToListAsync();
