@@ -92,7 +92,11 @@ namespace Heartify.Core.Services
                 .Select(l => l.LikedProfileId)
                 .ToListAsync();
 
-            var likedProfilesDaterIds = await repository.AllReadOnly<PersonProfile>().Where(pp => likedProfiles.Contains(pp.Id)).Select(pp => pp.DaterId).ToListAsync();
+            var likedProfilesDaterIds = await repository.AllReadOnly<PersonProfile>()
+                .Where(pp => likedProfiles
+                    .Contains(pp.Id))
+                .Select(pp => pp.DaterId)
+                .ToListAsync();
 
             var pendingRequests = await repository.AllReadOnly<Like>()
                 .Where(l => l.LikedProfileId == currentUserProfile.Id)
@@ -126,7 +130,11 @@ namespace Heartify.Core.Services
                 .Select(l => l.LikedProfileId)
                 .ToListAsync();
 
-            var likedProfilesDaterIds = await repository.AllReadOnly<PersonProfile>().Where(pp => likedProfiles.Contains(pp.Id)).Select(pp => pp.DaterId).ToListAsync();
+            var likedProfilesDaterIds = await repository.AllReadOnly<PersonProfile>()
+                .Where(pp => likedProfiles
+                    .Contains(pp.Id))
+                .Select(pp => pp.DaterId)
+                .ToListAsync();
 
             var matches = await repository.AllReadOnly<Like>()
                 .Where(l => l.LikedProfileId == currentUserProfile.Id)
