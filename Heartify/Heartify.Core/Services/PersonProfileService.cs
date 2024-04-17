@@ -62,6 +62,14 @@ namespace Heartify.Core.Services
             return profile ?? null;
         }
 
+        public async Task<PersonProfile> GetProfileByUserIdAsync(string userId)
+        {
+            var profile = await repository.All<PersonProfile>()
+                .FirstOrDefaultAsync(pp => pp.DaterId == userId);
+
+            return profile ?? null;
+        }
+
         public async Task<PersonProfile> GetProfileByIdAsync(int personProfileId)
         {
             var profile = await repository.All<PersonProfile>()

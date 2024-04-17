@@ -17,7 +17,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
             return services;
         }
-        public static IServiceCollection AddApplicationDbContext(this IServiceCollection services, IConfiguration config)
+        public static IServiceCollection AddheartifyDbContext(this IServiceCollection services, IConfiguration config)
         {
             var connectionString = config.GetConnectionString("DefaultConnection");
             services.AddDbContext<HeartifyDbContext>(options =>

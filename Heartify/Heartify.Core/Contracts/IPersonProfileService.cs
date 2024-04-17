@@ -12,6 +12,8 @@ namespace Heartify.Core.Contracts
 
 		Task<PersonProfile> GetApprovedProfileByIdAsync(int personProfileId);
 
+        Task<PersonProfile> GetProfileByUserIdAsync(string userId);
+
         Task<PersonProfile> GetProfileByIdAsync(int personProfileId);
 
         Task<IEnumerable<GenderViewModel>> AllGenders();

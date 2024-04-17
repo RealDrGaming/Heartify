@@ -9,9 +9,21 @@ namespace Heartify.Infrastructure.Data
 {
     public class HeartifyDbContext : IdentityDbContext
     {
-        public HeartifyDbContext(DbContextOptions<HeartifyDbContext> options)
+        private bool _seedDb;
+
+        public HeartifyDbContext(DbContextOptions<HeartifyDbContext> options, bool seedDb = true)
             : base(options)
         {
+            if (Database.IsRelational())
+            {
+                Database.Migrate();
+            }
+            else
+            {
+                Database.EnsureCreated();
+            }
+
+            _seedDb = seedDb;
         }
 
         public DbSet<PersonProfile> PersonProfiles { get; set; }
@@ -42,9 +54,12 @@ namespace Heartify.Infrastructure.Data
                 .WithMany()
                 .OnDelete(DeleteBehavior.Cascade);
 
-            modelBuilder.ApplyConfiguration(new GenderConfiguration());
-            modelBuilder.ApplyConfiguration(new RelationshipConfiguration());
-            modelBuilder.ApplyConfiguration(new AdminConfiguration());
+            if (_seedDb)
+            {
+                modelBuilder.ApplyConfiguration(new GenderConfiguration());
+                modelBuilder.ApplyConfiguration(new RelationshipConfiguration());
+                modelBuilder.ApplyConfiguration(new AdminConfiguration());
+            }
 
             base.OnModelCreating(modelBuilder);
         }

@@ -5,9 +5,11 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Heartify", "Heartify\Heartify.csproj", "{1D1C86A1-7876-4DAC-AF3D-C0B78F99D213}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heartify.Core", "Heartify.Core\Heartify.Core.csproj", "{7614E50B-D121-4995-BFEA-BE7110E2FB61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Heartify.Core", "Heartify.Core\Heartify.Core.csproj", "{7614E50B-D121-4995-BFEA-BE7110E2FB61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heartify.Infrastructure", "Heartify.Infrastructure\Heartify.Infrastructure.csproj", "{FEE0CDEC-92FB-4C7A-879D-377F1A1F1801}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Heartify.Infrastructure", "Heartify.Infrastructure\Heartify.Infrastructure.csproj", "{FEE0CDEC-92FB-4C7A-879D-377F1A1F1801}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heartify.Tests", "Heartify.Tests\Heartify.Tests.csproj", "{A6A79A82-B8D9-427E-B4B6-EC2A9F658BC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{FEE0CDEC-92FB-4C7A-879D-377F1A1F1801}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEE0CDEC-92FB-4C7A-879D-377F1A1F1801}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEE0CDEC-92FB-4C7A-879D-377F1A1F1801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6A79A82-B8D9-427E-B4B6-EC2A9F658BC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6A79A82-B8D9-427E-B4B6-EC2A9F658BC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6A79A82-B8D9-427E-B4B6-EC2A9F658BC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6A79A82-B8D9-427E-B4B6-EC2A9F658BC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
