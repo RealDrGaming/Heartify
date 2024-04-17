@@ -1,4 +1,4 @@
-﻿@model PersonProfilesModel
+﻿@model ProfileMatchesModel
 
 @{
     ViewData["Title"] = "Matches";
@@ -19,7 +19,7 @@
 
 @if (!Model.ProfilesArray.Any())
 {
-    <h2 text-center>There are no accessible user profiles at the moment!</h2>
+    <h2 text-center>You have no matches at the moment, but don't get discoureged!</h2>
 }
 
 <div class="row">
@@ -32,13 +32,10 @@
                     <h5>@profile.FirstName @profile.LastName, born on @profile.DateOfBirth is looking for a @profile.Relationship.</h5>
                     <h5>@profile.FirstName is a @profile.Gender and is looking for a @profile.WantedGender</h5>
                     <h6>"@profile.Description"</h6>
+                    <h5>You can now reach @profile.FirstName at their email: @profile.Email</h5>
 
-                    <form asp-area="" asp-controller="Dating" asp-action="Like" asp-route-personProfileId="@profile.Id" class="mb-1" method="post">
-                        <button type="submit" class="btn btn-success">Like</button>
-                    </form>
-
-                    <form asp-area="" asp-controller="Dating" asp-action="Decline" asp-route-personProfileId="@profile.Id" method="post">
-                        <button type="submit" class="btn btn-success">Decline</button>
+                    <form asp-area="" asp-controller="Dating" asp-action="RemoveMatch" asp-route-personProfileId="@profile.Id" class="mb-1" method="post">
+                        <button type="submit" class="btn btn-success">Remove match</button>
                     </form>
                 </div>
             </div>

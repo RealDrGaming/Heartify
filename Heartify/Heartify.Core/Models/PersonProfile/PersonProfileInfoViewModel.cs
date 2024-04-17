@@ -2,9 +2,9 @@
 
 namespace Heartify.Core.Models.PersonProfile
 {
-    public class PersonProfileInfoViewModel
+    public class PersonProfileInfoViewMatchModel
     {
-        public PersonProfileInfoViewModel(
+        public PersonProfileInfoViewMatchModel(
             int id,
             string firstName,
             string lastName,
@@ -15,7 +15,8 @@ namespace Heartify.Core.Models.PersonProfile
             /*byte[] profilePicture,
             byte[] usernamePicture,
             byte[] randomPicture,*/
-            string description)
+            string description,
+            string email)
         {
             Id = id;
             FirstName = firstName;
@@ -25,6 +26,7 @@ namespace Heartify.Core.Models.PersonProfile
             WantedGender = wantedGender;
             Relationship = relationship;
             Description = description;
+            Email = email;
             /*ProfilePicture = profilePicture;
             UsernamePicture = usernamePicture;
             RandomPicture = randomPicture;*/
@@ -45,6 +47,8 @@ namespace Heartify.Core.Models.PersonProfile
         public string Relationship { get; set; }
 
         public string Description { get; set; } = string.Empty;
+
+        public string Email { get; set; } = string.Empty;
 
         /*public byte[] ProfilePicture { get; set; }
 

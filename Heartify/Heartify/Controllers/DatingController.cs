@@ -66,7 +66,12 @@ namespace Heartify.Controllers
                 return RedirectToCreateProfile();
             }
 
-            return View();
+            var model = new ProfileMatchesModel()
+            {
+                ProfilesArray = await datingService.GetMatches(User.Id()),
+            };
+
+            return View(model);
         }
 
         [HttpPost]
@@ -78,11 +83,27 @@ namespace Heartify.Controllers
         }
 
         [HttpPost]
+        public async Task<IActionResult> LikeBack(int personProfileId)
+        {
+            await datingService.LikeProfileAsync(User.Id(), personProfileId);
+
+            return RedirectToAction(nameof(PendingRequests));
+        }
+
+        [HttpPost]
         public async Task<IActionResult> Decline(int personProfileId)
         {
             await datingService.DeclineProfileAsync(User.Id(), personProfileId);
 
             return RedirectToAction(nameof(PendingRequests));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> RemoveMatch(int personProfileId)
+        {
+            await datingService.RemoveMatchAsync(User.Id(), personProfileId);
+
+            return RedirectToAction(nameof(Matches));
         }
 
         private async Task<bool> IsProfileReviewedAsync()

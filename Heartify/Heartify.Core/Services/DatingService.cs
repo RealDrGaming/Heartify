@@ -1,11 +1,9 @@
 ﻿using Heartify.Core.Contracts;
 using Heartify.Core.Models.PersonProfile;
-using Heartify.Infrastructure.Constants;
 using Heartify.Infrastructure.Data.Common;
 using Heartify.Infrastructure.Data.Models;
 using HeartifyDating.Infrastructure.Data.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Linq;
 
 namespace Heartify.Core.Services
 {
@@ -54,22 +52,29 @@ namespace Heartify.Core.Services
 
         public async Task LikeProfileAsync(string userId, int personProfileId)
         {
+            var currentUserProfile = await repository.AllReadOnly<PersonProfile>().FirstOrDefaultAsync(pp => pp.DaterId == userId);
+
             var like = new Like
             {
                 LikerId = userId,
                 LikedProfileId = personProfileId
             };
 
-            await repository.AddAsync(like);
-            await repository.SaveChangesAsync();
+            var likeExisting = await repository.AllReadOnly<Like>().FirstOrDefaultAsync(l => l.LikedProfileId == like.LikedProfileId && l.LikerId == like.LikerId);
+
+            if (likeExisting == null)
+            {
+                await repository.AddAsync(like);
+                await repository.SaveChangesAsync();
+            }
         }
 
         public async Task DeclineProfileAsync(string userId, int personProfileId)
         {
-            var currentUserProfile = await repository.AllReadOnly<PersonProfile>().FirstOrDefaultAsync(pp => pp.Id == personProfileId);
-            var currentUser = await repository.AllReadOnly<PersonProfile>().FirstOrDefaultAsync(pp => pp.DaterId == userId);
+            var otherUserProfile = await repository.AllReadOnly<PersonProfile>().FirstOrDefaultAsync(pp => pp.Id == personProfileId);
+            var currentUserProfile = await repository.AllReadOnly<PersonProfile>().FirstOrDefaultAsync(pp => pp.DaterId == userId);
 
-            var likeToRemove = await repository.AllReadOnly<Like>().FirstOrDefaultAsync(l => l.LikedProfileId == currentUser.Id && l.LikerId == currentUserProfile.DaterId);
+            var likeToRemove = await repository.AllReadOnly<Like>().FirstOrDefaultAsync(l => l.LikedProfileId == currentUserProfile.Id && l.LikerId == otherUserProfile.DaterId);
 
             if (likeToRemove != null)
             {
@@ -82,9 +87,17 @@ namespace Heartify.Core.Services
         {
             var currentUserProfile = await repository.AllReadOnly<PersonProfile>().FirstOrDefaultAsync(pp => pp.DaterId == userId);
 
-            var usersWhoLikedCurrentProfile = await repository.AllReadOnly<Like>()
+            var likedProfiles = await repository.AllReadOnly<Like>()
+                .Where(l => l.LikerId == userId)
+                .Select(l => l.LikedProfileId)
+                .ToListAsync();
+
+            var likedProfilesDaterIds = await repository.AllReadOnly<PersonProfile>().Where(pp => likedProfiles.Contains(pp.Id)).Select(pp => pp.DaterId).ToListAsync();
+
+            var pendingRequests = await repository.AllReadOnly<Like>()
                 .Where(l => l.LikedProfileId == currentUserProfile.Id)
                 .Where(l => l.LikerId != userId)
+                .Where(l => !likedProfilesDaterIds.Contains(l.LikerId))
                 .Join(
                     repository.AllReadOnly<PersonProfile>(),
                     like => like.LikerId,
@@ -101,7 +114,58 @@ namespace Heartify.Core.Services
                 ))
                 .ToListAsync();
 
-            return usersWhoLikedCurrentProfile ?? null;
+            return pendingRequests ?? null;
+        }
+
+        public async Task<IEnumerable<PersonProfileInfoViewMatchModel>> GetMatches(string userId)
+        {
+            var currentUserProfile = await repository.AllReadOnly<PersonProfile>().FirstOrDefaultAsync(pp => pp.DaterId == userId);
+
+            var likedProfiles = await repository.AllReadOnly<Like>()
+                .Where(l => l.LikerId == userId)
+                .Select(l => l.LikedProfileId)
+                .ToListAsync();
+
+            var likedProfilesDaterIds = await repository.AllReadOnly<PersonProfile>().Where(pp => likedProfiles.Contains(pp.Id)).Select(pp => pp.DaterId).ToListAsync();
+
+            var matches = await repository.AllReadOnly<Like>()
+                .Where(l => l.LikedProfileId == currentUserProfile.Id)
+                .Where(l => l.LikerId != userId)
+                .Where(l => likedProfilesDaterIds.Contains(l.LikerId))
+                .Join(
+                    repository.AllReadOnly<PersonProfile>(),
+                    like => like.LikerId,
+                    profile => profile.DaterId,
+                    (like, profile) => new PersonProfileInfoViewMatchModel(
+                    profile.Id,
+                    profile.FirstName,
+                    profile.LastName,
+                    profile.DateOfBirth,
+                    profile.Gender.GenderName,
+                    profile.WantedGender.GenderName,
+                    profile.Relationship.RelationshipType,
+                    profile.Description,
+                    profile.Dater.Email
+                ))
+                .ToListAsync();
+
+            return matches ?? null;
+        }
+
+        public async Task RemoveMatchAsync(string userId, int personProfileId)
+        {
+            var otherUserProfile = await repository.AllReadOnly<PersonProfile>().FirstOrDefaultAsync(pp => pp.Id == personProfileId);
+            var currentUserProfile = await repository.AllReadOnly<PersonProfile>().FirstOrDefaultAsync(pp => pp.DaterId == userId);
+
+            var likeToRemove1 = await repository.AllReadOnly<Like>().FirstOrDefaultAsync(l => l.LikedProfileId == currentUserProfile.Id && l.LikerId == otherUserProfile.DaterId);
+            var likeToRemove2 = await repository.AllReadOnly<Like>().FirstOrDefaultAsync(l => l.LikedProfileId == otherUserProfile.Id && l.LikerId == currentUserProfile.DaterId);
+
+            if (likeToRemove1 != null && likeToRemove2 != null)
+            {
+                await repository.DeleteAsync<Like>(likeToRemove1.Id);
+                await repository.DeleteAsync<Like>(likeToRemove2.Id);
+                await repository.SaveChangesAsync();
+            }
         }
     }
 }

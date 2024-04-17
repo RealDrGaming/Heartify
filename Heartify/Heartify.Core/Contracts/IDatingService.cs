@@ -10,6 +10,10 @@ namespace Heartify.Core.Contracts
 
         Task DeclineProfileAsync(string userId, int personProfileId);
 
+        Task RemoveMatchAsync(string userId, int personProfileId);
+
         Task<IEnumerable<PersonProfileInfoViewModel>> GetPendingRequests(string userId);
+
+        Task<IEnumerable<PersonProfileInfoViewMatchModel>> GetMatches(string userId);
     }
 }

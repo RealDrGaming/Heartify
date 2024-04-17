@@ -33,7 +33,7 @@
                     <h5>@profile.FirstName is a @profile.Gender and is looking for a @profile.WantedGender</h5>
                     <h6>"@profile.Description"</h6>
 
-                    <form asp-area="" asp-controller="Dating" asp-action="Like" asp-route-personProfileId="@profile.Id" class="mb-1" method="post">
+                    <form asp-area="" asp-controller="Dating" asp-action="LikeBack" asp-route-personProfileId="@profile.Id" class="mb-1" method="post">
                         <button type="submit" class="btn btn-success">Like back</button>
                     </form>
 
