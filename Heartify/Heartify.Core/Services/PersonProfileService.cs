@@ -165,13 +165,6 @@ namespace Heartify.Core.Services
             return profile ?? null;
         }
 
-        public async Task DeleteAsync(int personProfileId)
-        {
-            await repository.DeleteAsync<PersonProfile>(personProfileId);
-
-            await repository.SaveChangesAsync();
-        }
-
 		public async Task<IEnumerable<PersonProfileInfoViewModel>> GetUserForReviewAsync()
 		{
             return await repository.AllReadOnly<PersonProfile>()
@@ -230,7 +223,7 @@ namespace Heartify.Core.Services
 
             if (profile != null)
             {
-                await repository.DeleteAsync<PersonProfile>(personProfileId);
+                await repository.DeletePersonProfileAsync<PersonProfile>(personProfileId);
 
                 await repository.SaveChangesAsync();
             }

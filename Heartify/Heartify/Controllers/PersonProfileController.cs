@@ -162,7 +162,7 @@ namespace Heartify.Controllers
                 return BadRequest();
             }
 
-            await personProfile.DeleteAsync(id);
+            await personProfile.DeletePersonProfileAsync(id);
 
             TempData[UserMessageError] = "Dating profile deleted!";
 

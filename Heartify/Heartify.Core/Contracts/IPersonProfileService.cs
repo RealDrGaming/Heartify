@@ -38,14 +38,12 @@ namespace Heartify.Core.Contracts
 
         Task<DeleteShowInfoPersonProfileModel> GetDeleteInfoAsync(int id);
 
-        Task DeleteAsync(int personProfileId);
+        Task DeletePersonProfileAsync(int personProfileId);
 
         Task<IEnumerable<PersonProfileInfoViewModel>> GetUserForReviewAsync();
 
 		Task<IEnumerable<PersonProfileInfoViewModel>> GetReviewedUsersAsync();
 
         Task ApprovePersonProfileAsync(int personProfileId);
-
-        Task DeletePersonProfileAsync(int personProfileId);
     }
 }

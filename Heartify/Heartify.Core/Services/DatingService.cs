@@ -78,7 +78,7 @@ namespace Heartify.Core.Services
 
             if (likeToRemove != null)
             {
-                await repository.DeleteAsync<Like>(likeToRemove.Id);
+                await repository.DeletePersonProfileAsync<Like>(likeToRemove.Id);
                 await repository.SaveChangesAsync();
             }
         }
@@ -162,8 +162,8 @@ namespace Heartify.Core.Services
 
             if (likeToRemove1 != null && likeToRemove2 != null)
             {
-                await repository.DeleteAsync<Like>(likeToRemove1.Id);
-                await repository.DeleteAsync<Like>(likeToRemove2.Id);
+                await repository.DeletePersonProfileAsync<Like>(likeToRemove1.Id);
+                await repository.DeletePersonProfileAsync<Like>(likeToRemove2.Id);
                 await repository.SaveChangesAsync();
             }
         }
