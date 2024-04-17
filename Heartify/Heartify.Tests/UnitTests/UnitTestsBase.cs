@@ -5,6 +5,7 @@ using Heartify.Infrastructure.Data.Common;
 using Heartify.Tests.Mocks;
 using HeartifyDating.Infrastructure.Data.Models;
 using System.Globalization;
+using Heartify.Infrastructure.Data.Models;
 using static Heartify.Infrastructure.Constants.ValidationConstants;
 
 namespace Heartify.Tests.UnitTests
@@ -120,6 +121,18 @@ namespace Heartify.Tests.UnitTests
             {
                 Id = 2,
                 RelationshipType = "Open",
+            });
+
+            await repo.AddAsync(new Like()
+            {
+                LikerId = "e0576a86-f7d1-419c-b074-b2c077e44ce9",
+                LikedProfileId = 4
+            });
+
+            await repo.AddAsync(new Like()
+            {
+                LikerId = "ca69b026-ad63-44b0-8264-612c9de7dd02",
+                LikedProfileId = 3
             });
 
             await repo.SaveChangesAsync();
