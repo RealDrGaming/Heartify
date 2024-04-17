@@ -252,6 +252,65 @@ namespace Heartify.Tests
             Assert.That(firstProfileInfo.Description, Is.EqualTo("some ivanka stuff"));
         }
 
+        [Test]
+        public async Task GetReviewedUsers_WorksCorrectly() 
+        {
+            var dbProfileInfoArray = await personProfileService.GetReviewedUsersAsync();
 
+            var firstProfileInfo = dbProfileInfoArray.FirstOrDefault();
+
+            Assert.IsNotNull(dbProfileInfoArray);
+            Assert.IsNotNull(firstProfileInfo);
+
+            Assert.That(dbProfileInfoArray.Count(), Is.EqualTo(3));
+
+            Assert.That(firstProfileInfo.Id, Is.EqualTo(1));
+            Assert.That(firstProfileInfo.FirstName, Is.EqualTo("Yordan"));
+            Assert.That(firstProfileInfo.LastName, Is.EqualTo("Neshev"));
+            Assert.That(firstProfileInfo.DateOfBirth, Is.EqualTo("12-07-2004"));
+            Assert.That(firstProfileInfo.Gender, Is.EqualTo("Male"));
+            Assert.That(firstProfileInfo.WantedGender, Is.EqualTo("Female"));
+            Assert.That(firstProfileInfo.Relationship, Is.EqualTo("Open"));
+            Assert.That(firstProfileInfo.Description, Is.EqualTo("Some discription here"));
+        }
+
+        [Test]
+        public async Task ApprovePersonProfile_WorksCorrectly()
+        {
+            string deletedProfileId = "fc2b4a2e-0a42-4067-bd8b-1c20b4fb4ba1";
+
+            string date = "12-07-2004";
+            DateTime dateOfBirth = DateTime.Now;
+
+            DateTime.TryParseExact(
+                date,
+                DateFormat,
+                CultureInfo.InvariantCulture,
+                DateTimeStyles.None,
+                out dateOfBirth);
+
+            await personProfileService.CreateAsync(
+                "Kondio",
+                "Curentov",
+                dateOfBirth,
+                1,
+                2,
+                3,
+                "waiting for approval",
+                deletedProfileId
+            );
+
+            var dbProfile = await personProfileService.GetProfileByUserIdAsync(deletedProfileId);
+
+            await personProfileService.ApprovePersonProfileAsync(dbProfile.Id);
+
+            Assert.That(dbProfile.IsApproved, Is.EqualTo(true));
+        }
+
+        [Test]
+        public async Task DeletePersonProfile_WorksCorrectly() 
+        {
+
+        }
     }
 }
