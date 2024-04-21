@@ -2,6 +2,6 @@
 {
     public class ProfileMatchesModel
 	{
-		public IEnumerable<PersonProfileInfoViewMatchModel> ProfilesArray { get; set; } = new List<PersonProfileInfoViewMatchModel>();
+		public IEnumerable<PersonProfileInfoViewModel> ProfilesArray { get; set; } = new List<PersonProfileInfoViewModel>();
 	}
 }

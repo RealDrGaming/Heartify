@@ -1,20 +1,15 @@
 ﻿using Heartify.Infrastructure.Constants;
 using System.ComponentModel.DataAnnotations;
 using System.Globalization;
+using static Heartify.Infrastructure.Constants.ValidationConstants;
 
 namespace Heartify.Core.Attributes
 {
     public class IsAdult : ValidationAttribute
     {
-        private readonly DateTime minimumAge = DateTime.Today.AddYears(-18);
+        private readonly DateTime minimumAge = DateTime.Today.AddYears(-MinAge);
 
-        private readonly DateTime maximumAge = DateTime.Today.AddYears(99);
-
-        public IsAdult(int minAge, int maxAge)
-        {
-            minimumAge = DateTime.Today.AddYears(minAge * -1);
-            maximumAge = DateTime.Today.AddYears(maxAge);
-        }
+        private readonly DateTime maximumAge = DateTime.Today.AddYears(MaxAge);
 
         protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
         {

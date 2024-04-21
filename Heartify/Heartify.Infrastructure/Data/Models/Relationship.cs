@@ -2,6 +2,7 @@
 using HeartifyDating.Infrastructure.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
+using static Heartify.Infrastructure.Constants.ValidationConstants;
 
 namespace Heartify.Data.Models
 {
@@ -13,7 +14,7 @@ namespace Heartify.Data.Models
         public int Id { get; set; }
 
         [Required]
-        [StringLength(ValidationConstants.RelationshipTypeMaxLength)]
+        [StringLength(RelationshipTypeMaxLength)]
         [Comment("Relationship Type")]
         public string RelationshipType { get; set; } = string.Empty;
 

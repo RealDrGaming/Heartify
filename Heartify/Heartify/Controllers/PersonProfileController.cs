@@ -80,6 +80,11 @@ namespace Heartify.Controllers
                 return BadRequest();
             }
 
+            if (pp.DaterId != User.Id())
+            {
+                return BadRequest();
+            }
+
             var model = new PersonProfileFormModel()
             {
                 FirstName = pp.FirstName,
@@ -103,6 +108,11 @@ namespace Heartify.Controllers
             var pp = await personProfile.GetApprovedProfileByIdAsync(id);
 
             if (pp == null)
+            {
+                return BadRequest();
+            }
+
+            if (pp.DaterId != User.Id())
             {
                 return BadRequest();
             }
@@ -142,6 +152,11 @@ namespace Heartify.Controllers
                 return BadRequest();
             }
 
+            if (pp.DaterId != User.Id())
+            {
+                return BadRequest();
+            }
+
             var model = await personProfile.GetDeleteInfoAsync(id);
 
             if (model == null)
@@ -158,6 +173,11 @@ namespace Heartify.Controllers
             var pp = await personProfile.GetApprovedProfileByIdAsync(id);
 
             if (pp == null)
+            {
+                return BadRequest();
+            }
+
+            if (pp.DaterId != User.Id())
             {
                 return BadRequest();
             }

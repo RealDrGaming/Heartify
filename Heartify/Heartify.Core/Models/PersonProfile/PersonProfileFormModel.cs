@@ -29,7 +29,7 @@ namespace Heartify.Core.Models.PersonProfile
         /// Person Age
         /// </summary>
         [Required(ErrorMessage = RequiredErrorMessage)]
-        [IsAdult(18, 99, ErrorMessage = "Your age must be between 18 and 99!")]
+        [IsAdult(ErrorMessage = "Your age must be between 18 and 99!")]
         public string DateOfBirth { get; set; } = string.Empty;
 
         /// <summary>

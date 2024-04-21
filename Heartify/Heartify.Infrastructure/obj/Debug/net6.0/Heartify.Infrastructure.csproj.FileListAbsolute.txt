@@ -1,0 +1,13 @@
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Infrastructure\bin\Debug\net6.0\Heartify.Infrastructure.deps.json
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Infrastructure\bin\Debug\net6.0\Heartify.Infrastructure.dll
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Infrastructure\bin\Debug\net6.0\Heartify.Infrastructure.pdb
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Infrastructure\obj\Debug\net6.0\Heartify.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Infrastructure\obj\Debug\net6.0\Heartify.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Infrastructure\obj\Debug\net6.0\Heartify.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Infrastructure\obj\Debug\net6.0\Heartify.Infrastructure.AssemblyInfo.cs
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Infrastructure\obj\Debug\net6.0\Heartify.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Infrastructure\obj\Debug\net6.0\Heartify.Infrastructure.sourcelink.json
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Infrastructure\obj\Debug\net6.0\Heartify.Infrastructure.dll
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Infrastructure\obj\Debug\net6.0\refint\Heartify.Infrastructure.dll
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Infrastructure\obj\Debug\net6.0\Heartify.Infrastructure.pdb
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Infrastructure\obj\Debug\net6.0\ref\Heartify.Infrastructure.dll

@@ -11,17 +11,17 @@
         public const string DateFormat = "dd-MM-yyyy";
 
         /// <summary>
-        /// Maximal First and Last Name length
+        /// Maximal First and Last Name Length
         /// </summary>
         public const int NamesMaxLength = 50;
 
         /// <summary>
-        /// Minimal First and Last Name length
+        /// Minimal First and Last Name Length
         /// </summary>
         public const int NamesMinLength = 3;
 
         /// <summary>
-        /// Maximal First Name length
+        /// Maximal First Name Length
         /// </summary>
         public const int MaxAge = 99;
 
@@ -31,34 +31,44 @@
         public const int MinAge = 18;
 
         /// <summary>
-        /// Maximal Gender length
+        /// Maximal Gender Length
         /// </summary>
         public const int GenderMaxLength = 40;
 
         /// <summary>
-        /// Minimal Gender length
+        /// Minimal Gender Length
         /// </summary>
         public const int GenderMinLength = 10;
 
         /// <summary>
-        /// Maximal Relationship Type length
+        /// Maximal Relationship Type Length
         /// </summary>
         public const int RelationshipTypeMaxLength = 30;
 
         /// <summary>
-        /// Minimal Relationship Type length
+        /// Minimal Relationship Type Length
         /// </summary>
         public const int RelationshipTypeMinLength = 10;
 
         /// <summary>
-        /// Maximal Description length
+        /// Maximal Description Length
         /// </summary>
         public const int DescriptionMaxLength = 150;
 
         /// <summary>
-        /// Minimal Description length
+        /// Minimal Description Length
         /// </summary>
         public const int DescriptionMinLength = 2;
+
+        /// <summary>
+        /// Email of Person Max Length
+        /// </summary>
+        public const int EmailMaxLength = 50;
+
+        /// <summary>
+        /// Email of Person Min Length
+        /// </summary>
+        public const int EmailMinLength = 50;
 
         /// <summary>
         /// Require Error Message Text
@@ -69,10 +79,5 @@
         /// Input is not long enough or is too long
         /// </summary>
         public const string StringLengthErrorMessage = "The {0} field must be between {2} and {1} characters long!";
-
-        /// <summary>
-        /// Age is not in the permitted range
-        /// </summary>
-        public const string AgeIsntInRangeErrorMessage = "{0} must be in the range {1} - {2}";
     }
 }
