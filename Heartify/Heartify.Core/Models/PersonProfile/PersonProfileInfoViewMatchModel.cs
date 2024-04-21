@@ -17,7 +17,8 @@ namespace Heartify.Core.Models.PersonProfile
             string gender,
             string wantedGender,
             string relationship,
-            string description)
+            string description,
+            string email)
         {
             Id = id;
             FirstName = firstName;
@@ -27,6 +28,7 @@ namespace Heartify.Core.Models.PersonProfile
             WantedGender = wantedGender;
             Relationship = relationship;
             Description = description;
+            Email = email;
         }
 
         /// <summary>
