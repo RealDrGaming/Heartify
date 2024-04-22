@@ -1,8 +1,7 @@
-﻿using Heartify.Infrastructure.Constants;
-using HeartifyDating.Infrastructure.Data.Models;
+﻿using HeartifyDating.Infrastructure.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
-using static Heartify.Infrastructure.Constants.ValidationConstants;
+using static Heartify.Infrastructure.Data.Constants.ValidationConstants;
 
 namespace Heartify.Data.Models
 {

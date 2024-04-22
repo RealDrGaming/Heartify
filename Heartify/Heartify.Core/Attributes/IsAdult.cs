@@ -1,7 +1,6 @@
-﻿using Heartify.Infrastructure.Constants;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Globalization;
-using static Heartify.Infrastructure.Constants.ValidationConstants;
+using static Heartify.Infrastructure.Data.Constants.ValidationConstants;
 
 namespace Heartify.Core.Attributes
 {
@@ -17,7 +16,7 @@ namespace Heartify.Core.Attributes
 
             if (DateTime.TryParseExact(
                         value?.ToString(),
-                        ValidationConstants.DateFormat,
+                        DateFormat,
                         CultureInfo.InvariantCulture,
                         DateTimeStyles.None,
                         out birthDate))

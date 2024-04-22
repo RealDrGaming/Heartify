@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using static Heartify.Core.Constants.AdministratorConstants;
+using static Heartify.Infrastructure.Data.Constants.AdministratorConstants;
 
 namespace Heartify.Areas.Admin.Controllers
 {

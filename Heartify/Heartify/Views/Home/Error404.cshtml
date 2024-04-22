@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Error 404!";
+}
+
+<link rel="stylesheet" href="~/css/styles-base.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/error-styles.css" asp-append-version="true" />
+
+<main>
+    <section>
+        <article>
+            <div class="container-main first-part">
+                <div class="title-stuff">
+                    <div class="text">
+                        <h1>@ViewBag.Title</h1>
+                        <p>Page was not found, but love can still be!</p>
+                    </div>
+
+                    <img src="~/images/heartbroken_no_bg.png" height="600px" width="600px" />
+                </div>
+                
+                <div>Go back to <a asp-area="" asp-controller="Home" asp-action="Index">Home</a></div>
+            </div>
+        </article>
+    </section>
+</main>

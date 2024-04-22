@@ -2,11 +2,12 @@
 using Heartify.Core.Models.Gender;
 using Heartify.Core.Models.PersonProfile;
 using Heartify.Core.Models.Relationship;
-using Heartify.Infrastructure.Constants;
+using Heartify.Infrastructure.Data.Constants;
 using Microsoft.AspNetCore.Mvc;
 using System.Globalization;
 using System.Security.Claims;
 using static Heartify.Core.Constants.MessageConstants;
+using static Heartify.Infrastructure.Data.Constants.ValidationConstants;
 
 namespace Heartify.Controllers
 {
@@ -89,11 +90,12 @@ namespace Heartify.Controllers
             {
                 FirstName = pp.FirstName,
                 LastName = pp.LastName,
-                DateOfBirth = pp.DateOfBirth.ToString(ValidationConstants.DateFormat),
+                DateOfBirth = pp.DateOfBirth.ToString(DateFormat),
                 GenderId = pp.GenderId,
                 WantedGenderId = pp.WantedGenderId,
                 RelationshipId = pp.RelationshipId,
-                Description = pp.Description
+                Description = pp.Description,
+                
             };
 
             model.Genders = await GetGenders();

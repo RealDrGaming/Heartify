@@ -1,0 +1,7 @@
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Tests\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Tests\obj\Debug\net6.0\Heartify.Tests.csproj.AssemblyReference.cache
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Tests\obj\Debug\net6.0\Heartify.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Tests\obj\Debug\net6.0\Heartify.Tests.AssemblyInfoInputs.cache
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Tests\obj\Debug\net6.0\Heartify.Tests.AssemblyInfo.cs
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Tests\obj\Debug\net6.0\Heartify.Tests.csproj.CoreCompileInputs.cache
+C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Tests\obj\Debug\net6.0\Heartify.Tests.sourcelink.json

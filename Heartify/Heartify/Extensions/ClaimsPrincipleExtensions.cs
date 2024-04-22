@@ -1,4 +1,4 @@
-﻿using static Heartify.Core.Constants.AdministratorConstants;
+﻿using static Heartify.Infrastructure.Data.Constants.AdministratorConstants;
 
 namespace System.Security.Claims
 {

@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using static Heartify.Infrastructure.Constants.ValidationConstants;
+using static Heartify.Infrastructure.Data.Constants.ValidationConstants;
 
 
 namespace HeartifyDating.Infrastructure.Data.Models

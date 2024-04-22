@@ -116,6 +116,7 @@ namespace Heartify.Core.Services
                 personProfile.WantedGenderId = model.WantedGenderId;
                 personProfile.RelationshipId = model.RelationshipId;
                 personProfile.Description = model.Description;
+                personProfile.IsApproved = false;
             }
 
             await repository.SaveChangesAsync();

@@ -41,6 +41,16 @@ namespace Heartify.Controllers
                 return View("Error401");
             }
 
+            if (statusCode == 404)
+            {
+                return View("Error404");
+            }
+
+            if (statusCode == 500)
+            {
+                return View("Error500");
+            }
+
             return View();
         }
     }

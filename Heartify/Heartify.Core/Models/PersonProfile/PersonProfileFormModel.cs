@@ -2,7 +2,7 @@
 using Heartify.Core.Models.Gender;
 using Heartify.Core.Models.Relationship;
 using System.ComponentModel.DataAnnotations;
-using static Heartify.Infrastructure.Constants.ValidationConstants;
+using static Heartify.Infrastructure.Data.Constants.ValidationConstants;
 
 namespace Heartify.Core.Models.PersonProfile
 {

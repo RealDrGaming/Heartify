@@ -1,6 +1,5 @@
-﻿using Heartify.Infrastructure.Constants;
-using System.ComponentModel.DataAnnotations;
-using static Heartify.Infrastructure.Constants.ValidationConstants;
+﻿using System.ComponentModel.DataAnnotations;
+using static Heartify.Infrastructure.Data.Constants.ValidationConstants;
 
 namespace Heartify.Core.Models.PersonProfile
 {

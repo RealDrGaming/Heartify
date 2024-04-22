@@ -1,7 +1,7 @@
-﻿using Heartify.Data.Models;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using static Heartify.Infrastructure.Data.Constants.AdministratorConstants;
 
 namespace Heartify.Infrastructure.Data.Configuration
 {
@@ -21,13 +21,13 @@ namespace Heartify.Infrastructure.Data.Configuration
             AdminUser = new IdentityUser
             {
                 Id = "621feec7-9420-4ba0-8362-1f8b2505b88c",
-                UserName = "admin@mail.com",
-                NormalizedUserName = "ADMIN@MAIL.COM",
-                Email = "admin@mail.com",
-                NormalizedEmail = "ADMIN@MAIL.COM"
+                UserName = AdminEmail,
+                NormalizedUserName = AdminEmail.ToUpper(),
+                Email = AdminEmail,
+                NormalizedEmail = AdminEmail.ToUpper(),
             };
 
-            AdminUser.PasswordHash = hasher.HashPassword(AdminUser, "admin123");
+            AdminUser.PasswordHash = hasher.HashPassword(AdminUser, AdminPassword);
         }
 
         public void Configure(EntityTypeBuilder<IdentityUser> builder)

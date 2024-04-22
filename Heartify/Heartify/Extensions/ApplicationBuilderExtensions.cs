@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using static Heartify.Core.Constants.AdministratorConstants;
+using static Heartify.Infrastructure.Data.Constants.AdministratorConstants;
 
 namespace Microsoft.AspNetCore.Builder
 {
@@ -17,7 +17,7 @@ namespace Microsoft.AspNetCore.Builder
 
                 await roleManager.CreateAsync(role);
 
-                var admin = await userManager.FindByEmailAsync("admin@mail.com");
+                var admin = await userManager.FindByEmailAsync(AdminEmail);
 
                 if (admin != null)
                 {
