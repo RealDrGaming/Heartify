@@ -5,175 +5,180 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Heartify
 build_property.RootNamespace = Heartify
-build_property.ProjectDir = C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify
+build_property.MSBuildProjectDirectory = C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Areas/Admin/Views/Home/Dashboard.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Areas/Admin/Views/Home/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Areas/Admin/Views/PersonProfile/AllReviewedUsers.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Areas/Admin/Views/PersonProfile/AllReviewedUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGVyc29uUHJvZmlsZVxBbGxSZXZpZXdlZFVzZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Areas/Admin/Views/PersonProfile/ApproveProfile.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Areas/Admin/Views/PersonProfile/ApproveProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGVyc29uUHJvZmlsZVxBcHByb3ZlUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Areas/Admin/Views/Shared/Components/AdminMenuComponent/Default.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Areas/Admin/Views/Shared/Components/AdminMenuComponent/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcQWRtaW5NZW51Q29tcG9uZW50XERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Areas/Admin/Views/Shared/_AdminPartial.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Areas/Admin/Views/Shared/_AdminPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9BZG1pblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Areas/Admin/Views/_ViewImports.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Areas/Admin/Views/_ViewStart.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/Dating/FindPerson.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Dating/FindPerson.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0aW5nXEZpbmRQZXJzb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/Dating/Matches.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Dating/Matches.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0aW5nXE1hdGNoZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/Dating/PendingRequests.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Dating/PendingRequests.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0aW5nXFBlbmRpbmdSZXF1ZXN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/Dating/People.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Dating/People.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0aW5nXFBlb3BsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/Home/Error.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Dating/_PersonMenuPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0aW5nXF9QZXJzb25NZW51UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Home/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/Home/Error400.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Home/Error400.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvcjQwMC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/Home/Error401.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Home/Error401.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvcjQwMS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/Home/Error404.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Home/Error404.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvcjQwNC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/Home/Error500.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Home/Error500.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvcjUwMC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/Home/FAQs.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Home/FAQs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGQVFzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/Home/Index.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/Home/Terms.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Home/Terms.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZXJtcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/PersonProfile/CreatePersonProfile.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/PersonProfile/CreatePersonProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uUHJvZmlsZVxDcmVhdGVQZXJzb25Qcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/PersonProfile/DeletePersonProfile.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/PersonProfile/DeletePersonProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uUHJvZmlsZVxEZWxldGVQZXJzb25Qcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/PersonProfile/EditPersonProfile.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/PersonProfile/EditPersonProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uUHJvZmlsZVxFZGl0UGVyc29uUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/Returner/PersonProfileInfo.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/PersonProfile/_PersonProfileFormPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uUHJvZmlsZVxfUGVyc29uUHJvZmlsZUZvcm1QYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Returner/PersonProfileInfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV0dXJuZXJcUGVyc29uUHJvZmlsZUluZm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/Returner/WaitingForReview.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Returner/WaitingForReview.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV0dXJuZXJcV2FpdGluZ0ZvclJldmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/Shared/Components/MainMenuComponent/Default.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Shared/Components/MainMenuComponent/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWFpbk1lbnVDb21wb25lbnRcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/Shared/Error.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/Shared/_TempDataPartial.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Shared/_TempDataPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UZW1wRGF0YVBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/_ViewImports.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/_ViewStart.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Areas/Admin/Views/Shared/_Layout.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-3ieybwcgv4
 
-[C:/Users/danko/Documents/GitHub/Heartify/Heartify/Heartify/Heartify/Views/Shared/_Layout.cshtml]
+[C:/Users/XI_B/Documents/GitHub/Heartify/Heartify/Heartify/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ud47vb4k3w

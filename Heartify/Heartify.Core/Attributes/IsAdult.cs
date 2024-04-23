@@ -7,7 +7,6 @@ namespace Heartify.Core.Attributes
     public class IsAdult : ValidationAttribute
     {
         private readonly DateTime minimumAge = DateTime.Today.AddYears(-MinAge);
-
         private readonly DateTime maximumAge = DateTime.Today.AddYears(MaxAge);
 
         protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
@@ -22,8 +21,8 @@ namespace Heartify.Core.Attributes
                         out birthDate))
             {
                 if (value != null &&
-                birthDate.Date <= minimumAge.Date &&
-                birthDate.Date <= maximumAge.Date)
+                    birthDate.Date <= minimumAge.Date &&
+                    birthDate.Date <= maximumAge.Date)
                 {
                     return ValidationResult.Success;
                 }

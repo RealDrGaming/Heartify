@@ -1,0 +1,73 @@
+﻿@using Heartify.Core.Models.PersonProfile
+
+@model PersonProfileFormModel
+
+<hr class="inbetween-form">
+
+<label asp-for="@Model.FirstName">First Name</label>
+<input asp-for="@Model.FirstName" aria-required="true" />
+<span asp-validation-for="@Model.FirstName" class="text-danger"></span>
+
+<hr class="inbetween-form">
+
+<label asp-for="@Model.LastName">Last Name</label>
+<input asp-for="@Model.LastName" aria-required="true" />
+<span asp-validation-for="@Model.LastName" class="text-danger"></span>
+
+<hr class="inbetween-form">
+
+<label asp-for="@Model.DateOfBirth">Date of Birth</label>
+<input asp-for="@Model.DateOfBirth" placeholder="dd-MM-yyyy" />
+<span asp-validation-for="@Model.DateOfBirth" class="text-danger"></span>
+
+<hr class="inbetween-form">
+
+<label asp-for="@Model.GenderId">I am a</label>
+<div class="my-sexuality">
+    <select asp-for="@Model.GenderId" aria-required="true">
+        <option disabled selected value="">Select Gender...</option>
+        @foreach (var gender in Model.Genders)
+        {
+            <option value="@gender.Id">@gender.GenderName</option>
+        }
+    </select>
+</div>
+<span asp-validation-for="@Model.GenderId" class="text-danger"></span>
+
+<hr class="inbetween-form">
+
+<label asp-for="@Model.WantedGenderId">I am looking for</label>
+<div class="looking-for-sexuality">
+    <select asp-for="@Model.WantedGenderId" aria-required="true">
+        <option disabled selected value="">Select Wanted Gender...</option>
+        @foreach (var wantedGender in Model.Genders)
+        {
+            <option value="@wantedGender.Id">@wantedGender.GenderName</option>
+        }
+    </select>
+</div>
+<span asp-validation-for="@Model.WantedGenderId" class="text-danger"></span>
+
+<hr class="inbetween-form">
+
+<label asp-for="@Model.RelationshipId">I am looking for a(n)</label>
+<div class="looking-for-relationship">
+    <select asp-for="@Model.RelationshipId" aria-required="true">
+        <option disabled selected value="">Select Wanted Relationship Type...</option>
+        @foreach (var relationship in Model.Relationships)
+        {
+            <option value="@relationship.Id">@relationship.RelationshipType</option>
+        }
+    </select>
+</div>
+<span asp-validation-for="@Model.RelationshipId" class="text-danger"></span>
+
+<hr class="inbetween-form">
+
+<label asp-for="@Model.Description">More Info</label>
+<textarea asp-for="@Model.Description" aria-required="true"></textarea>
+<span asp-validation-for="@Model.Description" class="text-danger"></span>
+
+<hr class="inbetween-form">
+
+<p><span class="emergency-mark">!</span> Catfishing is strictly forbidden and will be punished accordingly.</p>

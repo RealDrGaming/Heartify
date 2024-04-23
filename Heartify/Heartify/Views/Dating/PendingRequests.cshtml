@@ -1,25 +1,14 @@
 ﻿@model PersonProfilesModel
 
 @{
-    ViewData["Title"] = "Your pending requests";
+    ViewData["Title"] = "Pending requests";
 }
 
-<link rel="stylesheet" href="~/css/styles-base.css" asp-append-version="true" />
-<link rel="stylesheet" href="~/css/multiple-profiles-styles.css" asp-append-version="true" />
-
-<div class="row text-center mt-3 pending-matches">
-    <a class="button-direct col-sm-3 h4" asp-area="" asp-controller="Dating" asp-action="PendingRequests">Pending</a>
-    <a class="button-direct col-sm-3 h4" asp-area="" asp-controller="Dating" asp-action="People">People</a>
-    <a class="button-direct col-sm-3 h4" asp-area="" asp-controller="Dating" asp-action="Matches">Matches</a>
-</div>
-
-<h2 class="text-center">@ViewBag.Title</h2>
-
-<hr />
+<partial name="_PersonMenuPartial" />
 
 @if (!Model.ProfilesArray.Any())
 {
-    <h2 text-center>You've got no pending requests at the moment!</h2>
+    <h3 text-center>You have no requests pending for you at the moment!</h3>
 }
 
 <div class="row">

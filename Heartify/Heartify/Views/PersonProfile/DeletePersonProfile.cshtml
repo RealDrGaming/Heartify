@@ -19,10 +19,10 @@
 					<h5>(You can always create another one)</h5>
 				</div>
 				<div class="buttons">
-					<form asp-action="DeletePersonProfileConfirmed" method="post">
+					<form asp-area="" asp-controller="PersonProfile" asp-action="DeletePersonProfileConfirmed" method="post">
 						<input type="hidden" asp-for="@Model.Id" />
 						<button type="submit" class="btn btn-danger">Confirm Delete</button>
-						<a asp-action="CreatePersonProfile" class="button">Cancel</a>
+						<a asp-area="" asp-controller="PersonProfile" asp-action="CreatePersonProfile" class="button">Cancel</a>
 					</form>
 				</div>
 			</div>
