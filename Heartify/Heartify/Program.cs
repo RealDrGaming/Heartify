@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddheartifyDbContext(builder.Configuration);
+builder.Services.AddHeartifyDbContext(builder.Configuration);
 builder.Services.AddApplicationIdentity(builder.Configuration);
 
 builder.Services.AddControllersWithViews(options =>
