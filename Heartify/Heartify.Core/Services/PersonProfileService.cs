@@ -107,19 +107,28 @@ namespace Heartify.Core.Services
         {
             var personProfile = await repository.GetByIdAsync<PersonProfile>(personProfileId);
 
-            if (personProfile != null)
+            if (personProfile != null && personProfile.IsApproved)
             {
-                personProfile.FirstName = model.FirstName;
-                personProfile.LastName = model.LastName;
-                personProfile.DateOfBirth = dateOfBirth;
-                personProfile.GenderId = model.GenderId;
-                personProfile.WantedGenderId = model.WantedGenderId;
-                personProfile.RelationshipId = model.RelationshipId;
-                personProfile.Description = model.Description;
-                personProfile.IsApproved = false;
-            }
+                if (personProfile.FirstName != model.FirstName ||
+                    personProfile.LastName != model.LastName ||
+                    personProfile.DateOfBirth != dateOfBirth ||
+                    personProfile.GenderId != model.GenderId ||
+                    personProfile.WantedGenderId != model.WantedGenderId ||
+                    personProfile.RelationshipId != model.RelationshipId ||
+                    personProfile.Description != model.Description)
+                {
+                    personProfile.FirstName = model.FirstName;
+                    personProfile.LastName = model.LastName;
+                    personProfile.DateOfBirth = dateOfBirth;
+                    personProfile.GenderId = model.GenderId;
+                    personProfile.WantedGenderId = model.WantedGenderId;
+                    personProfile.RelationshipId = model.RelationshipId;
+                    personProfile.Description = model.Description;
+                    personProfile.IsApproved = false;
 
-            await repository.SaveChangesAsync();
+                    await repository.SaveChangesAsync();
+                }
+            }
         }
 
         public async Task<PersonProfileInfoViewModel> GetPersonProfileInfoAsync(string userId)
