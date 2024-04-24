@@ -69,10 +69,6 @@
       "PackagePath": "staticwebassets\\images\\4couples_no_bg.png"
     },
     {
-      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\images\\couple2_bg.jpg",
-      "PackagePath": "staticwebassets\\images\\couple2_bg.jpg"
-    },
-    {
       "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\images\\couple2_no_bg.png",
       "PackagePath": "staticwebassets\\images\\couple2_no_bg.png"
     },
@@ -85,16 +81,8 @@
       "PackagePath": "staticwebassets\\images\\hand_holding.jpg"
     },
     {
-      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\images\\heartbroken_2_no_bg.png",
-      "PackagePath": "staticwebassets\\images\\heartbroken_2_no_bg.png"
-    },
-    {
       "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\images\\heartbroken_no_bg.png",
       "PackagePath": "staticwebassets\\images\\heartbroken_no_bg.png"
-    },
-    {
-      "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\images\\hearts_bg.jpg",
-      "PackagePath": "staticwebassets\\images\\hearts_bg.jpg"
     },
     {
       "Id": "C:\\Users\\danko\\Documents\\GitHub\\Heartify\\Heartify\\Heartify\\Heartify\\wwwroot\\images\\hearts_no_bg.png",

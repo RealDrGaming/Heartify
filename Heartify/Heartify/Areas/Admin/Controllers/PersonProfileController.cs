@@ -6,19 +6,20 @@ namespace Heartify.Areas.Admin.Controllers
 {
     public class PersonProfileController : AdminBaseController
     {
-        private readonly IPersonProfileService personProfileService;
+        private readonly IAdminService adminService;
+        private readonly ISharedService sharedService;
 
-
-        public PersonProfileController(IPersonProfileService _personProfileService)
+        public PersonProfileController(IAdminService _adminService, ISharedService sharedService)
         {
-            personProfileService = _personProfileService;
+            adminService = _adminService;
+            this.sharedService = sharedService;
         }
 
         public async Task<IActionResult> AllReviewedUsers()
         {
             var model = new PersonProfilesModel()
             {
-                ProfilesArray = await personProfileService.GetReviewedUsersAsync(),
+                ProfilesArray = await adminService.GetReviewedUsersAsync(),
             };
 
             return View(model);
@@ -29,7 +30,7 @@ namespace Heartify.Areas.Admin.Controllers
         {
             var model = new PersonProfilesModel()
             {
-                ProfilesArray = await personProfileService.GetUserForReviewAsync(),
+                ProfilesArray = await adminService.GetUserForReviewAsync(),
             };
 
             return View(model);
@@ -38,7 +39,7 @@ namespace Heartify.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> ApproveProfile(int personProfileId)
         {
-            await personProfileService.ApprovePersonProfileAsync(personProfileId);
+            await adminService.ApprovePersonProfileAsync(personProfileId);
 
             return RedirectToAction(nameof(ApproveProfile));
         }
@@ -46,7 +47,7 @@ namespace Heartify.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Delete(int personProfileId)
         {
-            await personProfileService.DeletePersonProfileAsync(personProfileId);
+            await sharedService.DeletePersonProfileAsync(personProfileId);
 
             return RedirectToAction(nameof(ApproveProfile));
         }

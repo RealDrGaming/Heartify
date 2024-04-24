@@ -7,15 +7,17 @@ namespace Heartify.Controllers
     public class ReturnerController : BaseController
     {
         private readonly IPersonProfileService personProfile;
+        private readonly ISharedService sharedService;
 
-        public ReturnerController(IPersonProfileService _personProfile)
+        public ReturnerController(IPersonProfileService _personProfile, ISharedService _sharedService)
         {
             personProfile = _personProfile;
+            sharedService = _sharedService;
         }
 
         public async Task<IActionResult> PersonProfileInfo()
 		{
-            if (await personProfile.ExistsByIdReviewedAsync(User.Id()))
+            if (await sharedService.ExistsByIdApprovedAsync(User.Id()))
             {
                 var model = await personProfile.GetPersonProfileInfoAsync(User.Id());
                 

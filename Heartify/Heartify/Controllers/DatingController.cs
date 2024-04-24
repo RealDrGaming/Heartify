@@ -8,15 +8,13 @@ namespace Heartify.Controllers
 {
     public class DatingController : BaseController
     {
-        private readonly IPersonProfileService personProfile;
         private readonly IDatingService datingService;
+        private readonly ISharedService sharedService;
 
-        public DatingController(
-            IPersonProfileService _personProfile,
-            IDatingService _datingService)
+        public DatingController(IDatingService _datingService, ISharedService _sharedService)
         {
-            personProfile = _personProfile;
             datingService = _datingService;
+            sharedService = _sharedService;
         }
 
         public async Task<IActionResult> FindPerson()
@@ -108,12 +106,13 @@ namespace Heartify.Controllers
 
         private async Task<bool> IsProfileReviewedAsync()
         {
-            return await personProfile.ExistsByIdReviewedAsync(User.Id());
+            return await sharedService.ExistsByIdApprovedAsync(User.Id());
         }
 
         private IActionResult RedirectToCreateProfile()
         {
             TempData[UserMessageWarning] = "You cannot see other profiles until yours is reviewed!";
+
             return RedirectToAction("CreatePersonProfile", "PersonProfile");
         }
     }

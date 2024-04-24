@@ -14,16 +14,18 @@ namespace Heartify.Controllers
     public class PersonProfileController : BaseController
     {
         private readonly IPersonProfileService personProfile;
+        private readonly ISharedService sharedService;
 
-        public PersonProfileController(IPersonProfileService _personProfile)
+        public PersonProfileController(IPersonProfileService _personProfile, ISharedService _sharedService)
         {
             personProfile = _personProfile;
+            sharedService = _sharedService;
         }
 
         [HttpGet]
 		public async Task<IActionResult> CreatePersonProfile()
 		{
-            if (await personProfile.ExistsByIdAllAsync(User.Id()))
+            if (await sharedService.ExistsByIdAllAsync(User.Id()))
             {
 				return RedirectToAction("PersonProfileInfo", "Returner");
             }
@@ -72,9 +74,9 @@ namespace Heartify.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> EditPersonProfile(int id)
+        public async Task<IActionResult> EditPersonProfile(int personProfileId)
         {
-            var pp = await personProfile.GetApprovedProfileByIdAsync(id);
+            var pp = await personProfile.GetProfileByIdApprovedAsync(personProfileId);
 
             if (pp == null)
             {
@@ -105,9 +107,9 @@ namespace Heartify.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> EditPersonProfile(PersonProfileFormModel model, int id)
+        public async Task<IActionResult> EditPersonProfile(PersonProfileFormModel model, int personProfileId)
         {
-            var pp = await personProfile.GetApprovedProfileByIdAsync(id);
+            var pp = await personProfile.GetProfileByIdApprovedAsync(personProfileId);
 
             if (pp == null)
             {
@@ -139,15 +141,15 @@ namespace Heartify.Controllers
                 return View(model);
             }
 
-            await personProfile.EditAsync(id, model, dateOfBirth);
+            await personProfile.EditAsync(personProfileId, model, dateOfBirth);
 
             return RedirectToAction(nameof(CreatePersonProfile));
         }
 
         [HttpGet]
-        public async Task<IActionResult> DeletePersonProfile(int id)
+        public async Task<IActionResult> DeletePersonProfile(int personProfileId)
         {
-            var pp = await personProfile.GetApprovedProfileByIdAsync(id);
+            var pp = await personProfile.GetProfileByIdApprovedAsync(personProfileId);
 
             if (pp == null)
             {
@@ -159,7 +161,7 @@ namespace Heartify.Controllers
                 return BadRequest();
             }
 
-            var model = await personProfile.GetDeleteInfoAsync(id);
+            var model = await personProfile.GetDeleteInfoAsync(personProfileId);
 
             if (model == null)
             {
@@ -170,9 +172,9 @@ namespace Heartify.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> DeletePersonProfileConfirmed(int id)
+        public async Task<IActionResult> DeletePersonProfileConfirmed(int personProfileId)
         {
-            var pp = await personProfile.GetApprovedProfileByIdAsync(id);
+            var pp = await personProfile.GetProfileByIdApprovedAsync(personProfileId);
 
             if (pp == null)
             {
@@ -184,7 +186,7 @@ namespace Heartify.Controllers
                 return BadRequest();
             }
 
-            await personProfile.DeletePersonProfileAsync(id);
+            await sharedService.DeletePersonProfileAsync(personProfileId);
 
             TempData[UserMessageError] = "Dating profile deleted!";
 

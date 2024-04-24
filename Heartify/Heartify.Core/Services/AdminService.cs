@@ -53,7 +53,7 @@ namespace Heartify.Core.Services
         {
             var profile = await repository.GetByIdAsync<PersonProfile>(personProfileId);
 
-            if (profile != null)
+            if (profile != null && !profile.IsApproved)
             {
                 profile.IsApproved = true;
 

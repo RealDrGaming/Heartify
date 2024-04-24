@@ -1,10 +1,8 @@
 ﻿using Heartify.Core.Contracts;
 using Heartify.Core.Models.PersonProfile;
 using Heartify.Core.Services;
-using Heartify.Infrastructure.Constants;
-using HeartifyDating.Infrastructure.Data.Models;
 using System.Globalization;
-using static Heartify.Infrastructure.Constants.ValidationConstants;
+using static Heartify.Infrastructure.Data.Constants.ValidationConstants;
 
 namespace Heartify.Tests.UnitTests
 {
@@ -12,24 +10,14 @@ namespace Heartify.Tests.UnitTests
     public class PersonProfileServiceTests : UnitTestsBase
     {
         private IPersonProfileService personProfileService;
+        private ITestingService testingService;
 
         [OneTimeSetUp]
         public void SetUp()
         {
             personProfileService = new PersonProfileService(repository);
+            testingService = new TestingService(repository);
         }
-
-        /*[Test]
-        public async Task ExistsByIdReviewed_WorksCorrectly() 
-        {
-            var doesExist = await personProfileService.ExistsByIdReviewedAsync();
-        }
-
-        [Test]
-        public async Task ExistsByIdAll_WorksCorrectly()
-        {
-
-        }*/
 
         [Test]
         public async Task AllGenders_WorksCorrectly()
@@ -50,8 +38,8 @@ namespace Heartify.Tests.UnitTests
         [Test]
         public async Task GetProfileIdReviewed_WorksCorrectly()
         {
-            var dbProfile1 = await personProfileService.GetApprovedProfileByIdAsync(1);
-            var dbProfile2 = await personProfileService.GetApprovedProfileByIdAsync(2);
+            var dbProfile1 = await personProfileService.GetProfileByIdApprovedAsync(1);
+            var dbProfile2 = await personProfileService.GetProfileByIdApprovedAsync(2);
 
             Assert.IsNotNull(dbProfile1);
             Assert.That(dbProfile1.Id, Is.EqualTo(1));
@@ -65,8 +53,8 @@ namespace Heartify.Tests.UnitTests
             string someUserId = "ace41288-92e4-4b16-8880-808450fe5388";
             string someNotApprovedUserId = "c78567dd-3be3-41be-ba30-eee36aa7c9db";
 
-            var dbProfile1 = await personProfileService.GetProfileByUserIdAsync(someUserId);
-            var dbProfile2 = await personProfileService.GetProfileByUserIdAsync(someNotApprovedUserId);
+            var dbProfile1 = await testingService.GetProfileByUserIdAsync(someUserId);
+            var dbProfile2 = await testingService.GetProfileByUserIdAsync(someNotApprovedUserId);
 
             Assert.IsNotNull(dbProfile1);
             Assert.That(dbProfile1.Id, Is.EqualTo(1));
@@ -78,8 +66,8 @@ namespace Heartify.Tests.UnitTests
         [Test]
         public async Task GetProfileByIdAll_WorksCorrectly()
         {
-            var dbProfile1 = await personProfileService.GetProfileByIdAsync(1);
-            var dbProfile2 = await personProfileService.GetProfileByIdAsync(2);
+            var dbProfile1 = await testingService.GetProfileByIdAsync(1);
+            var dbProfile2 = await testingService.GetProfileByIdAsync(2);
 
             Assert.IsNotNull(dbProfile1);
             Assert.That(dbProfile1.Id, Is.EqualTo(1));
@@ -112,7 +100,7 @@ namespace Heartify.Tests.UnitTests
                 "d66a46bb-6a2b-47ed-8c20-06a538f2a250"
             );
 
-            var dbProfile = await personProfileService.GetProfileByUserIdAsync("d66a46bb-6a2b-47ed-8c20-06a538f2a250");
+            var dbProfile = await testingService.GetProfileByUserIdAsync("d66a46bb-6a2b-47ed-8c20-06a538f2a250");
 
             Assert.IsNotNull(dbProfile);
 
@@ -151,7 +139,7 @@ namespace Heartify.Tests.UnitTests
 
             await personProfileService.EditAsync(3, model, dateOfBirth);
 
-            var dbProfile = await personProfileService.GetProfileByIdAsync(3);
+            var dbProfile = await testingService.GetProfileByIdAsync(3);
 
             Assert.IsNotNull(dbProfile);
 
@@ -192,118 +180,6 @@ namespace Heartify.Tests.UnitTests
 
             Assert.That(dbProfileInfo.Id, Is.EqualTo(4));
             Assert.That(dbProfileInfo.FirstName, Is.EqualTo("Iztrit"));
-        }
-
-        [Test]
-        public async Task Delete_WorksCorrectly()
-        {
-            string deletedProfileId = "200d3874-0ef0-455d-aad8-7989f7b0ebeb";
-
-            string date = "12-07-2004";
-            DateTime dateOfBirth = DateTime.Now;
-
-            DateTime.TryParseExact(
-                date,
-                DateFormat,
-                CultureInfo.InvariantCulture,
-                DateTimeStyles.None,
-                out dateOfBirth);
-
-            await personProfileService.CreateAsync(
-                "Monio",
-                "Qvorov",
-                dateOfBirth,
-                2,
-                2,
-                2,
-                "finna get deleted anyway",
-                deletedProfileId
-            );
-
-            var dbProfile = await personProfileService.GetProfileByUserIdAsync(deletedProfileId);
-
-            await personProfileService.DeletePersonProfileAsync(dbProfile.Id);
-
-            var dbProfileInfo = await personProfileService.ExistsByIdAllAsync(deletedProfileId);
-
-            Assert.That(dbProfileInfo, Is.EqualTo(false));
-        }
-
-        [Test]
-        public async Task GetUserForReview_WorksCorrectly()
-        {
-            var dbProfileInfoArray = await personProfileService.GetUserForReviewAsync();
-
-            var firstProfileInfo = dbProfileInfoArray.FirstOrDefault();
-
-            Assert.IsNotNull(dbProfileInfoArray);
-            Assert.IsNotNull(firstProfileInfo);
-
-            Assert.That(dbProfileInfoArray.Count(), Is.EqualTo(1));
-
-            Assert.That(firstProfileInfo.Id, Is.EqualTo(2));
-            Assert.That(firstProfileInfo.FirstName, Is.EqualTo("Ivanka"));
-            Assert.That(firstProfileInfo.LastName, Is.EqualTo("Sotirova"));
-            Assert.That(firstProfileInfo.DateOfBirth, Is.EqualTo("12-07-2004"));
-            Assert.That(firstProfileInfo.Gender, Is.EqualTo("Female"));
-            Assert.That(firstProfileInfo.WantedGender, Is.EqualTo("Male"));
-            Assert.That(firstProfileInfo.Relationship, Is.EqualTo("Love"));
-            Assert.That(firstProfileInfo.Description, Is.EqualTo("some ivanka stuff"));
-        }
-
-        [Test]
-        public async Task GetReviewedUsers_WorksCorrectly()
-        {
-            var dbProfileInfoArray = await personProfileService.GetReviewedUsersAsync();
-
-            var firstProfileInfo = dbProfileInfoArray.FirstOrDefault();
-
-            Assert.IsNotNull(dbProfileInfoArray);
-            Assert.IsNotNull(firstProfileInfo);
-
-            Assert.That(dbProfileInfoArray.Count(), Is.EqualTo(3));
-
-            Assert.That(firstProfileInfo.Id, Is.EqualTo(1));
-            Assert.That(firstProfileInfo.FirstName, Is.EqualTo("Yordan"));
-            Assert.That(firstProfileInfo.LastName, Is.EqualTo("Neshev"));
-            Assert.That(firstProfileInfo.DateOfBirth, Is.EqualTo("12-07-2004"));
-            Assert.That(firstProfileInfo.Gender, Is.EqualTo("Male"));
-            Assert.That(firstProfileInfo.WantedGender, Is.EqualTo("Female"));
-            Assert.That(firstProfileInfo.Relationship, Is.EqualTo("Open"));
-            Assert.That(firstProfileInfo.Description, Is.EqualTo("Some discription here"));
-        }
-
-        [Test]
-        public async Task ApprovePersonProfile_WorksCorrectly()
-        {
-            string deletedProfileId = "fc2b4a2e-0a42-4067-bd8b-1c20b4fb4ba1";
-
-            string date = "12-07-2004";
-            DateTime dateOfBirth = DateTime.Now;
-
-            DateTime.TryParseExact(
-                date,
-                DateFormat,
-                CultureInfo.InvariantCulture,
-                DateTimeStyles.None,
-                out dateOfBirth);
-
-            await personProfileService.CreateAsync(
-                "Kondio",
-                "Curentov",
-                dateOfBirth,
-                1,
-                2,
-                3,
-                "waiting for approval",
-                deletedProfileId
-            );
-
-            var dbProfile = await personProfileService.GetProfileByUserIdAsync(deletedProfileId);
-
-            await personProfileService.ApprovePersonProfileAsync(dbProfile.Id);
-
-            Assert.That(dbProfile.IsApproved, Is.EqualTo(true));
         }
     }
 }

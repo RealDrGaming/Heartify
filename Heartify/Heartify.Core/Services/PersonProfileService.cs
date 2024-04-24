@@ -17,43 +17,8 @@ namespace Heartify.Core.Services
         {
             repository = _repository;
         }
-
-        public async Task<bool> ExistsByIdReviewedAsync(string userId)
-        {
-            return await repository.AllReadOnly<PersonProfile>()
-                .Where(pp => pp.IsApproved)
-                .AnyAsync(pp => pp.DaterId == userId);
-        }
-
-		public async Task<bool> ExistsByIdAllAsync(string userId)
-		{
-			return await repository.AllReadOnly<PersonProfile>()
-				.AnyAsync(pp => pp.DaterId == userId);
-		}
-
-		public async Task<IEnumerable<GenderViewModel>> AllGenders()
-        {
-            return await repository.AllReadOnly<Gender>()
-                .Select(g => new GenderViewModel
-                {
-                    Id = g.Id,
-                    GenderName = g.GenderName
-                })
-                .ToListAsync();
-        }
-
-        public async Task<IEnumerable<RelationshipViewModel>> AllRelationships()
-        {
-            return await repository.AllReadOnly<Relationship>()
-                .Select(r => new RelationshipViewModel
-                {
-                    Id = r.Id,
-                    RelationshipType = r.RelationshipType
-                })
-                .ToListAsync();
-        }
-
-        public async Task<PersonProfile> GetApprovedProfileByIdAsync(int personProfileId)
+        
+        public async Task<PersonProfile> GetProfileByIdApprovedAsync(int personProfileId)
         {
             var profile = await repository.GetByIdAsync<PersonProfile>(personProfileId);
 
@@ -63,21 +28,6 @@ namespace Heartify.Core.Services
             }
 
             return null;
-        }
-
-        public async Task<PersonProfile> GetProfileByIdAsync(int personProfileId)
-        {
-            var profile = await repository.GetByIdAsync<PersonProfile>(personProfileId);
-
-            return profile ?? null;
-        }
-
-        public async Task<PersonProfile> GetProfileByUserIdAsync(string userId)
-        {
-            var profile = await repository.All<PersonProfile>()
-                .FirstOrDefaultAsync(pp => pp.DaterId == userId);
-
-            return profile ?? null;
         }
 
         public async Task CreateAsync(string firstName,
@@ -153,31 +103,44 @@ namespace Heartify.Core.Services
             return profile ?? null;
         }
 
-        public async Task<DeleteShowInfoPersonProfileModel> GetDeleteInfoAsync(int id)
+        public async Task<DeleteShowInfoPersonProfileModel> GetDeleteInfoAsync(int personProfileId)
         {
-            var profile =  await repository.AllReadOnly<PersonProfile>()
-                .Where(dpp => dpp.Id == id)
-				.Where(pp => pp.IsApproved)
-				.Select(dpp => new DeleteShowInfoPersonProfileModel()
-                {
-                    Id = dpp.Id,
-                    FirstName = dpp.FirstName,
-                })
-                .FirstOrDefaultAsync();
+            var profile = await repository.GetByIdAsync<PersonProfile>(personProfileId);
 
-            return profile ?? null;
+            if (profile.IsApproved && profile != null)
+            {
+                var profileDeletionModel = new DeleteShowInfoPersonProfileModel()
+                {
+                    Id = profile.Id,
+                    FirstName = profile.FirstName,
+                };
+
+                return profileDeletionModel;
+            }
+
+            return null;
         }
 
-        public async Task DeletePersonProfileAsync(int personProfileId)
+        public async Task<IEnumerable<GenderViewModel>> AllGenders()
         {
-            var profile = await GetProfileByIdAsync(personProfileId);
+            return await repository.AllReadOnly<Gender>()
+                .Select(g => new GenderViewModel
+                {
+                    Id = g.Id,
+                    GenderName = g.GenderName
+                })
+                .ToListAsync();
+        }
 
-            if (profile != null)
-            {
-                await repository.DeletePersonProfileAsync<PersonProfile>(personProfileId);
-
-                await repository.SaveChangesAsync();
-            }
+        public async Task<IEnumerable<RelationshipViewModel>> AllRelationships()
+        {
+            return await repository.AllReadOnly<Relationship>()
+                .Select(r => new RelationshipViewModel
+                {
+                    Id = r.Id,
+                    RelationshipType = r.RelationshipType
+                })
+                .ToListAsync();
         }
     }
 }

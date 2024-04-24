@@ -1,12 +1,11 @@
 ﻿using Heartify.Data.Models;
-using Heartify.Infrastructure.Constants;
 using Heartify.Infrastructure.Data;
 using Heartify.Infrastructure.Data.Common;
 using Heartify.Tests.Mocks;
 using HeartifyDating.Infrastructure.Data.Models;
 using System.Globalization;
 using Heartify.Infrastructure.Data.Models;
-using static Heartify.Infrastructure.Constants.ValidationConstants;
+using static Heartify.Infrastructure.Data.Constants.ValidationConstants;
 
 namespace Heartify.Tests.UnitTests
 {
