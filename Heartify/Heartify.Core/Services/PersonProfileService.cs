@@ -55,9 +55,19 @@ namespace Heartify.Core.Services
 
         public async Task<PersonProfile> GetApprovedProfileByIdAsync(int personProfileId)
         {
-                var profile = await repository.All<PersonProfile>()
-				    .Where(pp => pp.IsApproved)
-					.FirstOrDefaultAsync(pp => pp.Id == personProfileId);
+            var profile = await repository.GetByIdAsync<PersonProfile>(personProfileId);
+
+            if (profile != null && profile.IsApproved)
+            {
+                return profile;
+            }
+
+            return null;
+        }
+
+        public async Task<PersonProfile> GetProfileByIdAsync(int personProfileId)
+        {
+            var profile = await repository.GetByIdAsync<PersonProfile>(personProfileId);
 
             return profile ?? null;
         }
@@ -66,14 +76,6 @@ namespace Heartify.Core.Services
         {
             var profile = await repository.All<PersonProfile>()
                 .FirstOrDefaultAsync(pp => pp.DaterId == userId);
-
-            return profile ?? null;
-        }
-
-        public async Task<PersonProfile> GetProfileByIdAsync(int personProfileId)
-        {
-            var profile = await repository.All<PersonProfile>()
-                .FirstOrDefaultAsync(pp => pp.Id == personProfileId);
 
             return profile ?? null;
         }
@@ -164,52 +166,6 @@ namespace Heartify.Core.Services
                 .FirstOrDefaultAsync();
 
             return profile ?? null;
-        }
-
-		public async Task<IEnumerable<PersonProfileInfoViewModel>> GetUserForReviewAsync()
-		{
-            return await repository.AllReadOnly<PersonProfile>()
-                .Where(pp => !pp.IsApproved)
-                .Select(pp => new PersonProfileInfoViewModel(
-                    pp.Id,
-                    pp.FirstName,
-                    pp.LastName,
-                    pp.DateOfBirth,
-                    pp.Gender.GenderName,
-                    pp.WantedGender.GenderName,
-                    pp.Relationship.RelationshipType,
-                    pp.Description
-                    ))
-                .ToListAsync();
-		}
-
-		public async Task<IEnumerable<PersonProfileInfoViewModel>> GetReviewedUsersAsync()
-		{
-			return await repository.AllReadOnly<PersonProfile>()
-                .Where(pp => pp.IsApproved)
-                .Select(pp => new PersonProfileInfoViewModel(
-					pp.Id,
-					pp.FirstName,
-					pp.LastName,
-					pp.DateOfBirth,
-					pp.Gender.GenderName,
-					pp.WantedGender.GenderName,
-					pp.Relationship.RelationshipType,
-					pp.Description
-					))
-				.ToListAsync();
-		}
-
-        public async Task ApprovePersonProfileAsync(int personProfileId)
-        {
-            var profile = await GetProfileByIdAsync(personProfileId);
-
-            if (profile != null) 
-            {
-                profile.IsApproved = true;
-
-                await repository.SaveChangesAsync();
-            }
         }
 
         public async Task DeletePersonProfileAsync(int personProfileId)
