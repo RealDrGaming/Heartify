@@ -1,8 +1,4 @@
-﻿header nav ul :nth-child(2) .button-direct a {
-    color: var(--text-hover-color);
-}
-
-.my-container {
+﻿.my-container {
     padding: 16px;
     width: 60%;
     margin: 4em auto 4em auto;

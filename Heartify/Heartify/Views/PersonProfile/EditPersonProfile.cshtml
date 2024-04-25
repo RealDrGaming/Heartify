@@ -12,11 +12,11 @@
 <main>
     <section>
         <article>
-            <form asp-action="EditPersonProfile" method="post">
+            <form asp-area="" asp-controller="PersonProfile" asp-action="EditPersonProfile" method="post">
                 <div class="my-container">
                     <div class="creation-text">
                         <h1>@ViewBag.Title</h1>
-                        <p>Please fill in this form to create your dating profile.</p>
+                        <p>Edit your profile to your liking.</p>
                     </div>
 
                     <partial name="_PersonProfileFormPartial" />

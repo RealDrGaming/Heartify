@@ -74,9 +74,9 @@ namespace Heartify.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> EditPersonProfile(int personProfileId)
+        public async Task<IActionResult> EditPersonProfile(int id)
         {
-            var pp = await personProfile.GetProfileByIdApprovedAsync(personProfileId);
+            var pp = await personProfile.GetProfileByIdApprovedAsync(id);
 
             if (pp == null)
             {
@@ -107,9 +107,9 @@ namespace Heartify.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> EditPersonProfile(PersonProfileFormModel model, int personProfileId)
+        public async Task<IActionResult> EditPersonProfile(PersonProfileFormModel model, int id)
         {
-            var pp = await personProfile.GetProfileByIdApprovedAsync(personProfileId);
+            var pp = await personProfile.GetProfileByIdApprovedAsync(id);
 
             if (pp == null)
             {
@@ -141,15 +141,15 @@ namespace Heartify.Controllers
                 return View(model);
             }
 
-            await personProfile.EditAsync(personProfileId, model, dateOfBirth);
+            await personProfile.EditAsync(id, model, dateOfBirth);
 
             return RedirectToAction(nameof(CreatePersonProfile));
         }
 
         [HttpGet]
-        public async Task<IActionResult> DeletePersonProfile(int personProfileId)
+        public async Task<IActionResult> DeletePersonProfile(int id)
         {
-            var pp = await personProfile.GetProfileByIdApprovedAsync(personProfileId);
+            var pp = await personProfile.GetProfileByIdApprovedAsync(id);
 
             if (pp == null)
             {
@@ -161,7 +161,7 @@ namespace Heartify.Controllers
                 return BadRequest();
             }
 
-            var model = await personProfile.GetDeleteInfoAsync(personProfileId);
+            var model = await personProfile.GetDeleteInfoAsync(id);
 
             if (model == null)
             {
@@ -172,9 +172,9 @@ namespace Heartify.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> DeletePersonProfileConfirmed(int personProfileId)
+        public async Task<IActionResult> DeletePersonProfileConfirmed(int id)
         {
-            var pp = await personProfile.GetProfileByIdApprovedAsync(personProfileId);
+            var pp = await personProfile.GetProfileByIdApprovedAsync(id);
 
             if (pp == null)
             {
@@ -186,7 +186,7 @@ namespace Heartify.Controllers
                 return BadRequest();
             }
 
-            await sharedService.DeletePersonProfileAsync(personProfileId);
+            await sharedService.DeletePersonProfileAsync(id);
 
             TempData[UserMessageError] = "Dating profile deleted!";
 
