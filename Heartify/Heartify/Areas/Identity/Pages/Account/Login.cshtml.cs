@@ -117,7 +117,7 @@ namespace Heartify.Areas.Identity.Pages.Account
 
                     _logger.LogInformation("User logged in.");
 
-                    if (await _userManager.IsInRoleAsync(user, AdminRole)) 
+                    if (await _userManager.IsInRoleAsync(user, AdminRole))
                     {
                         return RedirectToAction("Dashboard", "Home", new { area = "Admin" });
                     }

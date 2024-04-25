@@ -5,7 +5,7 @@ namespace Microsoft.AspNetCore.Builder
 {
     public static class ApplicationBuilderExtensions
     {
-        public static async Task CreateAdminRoleAsync(this IApplicationBuilder app) 
+        public static async Task CreateAdminRoleAsync(this IApplicationBuilder app)
         {
             using var scope = app.ApplicationServices.CreateScope();
             var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();

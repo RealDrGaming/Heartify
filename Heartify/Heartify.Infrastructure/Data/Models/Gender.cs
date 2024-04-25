@@ -17,6 +17,6 @@ namespace Heartify.Data.Models
         [Comment("Gender Name")]
         public string GenderName { get; set; } = string.Empty;
 
-        public IList<PersonProfile> PersonProfiles { get; set;} = new List<PersonProfile>();
+        public IList<PersonProfile> PersonProfiles { get; set; } = new List<PersonProfile>();
     }
 }

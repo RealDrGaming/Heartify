@@ -23,12 +23,12 @@ namespace Heartify.Infrastructure.Data.Configuration
                 Id = 3,
                 RelationshipType = "Asexual Relationship"
             },
-			new Relationship()
-			{
-				Id = 4,
+            new Relationship()
+            {
+                Id = 4,
                 RelationshipType = "Aromantical Relationship"
             },
-		};
+        };
 
         public void Configure(EntityTypeBuilder<Relationship> builder)
         {

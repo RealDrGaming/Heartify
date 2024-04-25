@@ -16,7 +16,7 @@ namespace Heartify.Tests.UnitTests
         }
 
         [Test]
-        public async Task Total_ShouldReturnCorrectCounts() 
+        public async Task Total_ShouldReturnCorrectCounts()
         {
             var result = await statisticService.TotalAsync();
 

@@ -4,7 +4,7 @@ namespace Heartify.Areas.Admin.Controllers
 {
     public class HomeController : AdminBaseController
     {
-        public IActionResult Dashboard() 
+        public IActionResult Dashboard()
         {
             return View();
         }

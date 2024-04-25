@@ -1,5 +1,4 @@
-﻿using Heartify.Infrastructure.Data.Common;
-using HeartifyDating.Infrastructure.Data.Models;
+﻿using HeartifyDating.Infrastructure.Data.Models;
 
 namespace Heartify.Core.Contracts
 {

@@ -9,7 +9,7 @@ namespace Heartify.Infrastructure.Data.Configuration
     {
         public IdentityUser AdminUser { get; set; }
 
-        public AdminConfiguration() 
+        public AdminConfiguration()
         {
             SeedAdmin();
         }

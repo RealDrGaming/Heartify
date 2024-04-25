@@ -15,7 +15,7 @@ namespace Heartify.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetStatistic() 
+        public async Task<IActionResult> GetStatistic()
         {
             var result = await statisticService.TotalAsync();
 

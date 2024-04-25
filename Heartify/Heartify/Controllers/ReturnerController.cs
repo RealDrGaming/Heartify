@@ -16,20 +16,20 @@ namespace Heartify.Controllers
         }
 
         public async Task<IActionResult> PersonProfileInfo()
-		{
+        {
             if (await sharedService.ExistsByIdApprovedAsync(User.Id()))
             {
                 var model = await personProfile.GetPersonProfileInfoAsync(User.Id());
-                
-				return View(model);
-			}
+
+                return View(model);
+            }
 
             return RedirectToAction(nameof(WaitingForReview));
-		}
+        }
 
-        public IActionResult WaitingForReview() 
+        public IActionResult WaitingForReview()
         {
-			return View();
-		}
-	}
+            return View();
+        }
+    }
 }

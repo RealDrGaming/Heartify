@@ -5,7 +5,7 @@ namespace Heartify.Tests.Mocks
 {
     public class DatabaseMock
     {
-        public static HeartifyDbContext Instance 
+        public static HeartifyDbContext Instance
         {
             get
             {

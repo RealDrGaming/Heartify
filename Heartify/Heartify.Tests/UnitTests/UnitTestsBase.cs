@@ -1,10 +1,10 @@
 ﻿using Heartify.Data.Models;
 using Heartify.Infrastructure.Data;
 using Heartify.Infrastructure.Data.Common;
+using Heartify.Infrastructure.Data.Models;
 using Heartify.Tests.Mocks;
 using HeartifyDating.Infrastructure.Data.Models;
 using System.Globalization;
-using Heartify.Infrastructure.Data.Models;
 using static Heartify.Infrastructure.Data.Constants.ValidationConstants;
 
 namespace Heartify.Tests.UnitTests
@@ -15,7 +15,7 @@ namespace Heartify.Tests.UnitTests
         protected IRepository repository;
 
         [OneTimeSetUp]
-        public async Task SetUpBase() 
+        public async Task SetUpBase()
         {
             data = DatabaseMock.Instance;
 
@@ -25,12 +25,12 @@ namespace Heartify.Tests.UnitTests
         }
 
         [OneTimeTearDown]
-        public void TearDownBase() 
+        public void TearDownBase()
         {
             data.Dispose();
         }
 
-        private async Task SeedDatabase(IRepository repo) 
+        private async Task SeedDatabase(IRepository repo)
         {
             string date = "12-07-2004";
             DateTime dateOfBirth = DateTime.Now;

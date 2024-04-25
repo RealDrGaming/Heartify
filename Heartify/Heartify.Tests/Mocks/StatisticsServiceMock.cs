@@ -15,9 +15,9 @@ namespace Heartify.Tests.Mocks
                 statisticsServiceMock
                     .Setup(s => s.TotalAsync())
                     .ReturnsAsync(new StatisticServiceModel()
-                {
-                    TotalUsers = 3,
-                });
+                    {
+                        TotalUsers = 3,
+                    });
 
                 return statisticsServiceMock.Object;
             }

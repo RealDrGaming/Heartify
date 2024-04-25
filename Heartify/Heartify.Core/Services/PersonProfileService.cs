@@ -17,7 +17,7 @@ namespace Heartify.Core.Services
         {
             repository = _repository;
         }
-        
+
         public async Task<PersonProfile> GetProfileByIdApprovedAsync(int personProfileId)
         {
             var profile = await repository.GetByIdAsync<PersonProfile>(personProfileId);
@@ -86,8 +86,8 @@ namespace Heartify.Core.Services
         public async Task<PersonProfileInfoViewModel> GetPersonProfileInfoAsync(string userId)
         {
             var profile = await repository.AllReadOnly<PersonProfile>()
-				.Where(pp => pp.IsApproved)
-				.Where(pp => pp.DaterId == userId)
+                .Where(pp => pp.IsApproved)
+                .Where(pp => pp.DaterId == userId)
                 .Select(pp => new PersonProfileInfoViewModel(
                     pp.Id,
                     pp.FirstName,

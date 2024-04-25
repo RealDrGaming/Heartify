@@ -2,7 +2,6 @@
 using Heartify.Infrastructure.Data.Common;
 using HeartifyDating.Infrastructure.Data.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Globalization;
 
 namespace Heartify.Core.Services
 {

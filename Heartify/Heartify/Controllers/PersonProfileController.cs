@@ -23,23 +23,23 @@ namespace Heartify.Controllers
         }
 
         [HttpGet]
-		public async Task<IActionResult> CreatePersonProfile()
-		{
+        public async Task<IActionResult> CreatePersonProfile()
+        {
             if (await sharedService.ExistsByIdAllAsync(User.Id()))
             {
-				return RedirectToAction("PersonProfileInfo", "Returner");
+                return RedirectToAction("PersonProfileInfo", "Returner");
             }
 
-			var model = new PersonProfileFormModel();
-			model.Genders = await GetGenders();
-			model.Relationships = await GetRelationships();
+            var model = new PersonProfileFormModel();
+            model.Genders = await GetGenders();
+            model.Relationships = await GetRelationships();
 
-			return View(model);
-		}
+            return View(model);
+        }
 
         [HttpPost]
-		public async Task<IActionResult> CreatePersonProfile(PersonProfileFormModel model)
-		{
+        public async Task<IActionResult> CreatePersonProfile(PersonProfileFormModel model)
+        {
             DateTime dateOfBirth = DateTime.Now;
 
             if (!DateTime.TryParseExact(
@@ -53,12 +53,12 @@ namespace Heartify.Controllers
             }
 
             if (!ModelState.IsValid)
-			{
-				model.Genders = await GetGenders();
+            {
+                model.Genders = await GetGenders();
                 model.Relationships = await GetRelationships();
 
-				return View(model);
-			}
+                return View(model);
+            }
 
             await personProfile.CreateAsync(
                 model.FirstName,
@@ -97,7 +97,7 @@ namespace Heartify.Controllers
                 WantedGenderId = pp.WantedGenderId,
                 RelationshipId = pp.RelationshipId,
                 Description = pp.Description,
-                
+
             };
 
             model.Genders = await GetGenders();
@@ -193,14 +193,14 @@ namespace Heartify.Controllers
             return RedirectToAction(nameof(CreatePersonProfile));
         }
 
-		private async Task<IEnumerable<GenderViewModel>> GetGenders()
-		{
+        private async Task<IEnumerable<GenderViewModel>> GetGenders()
+        {
             return await personProfile.AllGenders();
-		}
+        }
 
-		private async Task<IEnumerable<RelationshipViewModel>> GetRelationships()
-		{
+        private async Task<IEnumerable<RelationshipViewModel>> GetRelationships()
+        {
             return await personProfile.AllRelationships();
-		}
+        }
     }
 }
