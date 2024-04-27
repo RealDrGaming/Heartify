@@ -17,7 +17,7 @@ namespace Heartify.Areas.Admin.Controllers
 
         public async Task<IActionResult> AllReviewedUsers()
         {
-            var model = new PersonProfilesModel()
+            var model = new ProfileMatchesModel()
             {
                 ProfilesArray = await adminService.GetReviewedUsersAsync(),
             };
@@ -50,6 +50,14 @@ namespace Heartify.Areas.Admin.Controllers
             await sharedService.DeletePersonProfileAsync(personProfileId);
 
             return RedirectToAction(nameof(ApproveProfile));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> RemoveApprovedProfile(int personProfileId)
+        {
+            await sharedService.DeletePersonProfileAsync(personProfileId);
+
+            return RedirectToAction(nameof(AllReviewedUsers));
         }
     }
 }

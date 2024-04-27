@@ -1,4 +1,4 @@
-﻿@model PersonProfilesModel
+﻿@model ProfileMatchesModel
 
 @{
 	ViewData["Title"] = "All reviewed users";
@@ -13,7 +13,7 @@
 <h4>User Profiles that have been reviewed</h4>
 @if (!Model.ProfilesArray.Any())
 {
-    <h2 text-center>There are no accessable user profiles at the moment!</h2>
+    <h2 text-center>There are no accessible user profiles at the moment!</h2>
 }
 
 <div class="row">
@@ -26,6 +26,12 @@
                     <h5>@profile.FirstName @profile.LastName, born on @profile.DateOfBirth is looking for a @profile.Relationship.</h5>
                     <h5>@profile.FirstName is a @profile.Gender and is looking for a @profile.WantedGender partner</h5>
                     <h6>"@profile.Description"</h6>
+                    
+                    <h5>You can now reach @profile.FirstName at their email: @profile.Email</h5>
+
+                    <form asp-area="Admin" asp-controller="PersonProfile" asp-action="RemoveApprovedProfile" asp-route-personProfileId="@profile.Id" class="mb-1" method="post">
+	                    <button type="submit" class="btn btn-success">Delete profile</button>
+                    </form>
                 </div>
             </div>
         </div>

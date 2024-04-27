@@ -32,11 +32,11 @@ namespace Heartify.Core.Services
                 .ToListAsync();
         }
 
-        public async Task<IEnumerable<PersonProfileInfoViewModel>> GetReviewedUsersAsync()
+        public async Task<IEnumerable<PersonProfileInfoViewMatchModel>> GetReviewedUsersAsync()
         {
             return await repository.AllReadOnly<PersonProfile>()
                 .Where(pp => pp.IsApproved)
-                .Select(pp => new PersonProfileInfoViewModel(
+                .Select(pp => new PersonProfileInfoViewMatchModel(
                     pp.Id,
                     pp.FirstName,
                     pp.LastName,
@@ -44,7 +44,8 @@ namespace Heartify.Core.Services
                     pp.Gender.GenderName,
                     pp.WantedGender.GenderName,
                     pp.Relationship.RelationshipType,
-                    pp.Description
+                    pp.Description,
+                    pp.Dater.Email
                     ))
                 .ToListAsync();
         }

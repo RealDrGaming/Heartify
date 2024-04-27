@@ -6,7 +6,7 @@ namespace Heartify.Core.Contracts
     {
         Task<IEnumerable<PersonProfileInfoViewModel>> GetUserForReviewAsync();
 
-        Task<IEnumerable<PersonProfileInfoViewModel>> GetReviewedUsersAsync();
+        Task<IEnumerable<PersonProfileInfoViewMatchModel>> GetReviewedUsersAsync();
 
         Task ApprovePersonProfileAsync(int personProfileId);
     }
