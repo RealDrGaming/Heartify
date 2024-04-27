@@ -21,28 +21,6 @@ namespace Heartify.Tests.UnitTests
         }
 
         [Test]
-        public async Task GetReviewedUsers_WorksCorrectly()
-        {
-            var dbProfileInfoArray = await adminService.GetReviewedUsersAsync();
-
-            var firstProfileInfo = dbProfileInfoArray.FirstOrDefault();
-
-            Assert.IsNotNull(dbProfileInfoArray);
-            Assert.IsNotNull(firstProfileInfo);
-
-            Assert.That(dbProfileInfoArray.Count(), Is.EqualTo(2));
-
-            Assert.That(firstProfileInfo.Id, Is.EqualTo(1));
-            Assert.That(firstProfileInfo.FirstName, Is.EqualTo("Yordan"));
-            Assert.That(firstProfileInfo.LastName, Is.EqualTo("Neshev"));
-            Assert.That(firstProfileInfo.DateOfBirth, Is.EqualTo("12-07-2004"));
-            Assert.That(firstProfileInfo.Gender, Is.EqualTo("Male"));
-            Assert.That(firstProfileInfo.WantedGender, Is.EqualTo("Female"));
-            Assert.That(firstProfileInfo.Relationship, Is.EqualTo("Open"));
-            Assert.That(firstProfileInfo.Description, Is.EqualTo("Some discription here"));
-        }
-
-        [Test]
         public async Task GetUserForReview_WorksCorrectly()
         {
             var dbProfileInfoArray = await adminService.GetUserForReviewAsync();
@@ -95,6 +73,29 @@ namespace Heartify.Tests.UnitTests
             await adminService.ApprovePersonProfileAsync(dbProfile.Id);
 
             Assert.That(dbProfile.IsApproved, Is.EqualTo(true));
+        }
+
+        [Test]
+        public async Task GetReviewedUsers_WorksCorrectly()
+        {
+            var dbProfileMatchesInfoArray = await adminService.GetReviewedUsersAsync();
+
+            var firstProfileInfo = dbProfileMatchesInfoArray.FirstOrDefault();
+
+            Assert.IsNotNull(dbProfileMatchesInfoArray);
+            Assert.IsNotNull(firstProfileInfo);
+
+            Assert.That(dbProfileMatchesInfoArray.Count(), Is.EqualTo(1));
+
+            Assert.That(firstProfileInfo.Id, Is.EqualTo(5));
+            Assert.That(firstProfileInfo.FirstName, Is.EqualTo("Nqkuv"));
+            Assert.That(firstProfileInfo.LastName, Is.EqualTo("ApprovedPerson"));
+            Assert.That(firstProfileInfo.DateOfBirth, Is.EqualTo("12-07-2004"));
+            Assert.That(firstProfileInfo.Gender, Is.EqualTo("Female"));
+            Assert.That(firstProfileInfo.WantedGender, Is.EqualTo("Female"));
+            Assert.That(firstProfileInfo.Relationship, Is.EqualTo("Open"));
+            Assert.That(firstProfileInfo.Description, Is.EqualTo("approved li sum mamo"));
+            Assert.That(firstProfileInfo.Email, Is.Null);
         }
     }
 }

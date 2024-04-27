@@ -5,6 +5,7 @@ using Heartify.Infrastructure.Data.Models;
 using Heartify.Tests.Mocks;
 using HeartifyDating.Infrastructure.Data.Models;
 using System.Globalization;
+using Microsoft.AspNetCore.Identity;
 using static Heartify.Infrastructure.Data.Constants.ValidationConstants;
 
 namespace Heartify.Tests.UnitTests
@@ -53,7 +54,7 @@ namespace Heartify.Tests.UnitTests
                 RelationshipId = 2,
                 Description = "Some discription here",
                 IsApproved = true,
-                DaterId = "ace41288-92e4-4b16-8880-808450fe5388"
+                DaterId = "ace41288-92e4-4b16-8880-808450fe5388",
             });
 
             await repo.AddAsync(new PersonProfile()
@@ -67,7 +68,7 @@ namespace Heartify.Tests.UnitTests
                 RelationshipId = 1,
                 Description = "some ivanka stuff",
                 IsApproved = false,
-                DaterId = "c78567dd-3be3-41be-ba30-eee36aa7c9db"
+                DaterId = "c78567dd-3be3-41be-ba30-eee36aa7c9db",
             });
 
             await repo.AddAsync(new PersonProfile()
@@ -81,7 +82,7 @@ namespace Heartify.Tests.UnitTests
                 RelationshipId = 3,
                 Description = "omg checheneca",
                 IsApproved = true,
-                DaterId = "e0576a86-f7d1-419c-b074-b2c077e44ce9"
+                DaterId = "e0576a86-f7d1-419c-b074-b2c077e44ce9",
             });
 
             await repo.AddAsync(new PersonProfile()
@@ -95,7 +96,21 @@ namespace Heartify.Tests.UnitTests
                 RelationshipId = 2,
                 Description = "aide iztriha me",
                 IsApproved = true,
-                DaterId = "ca69b026-ad63-44b0-8264-612c9de7dd02"
+                DaterId = "ca69b026-ad63-44b0-8264-612c9de7dd02",
+            });
+
+            await repo.AddAsync(new PersonProfile()
+            {
+                Id = 5,
+                FirstName = "Nqkuv",
+                LastName = "ApprovedPerson",
+                DateOfBirth = dateOfBirth,
+                GenderId = 2,
+                WantedGenderId = 2,
+                RelationshipId = 2,
+                Description = "approved li sum mamo",
+                IsApproved = true,
+                Dater = new IdentityUser(userName: "ApprovedGuy@mail.com")
             });
 
             await repo.AddAsync(new Gender()
