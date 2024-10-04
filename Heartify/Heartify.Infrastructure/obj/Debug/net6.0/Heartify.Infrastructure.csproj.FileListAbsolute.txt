@@ -11,3 +11,15 @@ C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Infrastructu
 C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Infrastructure\obj\Debug\net6.0\refint\Heartify.Infrastructure.dll
 C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Infrastructure\obj\Debug\net6.0\Heartify.Infrastructure.pdb
 C:\Users\danko\Documents\GitHub\Heartify\Heartify\Heartify\Heartify.Infrastructure\obj\Debug\net6.0\ref\Heartify.Infrastructure.dll
+C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify.Infrastructure\bin\Debug\net6.0\Heartify.Infrastructure.deps.json
+C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify.Infrastructure\bin\Debug\net6.0\Heartify.Infrastructure.dll
+C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify.Infrastructure\bin\Debug\net6.0\Heartify.Infrastructure.pdb
+C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify.Infrastructure\obj\Debug\net6.0\Heartify.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify.Infrastructure\obj\Debug\net6.0\Heartify.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify.Infrastructure\obj\Debug\net6.0\Heartify.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify.Infrastructure\obj\Debug\net6.0\Heartify.Infrastructure.AssemblyInfo.cs
+C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify.Infrastructure\obj\Debug\net6.0\Heartify.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify.Infrastructure\obj\Debug\net6.0\Heartify.Infrastructure.dll
+C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify.Infrastructure\obj\Debug\net6.0\refint\Heartify.Infrastructure.dll
+C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify.Infrastructure\obj\Debug\net6.0\Heartify.Infrastructure.pdb
+C:\Users\XI_B\Documents\GitHub\Heartify\Heartify\Heartify.Infrastructure\obj\Debug\net6.0\ref\Heartify.Infrastructure.dll

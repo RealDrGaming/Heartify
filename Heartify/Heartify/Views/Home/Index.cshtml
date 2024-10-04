@@ -90,7 +90,7 @@
     <script>
         setInterval(function () {
             $.get('/api/statistic', data => {
-                $('#total-users').text(data.totalUsers + ' people are using Heartify');
+                $('#total-users').text(data.totalUsers + ' people is/are using Heartify');
             });
         }, 5000);
     </script>
